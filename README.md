@@ -1,0 +1,4 @@
+Courseware
+==========
+
+Open source courseware
