@@ -1,9 +1,13 @@
 from django.db import models
 
+# Abstract Course
 class Course(models.Model):
     name = models.CharField(max_length=200)
     course_number = models.PositiveIntegerField()
     credit = models.PositiveSmallIntegerField()
+
+    def __unicode__(self):
+        return self.name
 
 class Term(models.Model):
 
@@ -20,14 +24,23 @@ class Term(models.Model):
     year = models.IntegerField() #TODO year field
     semester = models.CharField( max_length=2, choices=SEMESTER_CHOICES )
 
+    def __unicode__(self):
+        d = dict(self.SEMESTER_CHOICES)
+        return self.year.__str__() + "-" + (self.year+1).__str__() + " " + d[self.semester]
+
+# Each Real Course
 class CourseInstance(models.Model):
-    term = models.ForeignKey(Term)
     course = models.ForeignKey(Course)
+    term = models.ForeignKey(Term)
     group = models.SmallIntegerField()
     professors = models.ManyToManyField('account.Professor')
-    teacher_assistants = models.ManyToManyField('account.Student', null = True, blank = True )
+    teacher_assistants = models.ManyToManyField('account.Student', null = True, blank = True, related_name='course_teacher_assistants' )
     description = models.TextField( null = True, blank = True )
     picture = models.ImageField( null = True, blank = True )
+    students = models.ManyToManyField('account.Student', null = True, blank = True, related_name='course_students' )
+
+    def __unicode__(self):
+        return self.course.course_number.__str__() + " " + self.course.name + " " + self.term.__str__()
 
 class Room(models.Model):
     number = models.PositiveSmallIntegerField()

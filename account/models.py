@@ -8,6 +8,9 @@ class Account(models.Model):
     student_id = models.ForeignKey('Student', null=True, blank=True )
     professor_id = models.ForeignKey('Professor', null=True, blank=True )
 
+    def __unicode__(self):
+        return self.user.username
+
 class Student(models.Model):
     account_id = models.ForeignKey(Account)
     student_number = models.PositiveIntegerField()
@@ -33,3 +36,4 @@ class Professor(models.Model):
     type = models.CharField( max_length=4, choices=PROFESSOR_CHOICES )
     website = models.URLField()
     # role
+
