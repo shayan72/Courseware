@@ -124,7 +124,7 @@ class Grade(models.Model):
     student = models.ForeignKey('account.Student')
     grade = models.PositiveIntegerField()
 
-class Resources(models.Model):
+class Resource(models.Model):
     name = models.CharField(max_length=1000)
     link = models.URLField()
     # type
