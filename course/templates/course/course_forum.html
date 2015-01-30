@@ -1,41 +1,12 @@
+{% extends 'course/course_page.html' %}
 {% load staticfiles %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Bootstrap 3, from LayoutIt!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
-    <!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
-    <!--script src="js/less-1.3.3.min.js"></script-->
-    <!--append ‘#!watch’ to the browser URL, then refresh the page. -->
-
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+{% block 'css_header' %}
     <link href="{% static 'css/forum.css' %}" rel="stylesheet">
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-  <![endif]-->
+{% endblock %}
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="img/favicon.png">
-
-    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>
-
-
+{% block 'js_header' %}
     <script type="text/javascript" src="{% static 'tinymce/js/tinymce/tinymce.min.js' %}"></script>
-
     <script type="text/javascript">
         tinymce.init({
             selector: "textarea",
@@ -47,226 +18,178 @@
             toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
         });
     </script>
-</head>
+{% endblock %}
 
-<body id="body">
-<div class="container" id="mainContainer">
-    <div class="row clearfix">
-        <div class="col-md-12 column">
-            <div class="page-header">
-                <h1>
-                    Course Name
-                    <small>CE Department- Sharif University of Technology</small>
-                </h1>
-            </div>
-        </div>
-    </div>
-    <div class="row clearfix">
-        <div class="col-md-12 column">
-            <div class="row clearfix">
-                <div class="col-md-2 column">
-                    <div class="row clearfix">
-                        <div class="col-md-12 column">
-                            <div class="list-group">
-                                <a href="#" class="list-group-item active" id="yellowHeader">Menu</a>
+{% block 'body_block' %}
 
-                                <div class="list-group-item">
+    <div class="col-md-10 column">
+        <div class="row clearfix">
+            <div class="col-md-3 column" id="posts">
+                <div class="panel-group" id="panel-936204">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <label>New Topic</label>
 
-                                    <li>
-                                        <a href="#">Syllabus</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Calendar</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Assignments</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Grades</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" style="color:#1a0a4f;"><u>Discussion Area</u></a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Lecture Notes</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Resource</a>
-                                    </li>
+                            <div>
+                                <button class="btn btn-default" type="button" onclick="showNewPostDiv();">
+                                    Create
+                                </button>
+                            </div>
+                            <script>
+                                function showNewPostDiv() {
+                                    replySubmit();
+                                    document.getElementById("post").style.display = "block";
+                                    document.getElementById("existingPost").style.display = "none"
+
+                                }
+                            </script>
+
+                        </div>
+                    </div>
+
+                    <div class="list-group">
+                        <div class="list-group-item">
+
+                            {#                                        New Style begin#}
+
+                            {% for topic in topics %}
+                                <div>
+                                    <div>
+                                        <a href="?topic={{ topic.pk }}">
+                                            {{ topic.title }}
+                                        </a>
+                                    </div>
                                 </div>
+                            {% endfor %}
+                            {#                                        New Style End#}
+
+                            {#                                        Old Style begin#}
+
+                            {#                                        <div class="panel panel-default">#}
+                            {#                                            <div class="panel-heading">#}
+                            {#                                                <a data-toggle="collapse" data-parent="#panel-936204"#}
+                            {#                                                   href="#panel-element-222">Quiz</a>#}
+                            {#                                            </div>#}
+                            {#                                            <div id="panel-element-222" class="panel-collapse collapse">#}
+                            {#                                                <div class="panel-body">#}
+                            {#                                                    <a>QuizPost #1</a>#}
+                            {#                                                </div>#}
+                            {#                                            </div>#}
+                            {#                                        </div>#}
+                            {#                                        <div class="panel panel-default">#}
+                            {#                                            <div class="panel-heading">#}
+                            {#                                                <a data-toggle="collapse" data-parent="#panel-936204"#}
+                            {#                                                   href="#panel-element-333">Polls</a>#}
+                            {#                                            </div>#}
+                            {#                                            <div id="panel-element-333" class="panel-collapse collapse">#}
+                            {#                                                <div class="panel-body">#}
+                            {#                                                    <a>PollsPost #1</a>#}
+                            {#                                                </div>#}
+                            {#                                            </div>#}
+                            {#                                        </div>#}
+                            {#                                        <div class="panel panel-default">#}
+                            {#                                            <div class="panel-heading">#}
+                            {#                                                <a data-toggle="collapse" data-parent="#panel-936204"#}
+                            {#                                                   href="#panel-element-444">Projects</a>#}
+                            {#                                            </div>#}
+                            {#                                            <div id="panel-element-444" class="panel-collapse collapse">#}
+                            {#                                                <div class="panel-body">#}
+                            {#                                                    <a>ProjectPost #1</a>#}
+                            {#                                                </div>#}
+                            {#                                            </div>#}
+                            {#                                        </div>#}
+
+                            {#                                        Old Style End#}
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-md-9 column">
+                <div class="row clearfix" id="post" style="display:none;">
+                    <div class="col-md-12">
+                        <div class="row clearfix" id="typeOfPost">
+                            <div class="col-md-2">
+                                <label>Type </label>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="btn-group btn-group-xs">
+                                    <button class="btn btn-default" type="button">HW</button>
+                                    <button class="btn btn-default" type="button"> Quiz</button>
+                                    <button class="btn btn-default" type="button"> Polls</button>
+                                    <button class="btn btn-default" type="button">Project</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <br>
+
+                        <div class="row clearfix">
+
+                            <div class="col-md-2 column">
+                                <label>Topic</label>
+                            </div>
+
+                            <div class="col-md-10 column">
+
+                                <form class="form-horizontal" role="form" id="topic">
+                                    <div class="form-group">
+
+                                        <div class="col-sm-12">
+                                            <input type="email" class="form-control" id="inp"/>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix">
+                            <div class="col-md-2 column">
+                                <label>Details</label>
+
+                            </div>
+
+
+                            <div class="col-md-10 column">
+                                <form method="post" action="somepage">
+                                    <textarea name="makan"></textarea>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix" id="postButton">
+                            <div class="col-md-2">
+
+                            </div>
+                            <div class="col-md-10">
+                                <button type="button" class="btn btn-info" onclick="hideNewPostDiv();">
+                                    Post
+                                </button>
+                                <Script>
+                                    function hideNewPostDiv() {
+                                        document.getElementById("existingPost").style.display = "block";
+                                        document.getElementById("post").style.display = "none";
+                                    }
+                                </Script>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-10 column">
-                    <div class="row clearfix">
-                        <div class="col-md-3 column" id="posts">
-                            <div class="panel-group" id="panel-936204">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <label>New Topic</label>
-
-                                        <div>
-                                            <button class="btn btn-default" type="button" onclick="showNewPostDiv();">
-                                                Create
-                                            </button>
-                                        </div>
-                                        <script>
-                                            function showNewPostDiv() {
-                                                replySubmit();
-                                                document.getElementById("post").style.display = "block";
-                                                document.getElementById("existingPost").style.display = "none"
-
-                                            }
-                                        </script>
-
-                                    </div>
-                                </div>
-
-                                <div class="list-group">
-                                    <div class="list-group-item">
-
-{#                                        New Style begin#}
-
-                                        {% for topic in topics %}
-                                        <div>
-                                            <div>
-                                                <a href="?topic={{ topic.pk }}">
-                                                    {{ topic.title }}
-                                                </a>
-                                            </div>
-                                        </div>
-                                        {% endfor %}
-{#                                        New Style End#}
-
-{#                                        Old Style begin#}
-
-{#                                        <div class="panel panel-default">#}
-{#                                            <div class="panel-heading">#}
-{#                                                <a data-toggle="collapse" data-parent="#panel-936204"#}
-{#                                                   href="#panel-element-222">Quiz</a>#}
-{#                                            </div>#}
-{#                                            <div id="panel-element-222" class="panel-collapse collapse">#}
-{#                                                <div class="panel-body">#}
-{#                                                    <a>QuizPost #1</a>#}
-{#                                                </div>#}
-{#                                            </div>#}
-{#                                        </div>#}
-{#                                        <div class="panel panel-default">#}
-{#                                            <div class="panel-heading">#}
-{#                                                <a data-toggle="collapse" data-parent="#panel-936204"#}
-{#                                                   href="#panel-element-333">Polls</a>#}
-{#                                            </div>#}
-{#                                            <div id="panel-element-333" class="panel-collapse collapse">#}
-{#                                                <div class="panel-body">#}
-{#                                                    <a>PollsPost #1</a>#}
-{#                                                </div>#}
-{#                                            </div>#}
-{#                                        </div>#}
-{#                                        <div class="panel panel-default">#}
-{#                                            <div class="panel-heading">#}
-{#                                                <a data-toggle="collapse" data-parent="#panel-936204"#}
-{#                                                   href="#panel-element-444">Projects</a>#}
-{#                                            </div>#}
-{#                                            <div id="panel-element-444" class="panel-collapse collapse">#}
-{#                                                <div class="panel-body">#}
-{#                                                    <a>ProjectPost #1</a>#}
-{#                                                </div>#}
-{#                                            </div>#}
-{#                                        </div>#}
-
-{#                                        Old Style End#}
-
-                                    </div>
-                                </div>
+                <div class="row clearfix">
+                    <div class="col-md-12">
 
 
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-9 column">
-                            <div class="row clearfix" id="post" style="display:none;">
-                                <div class="col-md-12">
-                                    <div class="row clearfix" id="typeOfPost">
-                                        <div class="col-md-2">
-                                            <label>Type </label>
-                                        </div>
-                                        <div class="col-md-10">
-                                            <div class="btn-group btn-group-xs">
-                                                <button class="btn btn-default" type="button">HW</button>
-                                                <button class="btn btn-default" type="button"> Quiz</button>
-                                                <button class="btn btn-default" type="button"> Polls</button>
-                                                <button class="btn btn-default" type="button">Project</button>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-
-                                    <br>
-
-                                    <div class="row clearfix">
-
-                                        <div class="col-md-2 column">
-                                            <label>Topic</label>
-                                        </div>
-
-                                        <div class="col-md-10 column">
-
-                                            <form class="form-horizontal" role="form" id="topic">
-                                                <div class="form-group">
-
-                                                    <div class="col-sm-12">
-                                                        <input type="email" class="form-control" id="inp"/>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-
-                                    <div class="row clearfix">
-                                        <div class="col-md-2 column">
-                                            <label>Details</label>
-
-                                        </div>
-
-
-                                        <div class="col-md-10 column">
-                                            <form method="post" action="somepage">
-                                                <textarea name="makan"></textarea>
-                                            </form>
-                                        </div>
-                                    </div>
-
-                                    <div class="row clearfix" id="postButton">
-                                        <div class="col-md-2">
-
-                                        </div>
-                                        <div class="col-md-10">
-                                            <button type="button" class="btn btn-info" onclick="hideNewPostDiv();">
-                                                Post
-                                            </button>
-                                            <Script>
-                                                function hideNewPostDiv() {
-                                                    document.getElementById("existingPost").style.display = "block";
-                                                    document.getElementById("post").style.display = "none";
-                                                }
-                                            </Script>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row clearfix">
-                                <div class="col-md-12">
-
-
-                                    <div class="row clearfix" id="existingPost">
+                        <div class="row clearfix" id="existingPost">
+                            <div class="col-md-12 column">
+                                <div class="row clearfix">
+                                    {% for post in posts %}
+                                        {#                                                each main post#}
                                         <div class="col-md-12 column">
-                                            <div class="row clearfix">
-                                                {% for post in posts %}
-                                                    {#                                                each main post#}
-                                                    <div class="col-md-12 column">
                                                     <span class="label label-default">
                                                         {% if post.anonymous == True %}
                                                             anonymous
@@ -275,18 +198,18 @@
                                                         {% endif %}
                                                     </span>
 
-                                                        <p>
-                                                            {{ post.body }}
-                                                        </p>
+                                            <p>
+                                                {{ post.body }}
+                                            </p>
 
 
-                                                        {#                                                    each comment to that post#}
-                                                        {% for comment in post.get_post_comments %}
-                                                            <div class="row clearfix">
-                                                                <div class="col-md-1 column">
+                                            {#                                                    each comment to that post#}
+                                            {% for comment in post.get_post_comments %}
+                                                <div class="row clearfix">
+                                                    <div class="col-md-1 column">
 
-                                                                </div>
-                                                                <div class="col-md-11">
+                                                    </div>
+                                                    <div class="col-md-11">
                                                             <span class="label label-default">
                                                                 {% if comment.anonymous == True %}
                                                                     anonymous
@@ -295,129 +218,127 @@
                                                                 {% endif %}
                                                             </span>
 
-                                                                    <p>
-                                                                        {{ comment.body }}
-                                                                    </p>
+                                                        <p>
+                                                            {{ comment.body }}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            {% endfor %}
+
+
+                                            {#                                                    commnet on that post#}
+                                            <div class="row clearfix">
+                                                <div class="col-md-1 column">
+                                                </div>
+                                                <div class="col-md-11 column">
+
+                                                    <form class="form-horizontal" role="form" id="topic">
+                                                        <div class="form-group">
+
+                                                            <div class="col-sm-12">
+                                                                <input type="text" class="form-control"
+                                                                       placeholder="Reply to this post"
+                                                                       onclick="changeToReplyMode(this)"
+                                                                       id="replyInput"/>
+
+                                                                <div style="display: none;" id="editorDiv">
+                                                                    <form method="post" action="somepage">
+                                                                        <textarea></textarea>
+                                                                    </form>
+                                                                    <button type="button"
+                                                                            class="btn btn-info"
+                                                                            onclick="replySubmit(this)">Post
+                                                                    </button>
+                                                                    <script>
+                                                                        function changeToReplyMode(x) {
+                                                                            x.style.display = "none";
+                                                                            $(x).siblings().css({"display": "block"});
+                                                                        }
+                                                                        ;
+                                                                    </script>
+                                                                    <script>
+                                                                        function replySubmit() {
+                                                                            document.getElementById('replyInput').style.display = 'block';
+                                                                            document.getElementById("editorDiv").style.display = 'none';
+
+
+                                                                        }
+                                                                        ;
+                                                                    </script>
                                                                 </div>
-                                                            </div>
-                                                        {% endfor %}
-
-
-                                                        {#                                                    commnet on that post#}
-                                                        <div class="row clearfix">
-                                                            <div class="col-md-1 column">
-                                                            </div>
-                                                            <div class="col-md-11 column">
-
-                                                                <form class="form-horizontal" role="form" id="topic">
-                                                                    <div class="form-group">
-
-                                                                        <div class="col-sm-12">
-                                                                            <input type="text" class="form-control"
-                                                                                   placeholder="Reply to this post"
-                                                                                   onclick="changeToReplyMode(this)"
-                                                                                   id="replyInput"/>
-
-                                                                            <div style="display: none;" id="editorDiv">
-                                                                                <form method="post" action="somepage">
-                                                                                    <textarea></textarea>
-                                                                                </form>
-                                                                                <button type="button"
-                                                                                        class="btn btn-info"
-                                                                                        onclick="replySubmit(this)">Post
-                                                                                </button>
-                                                                                <script>
-                                                                                    function changeToReplyMode(x) {
-                                                                                        x.style.display = "none";
-                                                                                        $(x).siblings().css({"display": "block"});
-                                                                                    }
-                                                                                    ;
-                                                                                </script>
-                                                                                <script>
-                                                                                    function replySubmit() {
-                                                                                        document.getElementById('replyInput').style.display = 'block';
-                                                                                        document.getElementById("editorDiv").style.display = 'none';
-
-
-                                                                                    }
-                                                                                    ;
-                                                                                </script>
-                                                                            </div>
-
-                                                                        </div>
-                                                                    </div>
-                                                                </form>
 
                                                             </div>
                                                         </div>
+                                                    </form>
+
+                                                </div>
+                                            </div>
 
 
+                                        </div>
+                                    {% endfor %}
+
+                                    {#                                                reply to the post#}
+                                    <div class="row clearfix">
+                                        <div class="col-md-1 column">
+                                        </div>
+                                        <div class="col-md-11 column">
+
+                                            {% if form.errors %}
+                                                {% for field in form %}
+                                                    {% for error in field.errors %}
+                                                        <div class="alert alert-error">
+                                                            <strong>{{ error|escape }}</strong>
+                                                        </div>
+                                                    {% endfor %}
+                                                {% endfor %}
+                                                {% for error in form.non_field_errors %}
+                                                    <div class="alert alert-error">
+                                                        <strong>{{ error|escape }}</strong>
                                                     </div>
                                                 {% endfor %}
+                                            {% endif %}
 
-                                                {#                                                reply to the post#}
-                                                <div class="row clearfix">
-                                                    <div class="col-md-1 column">
-                                                    </div>
-                                                    <div class="col-md-11 column">
+                                            <form action="{% url 'course_forum' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}"
+                                                  method="post" class="form-horizontal" role="form" id="topic">
+                                                {% csrf_token %}
+                                                <div class="form-group">
 
-                                                        {% if form.errors %}
-                                                            {% for field in form %}
-                                                                {% for error in field.errors %}
-                                                                    <div class="alert alert-error">
-                                                                        <strong>{{ error|escape }}</strong>
-                                                                    </div>
-                                                                {% endfor %}
-                                                            {% endfor %}
-                                                            {% for error in form.non_field_errors %}
-                                                                <div class="alert alert-error">
-                                                                    <strong>{{ error|escape }}</strong>
-                                                                </div>
-                                                            {% endfor %}
-                                                        {% endif %}
+                                                    <div class="col-sm-12">
+                                                        <a onclick="changeToReplyMode(this)"
+                                                           id="replyInput"> + Reply to this post </a>
 
-                                                        <form action="{% url 'course_forum' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}" method="post" class="form-horizontal" role="form" id="topic">
-                                                            {% csrf_token %}
-                                                            <div class="form-group">
-
-                                                                <div class="col-sm-12">
-                                                                    <a onclick="changeToReplyMode(this)"
-                                                                           id="replyInput"> + Reply to this post </a>
-
-                                                                    <div style="display: none;" id="editorDiv">
-                                                                        <textarea name="body" form="topic"></textarea>
-                                                                        <button type="submit" class="btn btn-info"
-                                                                                onclick="replySubmit(this)">Post
-                                                                        </button>
-                                                                        <script>
-                                                                            function changeToReplyMode(x) {
-                                                                                x.style.display = "none";
-                                                                                $(x).siblings().css({"display": "block"});
-                                                                            }
-                                                                            ;
-                                                                        </script>
-                                                                        <script>
-                                                                            function replySubmit() {
-                                                                                document.getElementById('replyInput').style.display = 'block';
-                                                                                document.getElementById("editorDiv").style.display = 'none';
+                                                        <div style="display: none;" id="editorDiv">
+                                                            <textarea name="body" form="topic"></textarea>
+                                                            <button type="submit" class="btn btn-info"
+                                                                    onclick="replySubmit(this)">Post
+                                                            </button>
+                                                            <script>
+                                                                function changeToReplyMode(x) {
+                                                                    x.style.display = "none";
+                                                                    $(x).siblings().css({"display": "block"});
+                                                                }
+                                                                ;
+                                                            </script>
+                                                            <script>
+                                                                function replySubmit() {
+                                                                    document.getElementById('replyInput').style.display = 'block';
+                                                                    document.getElementById("editorDiv").style.display = 'none';
 
 
-                                                                            }
-                                                                            ;
-                                                                        </script>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </form>
+                                                                }
+                                                                ;
+                                                            </script>
+                                                        </div>
 
                                                     </div>
                                                 </div>
+                                            </form>
 
-
-                                            </div>
                                         </div>
                                     </div>
+
+
                                 </div>
                             </div>
                         </div>
@@ -426,8 +347,5 @@
             </div>
         </div>
     </div>
-</div>
 
-
-</body>
-</html>
+{% endblock %}

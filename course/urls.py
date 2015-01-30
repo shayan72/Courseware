@@ -2,13 +2,13 @@ from django.conf.urls import include, patterns, url
 from course import views
 
 urlpatterns = patterns('',
-                       # /courses/93-94/1/ce108-1/
+                       # /courses/
                        url(r'^$', views.courses, name='courses'),
 
-                       # /courses/93-94/1/ce108-1/
+                       # /courses/93-94/FA/
                        url(
                            r'^(?P<course_year_1>\d{2})-(?P<course_year_2>\d{2})/(?P<term>\w{2})/', include(patterns('',
-                                        url( r'^$', views.courses_of_term, name='courses_of_term' ),
+                                        url( r'^$', views.courses, name='courses_of_term' ),
                                         url( r'^ce(?P<course_num>\d+)-(?P<course_group>\d+)/', include(patterns('',
                                             url( r'^$', views.course_page, name='course_page'),
                                             url( r'^syllabus$', views.course_syllabus, name='course_syllabus' ),

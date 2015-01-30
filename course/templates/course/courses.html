@@ -162,10 +162,11 @@
 							<li>
 								<a href="#">Current Semester</a>
 							</li>
-
+							{% for term in terms %}
 							<li>
-								<a href="#">Something else here</a>
+								<a href="{% url 'courses_of_term' term.year term.year|add:'1' term.semester %}"> {{ term }} </a>
 							</li>
+                            {% endfor %}
 						</ul>
 					</div>
 					<div class="panel-group" id="panel-710204">
@@ -181,9 +182,11 @@
 									<div class="row clearfix">
 										<div class="col-md-9 column">
 											<ul>
+                                                {% for professor in course_instance.professors.all %}
 												<li>
-													teacher
+													{{ professor }}
 												</li>
+												{% endfor %}
 											</ul>
                                             <a href="{% url 'course_page' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}"> Visit Course Page </a>
 										</div>

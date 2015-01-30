@@ -24,9 +24,12 @@ class Term(models.Model):
     year = models.IntegerField() #TODO year field
     semester = models.CharField( max_length=2, choices=SEMESTER_CHOICES )
 
-    def __unicode__(self):
+    def get_semester(self):
         d = dict(self.SEMESTER_CHOICES)
-        return self.year.__str__() + "-" + (self.year+1).__str__() + " " + d[self.semester]
+        return d[self.semester]
+
+    def __unicode__(self):
+        return self.year.__str__() + "-" + (self.year+1).__str__() + " " + self.get_semester()
 
 # Each Real Course
 class CourseInstance(models.Model):
@@ -94,8 +97,11 @@ class TextBook(models.Model):
     name = models.CharField(max_length=1000)
     link = models.URLField()
 
+    def __unicode__(self):
+        return self.name
+
 class Syllabus(models.Model):
-    course_instance = models.ForeignKey(CourseInstance)
+    course_instance = models.OneToOneField(CourseInstance)
     description = models.TextField()
     text_books = models.ManyToManyField(TextBook, null=True, blank=True)
     grading_policy = models.TextField( null=True, blank=True )

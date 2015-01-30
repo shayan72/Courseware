@@ -37,3 +37,5 @@ class Professor(models.Model):
     website = models.URLField()
     # role
 
+    def __unicode__(self):
+        return self.account_id.user.first_name + " " + self.account_id.user.last_name

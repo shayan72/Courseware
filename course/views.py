@@ -10,20 +10,17 @@ from course.models import Resource
 from course.models import Topic
 from course.models import RoomReservation
 from course.models import Post
+from course.models import Term
 
 from course.forms import PostForm
 
+def courses(request, course_year_1 = 93, course_year_2 = 94, term = 'FA' ):
+    course_instance_list = CourseInstance.objects.filter(term__year=93).filter(term__semester='FA')
+    terms = Term.objects.all()
 
-def courses(request):
-    return render(request, 'course/courses.html')
+    context = {'course_instance_list': course_instance_list, 'terms': terms }
 
-
-def courses_of_term(request, course_year_1, course_year_2, term):
-    course_instance_list = CourseInstance.objects.filter(term__year=course_year_1).filter(term__semester=term)
-
-    context = {'course_instance_list': course_instance_list}
-
-    return render(request, 'course/courses.html', context)
+    return render(request, 'course/courses.html', context )
 
 
 def course_page(request, course_year_1, course_year_2, term, course_num, course_group):
@@ -41,7 +38,7 @@ def course_page(request, course_year_1, course_year_2, term, course_num, course_
 
 def course_syllabus(request, course_year_1, course_year_2, term, course_num, course_group):
     course_instance = get_course_instance(course_year_1, course_year_2, term, course_num, course_group)
-    syllabus = Syllabus.objects.filter(course_instance=course_instance)
+    syllabus = Syllabus.objects.get(course_instance=course_instance)
 
     context = {'course_instance': course_instance, 'syllabus': syllabus}
 
