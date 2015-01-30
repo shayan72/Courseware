@@ -1,10 +1,221 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-Manage Course Assignments
-</body>
-</html>
+{% extends 'course_admin/manage_base.html' %}
+{% load staticfiles %}
+
+{% block 'js_header' %}
+    <script type="text/javascript" src="{% static 'js/AssignmentManaging.js' %}"></script>
+    <script>
+        /**
+         * Created by makan on 1/30/15.
+         */
+
+        function hideAssignment(x) {
+            x.style.display = "none";
+            //remove from server ...;
+        }
+    </script>
+{% endblock %}
+
+{% block 'body_block' %}
+    <div class="col-md-10 column">
+        <div class="row clearfix">
+            <div class="col-md-12 column" id="hw1">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">
+                        <div class="row clearfix">
+                            <div class="col-md-9 column">
+                                <label>HW#1</label>
+                            </div>
+                            <div class="col-md-2 column">
+                                <label id="deadline">DeadLine: 93/08/10</label>
+                            </div>
+                            <div class="col-md-1 column">
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <div class="list-group-item">
+                        <div class="row clearfix">
+                            <div class="col-md-8">
+                                <div class="row clearfix">
+                                    <div class="col-md-1">
+                                        <label class="fa fa-angle-double-right"></label>
+                                    </div>
+                                    <div class="col-md-11">
+                                        <p style="margin-left: -3em;">Description of Assignment</p>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <ul style="list-style-type: none;">
+                                        <li>
+                                            <a href="#" class="fa fa-cloud-download fa-2x"></a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item active "
+                                       style="background-color: #d5d4ff">Uploaded File</a>
+
+                                    <div style="overflow-y:scroll ; max-height: 7em; min-height: 7em; background-color: whitesmoke">
+                                        <div class="list-group-item">
+                                            <label class="fa fa-file-zip-o"> </label><a href="#"> std#1</a>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <label class="fa fa-file-zip-o "> </label><a href="#"> std#2</a>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <label class="fa fa-file-zip-o"> </label><a href="#"> std#3</a>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <label class="fa fa-file-zip-o"> </label><a href="#"> std#4</a>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <label class="fa fa-file-zip-o"> </label><a href="#"> std#5</a>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <label class="fa fa-file-zip-o"> </label><a href="#"> std#6</a>
+                                        </div>
+
+                                    </div>
+                                    <a href="#" class="list-group-item " style="background-color: #d5d4ff">
+                                        <p></p></a>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-md-1 column">
+                                <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span
+                                        class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#"
+                                           onclick="hideAssignment(document.getElementById('hw1'));">Remove</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix" id="createNewAssignment" style="display:none;">
+            <div class="col-md-12">
+
+                <div class="row clearfix" id="typeOfPost" style="margin-top: 1em;">
+                    <div class="col-md-2">
+                        <label>Type </label>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="btn-group btn-group-xs">
+                            <button class="btn btn-default" type="button">HW</button>
+                            <button class="btn btn-default" type="button">Project</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row clearfix" style="margin-top: 1em;">
+
+                    <div class="col-md-2 column">
+                        <label>Deadline</label>
+                    </div>
+
+                    <div class="col-md-10 column">
+                        <input type="date">
+
+                    </div>
+                </div>
+
+                <div class="row clearfix" style="margin-top: 1em;">
+
+                    <div class="col-md-2 column">
+                        <label>Topic</label>
+                    </div>
+
+                    <div class="col-md-10 column">
+
+                        <form class="form-horizontal" role="form" id="topic">
+                            <div class="form-group">
+
+                                <div class="col-sm-12">
+                                    <input type="email" class="form-control" id="inp"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row clearfix" style="margin-top: 1em;">
+                    <div class="col-md-2 column">
+                        <label>Description</label>
+
+                    </div>
+
+
+                    <div class="col-md-10 column">
+                        <form method="post" action="somepage">
+                            <textarea name="makan"></textarea>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="row clearfix" style="margin-top: 1em;">
+
+                    <div class="col-md-2 column">
+                        <label>File</label>
+                    </div>
+
+                    <div class="col-md-10 column">
+                        <input type="file">
+
+                    </div>
+                </div>
+                <div class="row clearfix" id="postButton" style="margin-top: 1em;">
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-10">
+                        <button type="button" class="btn btn-default" onclick="hideCreateNewAssignment();">
+                            Post
+                        </button>
+                        <Script>
+                            function hideCreateNewAssignment() {
+                                document.getElementById("createAssignmentBtn").style.display = "block";
+                                document.getElementById("createNewAssignment").style.display = "none";
+                            }
+                        </Script>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row clearfix">
+            <div class="col-md-12">
+                <button class="btn btn-default btn-sm" id="createAssignmentBtn"
+                        onclick="showCreateNewAssignment(this);">New Assignment
+                </button>
+                <script>
+                    function showCreateNewAssignment(x) {
+                        document.getElementById("createNewAssignment").style.display = "block";
+                        x.style.display = "none";
+                    }
+                </script>
+
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

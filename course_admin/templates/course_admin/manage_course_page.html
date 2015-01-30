@@ -1,0 +1,340 @@
+{% extends 'course_admin/manage_base.html' %}
+{% load staticfiles %}
+
+{% block 'css_header' %}
+    <link href="{% static 'css/coursesStyle.css' %}" rel="stylesheet">
+    <link href="{% static 'css/coursePageManaging.css' %}" rel="stylesheet">
+    <style>
+        #choosePic {
+            margin-top: 1em;
+        }
+    </style>
+{% endblock %}
+
+{% block 'body_block' %}
+
+    <div class="col-md-10 column">
+
+
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">Course description</a>
+
+                    <div class="list-group-item">
+
+                        <div class="row clearfix">
+                            <div class="col-md-8 column">
+                                <div class="row clearfix" id="currentDesc">
+                                    <div class="col-md-12">
+
+                                        <dl>
+                                            <dt>
+                                                Description lists
+                                            </dt>
+                                            <dd>
+                                                A description list is perfect for defining terms.
+                                            </dd>
+                                            <dt>
+                                                Euismod
+                                            </dt>
+                                            <dd>
+                                                Vestibulum id ligula porta felis euismod semper eget lacinia odio sem
+                                                nec elit.
+                                            </dd>
+                                            <dd>
+                                                Donec id elit non mi porta gravida at eget metus.
+                                            </dd>
+                                            <dt>
+                                                Malesuada porta
+                                            </dt>
+                                            <dd>
+                                                Etiam porta sem malesuada magna mollis euismod.
+                                            </dd>
+                                            <dt>
+                                                Felis euismod semper eget lacinia
+                                            </dt>
+                                            <dd>
+                                                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+                                                ut fermentum massa justo sit amet risus.
+                                            </dd>
+                                        </dl>
+                                    </div>
+
+
+                                    <div class="col-md-12">
+                                        <button type="button" class="btn btn-default" onclick="hideCurrentDescDiv();">
+                                            Change Description
+                                        </button>
+
+
+                                        <Script>
+                                            function hideCurrentDescDiv() {
+                                                document.getElementById("descEditor").style.display = "block";
+                                                document.getElementById("currentDesc").style.display = "none";
+                                            }
+                                        </Script>
+                                    </div>
+
+
+                                </div>
+                                <div class="row clearfix" style="display:none;" id="descEditor">
+                                    <div class="col-md-12">
+                                        <textarea></textarea>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button class="btn btn-default" onclick="hideDescEditor();">Set Description
+                                        </button>
+                                        <Script>
+                                            function hideDescEditor() {
+                                                document.getElementById("currentDesc").style.display = "block";
+                                                document.getElementById("descEditor").style.display = "none";
+                                            }
+                                        </Script>
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-md-4 column">
+                                <div class="row clearfix">
+                                    <div class="col-md-12">
+                                        <img alt="140x140" src="http://lorempixel.com/140/140/" id="image"/>
+                                    </div>
+                                </div>
+                                <div class="row clearfix">
+                                    <div class="col-md-12">
+                                        <input type="file" id="choosePic" onchange="readURL(this)">
+                                        <script>
+
+                                            function readURL(input) {
+                                                var x = document.getElementById("image");
+                                                if (input.files && input.files[0]) {
+                                                    var reader = new FileReader();
+                                                    reader.onload = function (e) {
+                                                        $('#image')
+                                                                .attr('src', e.target.result)
+                                                                .width(150)
+                                                                .height(200);
+                                                    };
+                                                    x.src = reader.readAsDataURL(input.files[0]);
+                                                }
+                                            }
+
+                                        </script>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">Ansector</a>
+
+                    <div class="list-group-item" id="currentTeacher">
+                        <dl>
+                            <dt>
+                                Teacher Name
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        example@mail.com
+                                    </li>
+                                </ul>
+
+                            </dd>
+                        </dl>
+                        <div>
+                            <button class="btn btn-default" onclick="hideCurrentTeacher()">Set Teacher</button>
+
+                            <Script>
+                                function hideCurrentTeacher() {
+                                    document.getElementById("setTeacher").style.display = "block";
+                                    document.getElementById("currentTeacher").style.display = "none";
+                                }
+                            </Script>
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="list-group-item" style="display:none;" id="setTeacher">
+                        <div class="row clearfix">
+                            <div class="col-md-5">
+                                <dl>
+
+                                    <dt>
+                                        <label>Name</label>
+                                        <input type="email" class="form-control" id="inp"/>
+                                    </dt>
+                                    <dd>
+                                        <ul style="list-style-type: none;">
+                                            <li>
+                                                <label>E-mail</label>
+                                                <input type="email" class="form-control" id="inp"/>
+                                            </li>
+                                        </ul>
+
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="col-md-7">
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <button class="btn btn-default" onclick="hideGetTeacher();">Set Teacher</button>
+                            <Script>
+                                function hideGetTeacher() {
+                                    document.getElementById("setTeacher").style.display = "none";
+                                    document.getElementById("currentTeacher").style.display = "block";
+                                }
+                            </Script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">TA's</a>
+
+                    <div class="list-group-item">
+
+                        <ul>
+                            <li>
+                                Name : example@mail.com
+                            </li>
+                            <li>
+                                Name : example@mail.com
+                            </li>
+                            <li>
+                                Name : example@mail.com
+                            </li>
+
+                        </ul>
+                        <div>
+                            <button class="btn btn-default" onclick="hideAddTAButton();" id="addTAButton">Add TA
+                            </button>
+                            <Script>
+                                function hideAddTAButton() {
+                                    document.getElementById("addTAButton").style.display = "none";
+                                    document.getElementById("getTA").style.display = "block";
+                                }
+                            </Script>
+
+
+                            <ul id="getTA" style="display: none; list-style-type: none;">
+                                <li>
+                                    <div class="row clearfix">
+                                        <div class="col-md-5">
+                                            <input type="email" class="form-control" placeholder="Name : E-mail">
+                                            <button class="btn btn-default" onclick="hideGetTA()"
+                                                    style="margin-top: 2px;">Add
+                                            </button>
+                                            <Script>
+                                                function hideGetTA() {
+                                                    document.getElementById("addTAButton").style.display = "block";
+                                                    document.getElementById("getTA").style.display = "none";
+                                                }
+                                            </Script>
+
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">About</a>
+
+                    <div class="list-group-item" id="showInfoDiv">
+                        <dl>
+                            <dt>
+                                Time
+                            </dt>
+                            <dd>
+                                13:30-15 on saturday & monday.
+                            </dd>
+                            <dt>
+                                Location
+                            </dt>
+                            <dd>
+                                class 102 in Computer Engineering Department
+                            </dd>
+                        </dl>
+                        <div>
+                            <button class="btn btn-default" onclick="hideShowInfo();">Add info</button>
+                            <Script>
+                                function hideShowInfo() {
+                                    document.getElementById("getInfoDiv").style.display = "block";
+                                    document.getElementById("showInfoDiv").style.display = "none";
+                                }
+                            </Script>
+
+
+                        </div>
+                    </div>
+
+                    <div class="list-group-item" style="display: none;" id="getInfoDiv">
+                        <dl>
+                            <dt>
+                                Time
+                            </dt>
+                            <dd>
+                                <div class="row clearfix">
+                                    <div class="col-md-5">
+                                        <input type="email" class="form-control" placeholder="Enter Time">
+                                    </div>
+                                </div>
+                            </dd>
+                            <dt>
+                                Location
+                            </dt>
+                            <dd>
+                                <div class="row clearfix">
+                                    <div class="col-md-5">
+                                        <input type="email" class="form-control" placeholder="Enter Location">
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <div>
+                            <button class="btn btn-default" onclick="hideGetInfo();">Set</button>
+                            <Script>
+                                function hideGetInfo() {
+                                    document.getElementById("showInfoDiv").style.display = "block";
+                                    document.getElementById("getInfoDiv").style.display = "none";
+                                }
+                            </Script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

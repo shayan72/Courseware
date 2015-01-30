@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import Http404
 
 from course.models import CourseInstance
@@ -38,7 +38,7 @@ def course_page(request, course_year_1, course_year_2, term, course_num, course_
 
 def course_syllabus(request, course_year_1, course_year_2, term, course_num, course_group):
     course_instance = get_course_instance(course_year_1, course_year_2, term, course_num, course_group)
-    syllabus = Syllabus.objects.get(course_instance=course_instance)
+    syllabus = get_object_or_404(Syllabus, course_instance=course_instance)
 
     context = {'course_instance': course_instance, 'syllabus': syllabus}
 
@@ -65,10 +65,9 @@ def course_assignments(request, course_year_1, course_year_2, term, course_num, 
 
 def course_grades(request, course_year_1, course_year_2, term, course_num, course_group):
     course_instance = get_course_instance(course_year_1, course_year_2, term, course_num, course_group)
-    grades = Grade.objects.filter(course_instance=course_instance)
+    # grades = Grade.objects.filter(course_instance=course_instance)
 
-    context = {'course_instance': course_instance, 'grades': grades}
-
+    context = {'course_instance': course_instance }
     return render(request, 'course/course_grades.html', context)
 
 

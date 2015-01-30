@@ -28,11 +28,11 @@
   <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'img/apple-touch-icon-144-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'img/apple-touch-icon-114-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'img/apple-touch-icon-72-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" href="{% static 'img/apple-touch-icon-57-precomposed.png' %}">
+    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}">
 
     <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
@@ -75,20 +75,20 @@
                                         <a href="{% url 'course_calendar' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}">Calendar</a>
                                     </li>
                                     <li>
-                                        <a href="#">Assignments</a>
+                                        <a href="{% url 'course_assignments' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}">Assignments</a>
                                     </li>
                                     <li>
-                                        <a href="#">Grades</a>
+                                        <a href="{% url 'course_grades' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}">Grades</a>
                                     </li>
                                     <li>
                                         <a href="{% url 'course_forum' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}">Discussion
                                             Area</a>
                                     </li>
                                     <li>
-                                        <a href="#">Lecture Notes</a>
+                                        <a href="{% url 'course_videolectures' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}">Lecture Notes</a>
                                     </li>
                                     <li>
-                                        <a href="#">Resource</a>
+                                        <a href="{% url 'course_resources' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}">Resource</a>
                                     </li>
 
 
