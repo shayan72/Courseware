@@ -1,0 +1,202 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> {{ course_instance.course.name }} | Computer Engineering Department | Sharif University of
+        technology </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+    <!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+    <!--script src="js/less-1.3.3.min.js"></script-->
+    <!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    {% block 'css_header' %}
+        <link href="{% static 'css/coursesStyle.css' %}" rel="stylesheet">
+    {% endblock %}
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>
+
+    {% block 'js_header' %}
+    {% endblock %}
+
+</head>
+
+<body id="body">
+<div class="container" id="mainContainer">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="page-header">
+                <h1>
+                    {{ course_instance.course }}<br>
+                    <small>CE Department- Sharif University of Technology</small>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="row clearfix">
+                <div class="col-md-2 column">
+                    <div class="row clearfix">
+                        <div class="col-md-12 column">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item active" id="yellowHeader">Menu</a>
+
+                                <div class="list-group-item">
+                                    <li>
+                                        <a href="{% url 'course_page' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'course_syllabus' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}">Syllabus</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'course_calendar' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}">Calendar</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Assignments</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Grades</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'course_forum' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}">Discussion
+                                            Area</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lecture Notes</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Resource</a>
+                                    </li>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {% block 'body_block' %}
+
+                    <div class="col-md-10 column">
+                        <div class="row clearfix">
+                            <div class="col-md-12 column">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item active">Course description</a>
+
+                                    <div class="list-group-item">
+                                        <div class="row clearfix">
+                                            <div class="col-md-12 column">
+                                                {{ course_instance.description }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row clearfix">
+                            <div class="col-md-12 column">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item active">Instructor</a>
+
+                                    <div class="list-group-item">
+                                        {% for professor in course_instance.professors.all %}
+                                            <dl>
+                                                <dt>
+                                                    - {{ professor.account_id.user.first_name }} {{ professor.account_id.user.last_name }}
+                                    <span style="font-size:12px"> < {{ professor.account_id.user.email }} > <span>
+                                                </dt>
+                                            </dl>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix">
+                            <div class="col-md-12 column">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item active">TA's</a>
+
+                                    <div class="list-group-item">
+                                        {% if course_instance.teacher_assistants.all|length > 0 %}
+                                            <ul>
+                                                {% for teacher_assistant in course_instance.teacher_assistants.all %}
+                                                    <li>
+                                                        {{ teacher_assistant.account_id.user.first_name }}
+                                                        {{ teacher_assistant.account_id.user.last_name }} :
+                                                        {{ teacher_assistant.account_id.user.email }}
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% else %}
+                                            No Teacher assistance
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-md-12 column">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item active">About</a>
+
+                                    <div class="list-group-item">
+                                        {% if room_reservations|length > 0 %}
+                                            <dl>
+                                                <dt>
+                                                    Time
+                                                </dt>
+                                                <dd>
+                                                    {% for room_reservation in room_reservations %}
+                                                        {{ room_reservation.start_time }}-
+                                                        {{ room_reservation.finish_time }}
+                                                        on {{ room_reservation.day }} <br>
+                                                    {% endfor %}
+                                                </dd>
+                                                <dt>
+                                                    Location
+                                                </dt>
+                                                <dd>
+                                                    class {{ room_reservations.0.room.number }} in Computer Engineering
+                                                    Department
+                                                </dd>
+                                            </dl>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endblock %}
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

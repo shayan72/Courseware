@@ -1,0 +1,103 @@
+{% extends 'course/course_page.html' %}
+
+{% block 'body_block' %}
+
+    <div class="col-md-10 column">
+
+         <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">{{ course_instance.course.name }} - {{ course_instance.course.course_number }}</a>
+
+                    <div class="list-group-item">
+                        <ul>
+                            <li>
+                                Credit: {{ course_instance.course.credit }} Units
+                            </li>
+                            <li>
+                                Semester: {{ course_instance.term }}
+                            </li>
+                            <li>
+                                Group: {{ course_instance.group }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">Description</a>
+
+                    <div class="list-group-item">
+                        <div class="row clearfix">
+                            <div class="col-md-12 column">
+                                {% if syllabus.dedescription|length > 0 %}
+                                    {{ syllabus.description }}
+                                {% else %}
+                                    No Description
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">Instructor</a>
+
+                    <div class="list-group-item">
+                        {% for professor in course_instance.professors.all %}
+                            <dl>
+                                <dt>
+                                    - {{ professor.account_id.user.first_name }} {{ professor.account_id.user.last_name }}
+                                    <span style="font-size:12px" > < {{ professor.account_id.user.email }} > <span>
+                                </dt>
+                            </dl>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">Text Book(s)</a>
+
+                    <div class="list-group-item">
+                        {% for text_book in syllabus.text_books.all %}
+                            [{{ forloop.counter }}] <a href="{{ text_book.link }}">{{ text_book.name }} </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">Grading Policy</a>
+
+                    <div class="list-group-item">
+                        <div class="row clearfix">
+                            <div class="col-md-12 column">
+                                {% if syllabus.grading_policy|length > 0 %}
+                                    {{ syllabus.grading_policy }}
+                                {% else %}
+                                    No Grading Policy
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
