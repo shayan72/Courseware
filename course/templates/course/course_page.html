@@ -70,7 +70,7 @@
                                         <a href="#">Grades</a>
                                     </li>
                                     <li>
-                                        <a href="#">Discussion Area</a>
+                                        <a href="{% url 'course_forum' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}">Discussion Area</a>
                                     </li>
                                     <li>
                                         <a href="#">Lecture Notes</a>

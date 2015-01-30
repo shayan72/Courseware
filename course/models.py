@@ -159,6 +159,7 @@ class Post(models.Model):
     def __unicode__(self):
         return "post of " + self.topic.title
 
+
 class Poll(models.Model):
     topic = models.OneToOneField(Topic)
 
