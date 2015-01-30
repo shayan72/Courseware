@@ -1,0 +1,56 @@
+
+#btnchb{
+display:inline-block;
+}
+#mainContainer{
+background-color:#fffdd4;
+
+}
+#courseRegister{
+	height: 12em;
+	background-color:#fffa97;
+	
+	border: 2px solid black;
+	border-radius: 20%;
+}
+#navbar{
+	background-color:#fff592;
+	
+	z-index:0;
+
+}
+#breadcrumb{
+    
+    }
+#regButton{
+    background-color: #eef9ba;
+}
+#courseItem{
+
+	z-index:0;
+
+	}
+#courseRegHeading{
+	padding:0.5em;
+
+}
+#courseDiv{
+	z-index:0;
+
+}
+#loginDiv{
+	z-index:1;
+	
+
+}
+#news{
+	max-height:15em;
+
+}
+#myCalendar{
+    max-height: 100em;
+}
+#dropdownNavbar{
+    z-index: 2;
+}
+

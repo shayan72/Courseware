@@ -7,7 +7,7 @@ urlpatterns = patterns('',
 
                        # /courses/93-94/1/ce108-1/
                        url(
-                           r'^(?P<course_year_1>\d{2})-(?P<course_year_2>\d{2})/(?P<term>\d)/', include(patterns('',
+                           r'^(?P<course_year_1>\d{2})-(?P<course_year_2>\d{2})/(?P<term>\w{2})/', include(patterns('',
                                         url( r'^$', views.courses_of_term, name='courses_of_term' ),
                                         url( r'^ce(?P<course_num>\d+)-(?P<course_group>\d+)/', include(patterns('',
                                             url( r'^$', views.course_page, name='course_page'),

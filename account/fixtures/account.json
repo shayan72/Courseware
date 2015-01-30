@@ -1,0 +1,1 @@
+[{"fields": {"student_id": null, "user": 2, "professor_id": 1}, "model": "account.account", "pk": 1}, {"fields": {"website": "http://ce.sharif.ir/~soleymani", "research_interest": "Machine Learning\r\nArtificial Intelligence", "education_background": "BS: Sharif\r\nMS: Sharif\r\n", "telephone": 616, "type": "ASSI", "account_id": 1}, "model": "account.professor", "pk": 1}]

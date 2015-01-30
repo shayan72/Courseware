@@ -37,13 +37,16 @@ class CourseInstance(models.Model):
     teacher_assistants = models.ManyToManyField('account.Student', null = True, blank = True, related_name='course_teacher_assistants' )
     description = models.TextField( null = True, blank = True )
     picture = models.ImageField( null = True, blank = True )
-    students = models.ManyToManyField('account.Student', null = True, blank = True, related_name='course_students' )
+    # students = models.ManyToManyField('account.Student', null = True, blank = True, related_name='course_students' )
 
     def __unicode__(self):
         return self.course.course_number.__str__() + " " + self.course.name + " " + self.term.__str__()
 
 class Room(models.Model):
     number = models.PositiveSmallIntegerField()
+
+    def __unicode__(self):
+        return "Room " + self.number.__str__()
 
 class RoomReservation(models.Model):
 
@@ -139,12 +142,22 @@ class Topic(models.Model):
     anonymous = models.BooleanField( default=False )
     created_at = models.DateTimeField()
 
+    def __unicode__(self):
+        return self.course_instance.course.name + " -> " + self.title
+
 class Post(models.Model):
     topic = models.ForeignKey(Topic)
+    parent = models.ForeignKey('self', null=True, blank=True)
     created_by = models.ForeignKey('account.Account')
     body = models.TextField()
     anonymous = models.BooleanField( default=False )
     created_at = models.DateTimeField()
+
+    def get_post_comments(self):
+        return Post.objects.filter(parent=self)
+
+    def __unicode__(self):
+        return "post of " + self.topic.title
 
 class Poll(models.Model):
     topic = models.OneToOneField(Topic)
