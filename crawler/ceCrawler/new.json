@@ -1,0 +1,1051 @@
+{"courseID": "40115", "courseName": "Discrete Mathematics", "link": "http://ce.sharif.edu/courses/84-85/2/ce115", "teacher": "Alireza Zarei"}
+{"courseID": "40126", "courseName": "Computer Structure and Language", "link": "http://ce.sharif.edu/courses/84-85/2/ce126", "teacher": "Dr. H. Sarbazi Azad"}
+{"courseID": "40153", "courseName": "Introduction to Programming", "link": "http://ce.sharif.edu/courses/84-85/2/ce153", "teacher": "TA : Masoud Tajfard"}
+{"courseID": "40203", "courseName": "Digital Systems Design Lab", "link": "http://ce.sharif.edu/courses/84-85/2/ce203", "teacher": "Arash Tavakkol"}
+{"courseID": "40221", "courseName": "Scientific and Technical Presentation", "link": "http://ce.sharif.edu/courses/84-85/2/ce221", "teacher": "Dr. Sharif"}
+{"courseID": "40221", "courseName": "Scientific and Technical Presentation", "link": "http://ce.sharif.edu/courses/84-85/2/ce221a", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40242", "courseName": "Signals & Systems", "link": "http://ce.sharif.edu/courses/84-85/2/ce242", "teacher": "Dr. S.Kasaei"}
+{"courseID": "40244", "courseName": "Advanced Programming in Java", "link": "http://ce.sharif.edu/courses/84-85/2/ce244", "teacher": "Ramtin Khosravi"}
+{"courseID": "40254", "courseName": "Data Structures and Algorithms Fundamentals", "link": "http://ce.sharif.edu/courses/84-85/2/ce254", "teacher": "Dr. Beigy"}
+{"courseID": "40312", "courseName": "Digital Electronics", "link": "http://ce.sharif.edu/courses/84-85/2/ce312", "teacher": "Dr. Manzuri"}
+{"courseID": "40317", "courseName": "Internet Engineering", "link": "http://ce.sharif.edu/courses/84-85/2/ce317", "teacher": "Dr. Abolhassani"}
+{"courseID": "40324", "courseName": "Modern Information Retrieval", "link": "http://ce.sharif.edu/courses/84-85/2/ce324", "teacher": "Dr. Abolhassani"}
+{"courseID": "40327", "courseName": "Web Programming", "link": "http://ce.sharif.edu/courses/84-85/2/ce327", "teacher": "Ramtin Khosravi"}
+{"courseID": "40342", "courseName": "Multimedia Systems", "link": "http://ce.sharif.edu/courses/84-85/2/ce342", "teacher": "Dr. Hamid R. Rabiee"}
+{"courseID": "ce353", "courseName": "VLSI Design", "link": "http://ce.sharif.edu/courses/84-85/2/ce353", "teacher": "Shaahin Hessabi"}
+{"courseID": "40354", "courseName": "Design and Analysis of Algorithms", "link": "http://ce.sharif.edu/courses/84-85/2/ce354", "teacher": "Dr. Hamid Beigy"}
+{"courseID": "40354", "courseName": "Design and Analysis of Algorithms", "link": "http://ce.sharif.edu/courses/84-85/2/ce354b", "teacher": "Dr. Ghodsi"}
+{"courseID": "40384", "courseName": "Database Systems", "link": "http://ce.sharif.edu/courses/84-85/2/ce384", "teacher": "TA : Ehsan Akhgari"}
+{"courseID": "40404", "courseName": "Software Engineering Lab", "link": "http://ce.sharif.edu/courses/84-85/2/ce404", "teacher": "Amir Hosein Assiaee, Kaveh Shahbaz, Arash Shahkarami"}
+{"courseID": "40408", "courseName": "Operating Systems Lab", "link": "http://ce.sharif.edu/courses/84-85/2/ce408", "teacher": "Payam Bahraini"}
+{"courseID": "40415", "courseName": "Theory of Languages and Machines", "link": "http://ce.sharif.edu/courses/84-85/2/ce415", "teacher": "Dr. Ali Movaghar"}
+{"courseID": "40417", "courseName": "An Introduction to Artificial Intelligence", "link": "http://ce.sharif.edu/courses/84-85/2/ce417", "teacher": "Ramin Halavati"}
+{"courseID": "40418", "courseName": "System Analysis & Design", "link": "http://ce.sharif.edu/courses/84-85/2/ce418", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40424", "courseName": "Operating Systems", "link": "http://ce.sharif.edu/courses/84-85/2/ce424", "teacher": "Ali Mahjur"}
+{"courseID": "40442", "courseName": "[ Data and ] Network Security", "link": "http://ce.sharif.edu/courses/84-85/2/ce442", "teacher": "Dr. Rasool Jalili"}
+{"courseID": "40443", "courseName": "Computer Networks", "link": "http://ce.sharif.edu/courses/84-85/2/ce443", "teacher": "Ehsan Malekian"}
+{"courseID": "40417", "courseName": " Artificial Intelligence", "link": "http://ce.sharif.edu/~ce417c", "teacher": "Dr. M. Hassan Shafazand"}
+{"courseID": "40242", "courseName": "Signals & Systems", "link": "http://ce.sharif.edu/~ce242", "teacher": "Dr. S.Kasaie"}
+{"courseID": "40115", "courseName": "Discrete Structures", "link": "http://ce.sharif.edu/~/~ce115", "teacher": "Dr. Tusserkani"}
+{"courseID": "40126", "courseName": " Computer Structure and Language", "link": "http://ce.sharif.edu/~/~ce126b", "teacher": "Dr. Miremadi"}
+{"courseID": "40221", "courseName": "Scientific & technical presentation", "link": "http://ce.sharif.edu/~/~ce221", "teacher": "Dr. Kasaie"}
+{"courseID": "40222", "courseName": "Network Security", "link": "http://ce.sharif.edu/~/~ce222", "teacher": "Dr. Jalili"}
+{"courseID": "40244", "courseName": "Advanced Programming", "link": "http://ce.sharif.edu/~/~ce244", "teacher": "Mahdi Niamanesh"}
+{"courseID": "40254", "courseName": "Data Structures and Algorithms Fundamentals", "link": "http://ce.sharif.edu/~/~ce254", "teacher": "Mohammad Izadi"}
+{"courseID": "40354", "courseName": "Design and Analysis of Algorithms", "link": "http://ce.sharif.edu/~/~ce354", "teacher": "Dr.Ghodsi"}
+{"courseID": "40415", "courseName": "Introduction to the Theory of Computation", "link": "http://ce.sharif.edu/~/~ce415", "teacher": "Dr. Movaghar"}
+{"courseID": "40418", "courseName": "System Analysis and Design", "link": "http://ce.sharif.edu/~/~ce418", "teacher": "Dr. Habibi"}
+{"courseID": "40447", "courseName": "Computer Graphics", "link": "http://ce.sharif.edu/courses/84-85/2/ce447", "teacher": "Dr. Jamzad"}
+{"courseID": "40448", "courseName": "Information Technology Management & Strategic Planning", "link": "http://ce.sharif.edu/courses/84-85/2/ce448", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/courses/84-85/2/ce474", "teacher": "Dr. Habibi"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/courses/84-85/2/ce474b", "teacher": "Dr Mirinam"}
+{"courseID": "40513", "courseName": "Microprocessor", "link": "http://ce.sharif.edu/courses/84-85/2/ce513", "teacher": "Dr. S. G. Miremadi"}
+{"courseID": "40516", "courseName": "Robotics Technology", "link": "http://ce.sharif.edu/courses/84-85/2/ce516", "teacher": "Dr. Leila Sharif"}
+{"courseID": "40663", "courseName": "Distributed Systems", "link": "http://ce.sharif.edu/courses/84-85/2/ce663", "teacher": "Dr. Rasool Jalili"}
+{"courseID": "40665", "courseName": "Verification of Reactive Systems", "link": "http://ce.sharif.edu/courses/84-85/2/ce665", "teacher": "Dr. Movaghar"}
+{"courseID": "40667", "courseName": "Artificial Neural Networks", "link": "http://ce.sharif.edu/courses/84-85/2/ce667", "teacher": "Dr. Bagheri"}
+{"courseID": "40693", "courseName": "Advanced Network", "link": "http://ce.sharif.edu/courses/84-85/2/ce693", "teacher": "Dr. Nasser Yazdani"}
+{"courseID": "40694", "courseName": "Semantic Web", "link": "http://ce.sharif.edu/courses/84-85/2/ce694", "teacher": "Dr. Abolhassani"}
+{"courseID": "40717", "courseName": "Machine Learning", "link": "http://ce.sharif.edu/courses/84-85/2/ce717", "teacher": "Dr. Beigy"}
+{"courseID": "40823", "courseName": "Andvanced Image Processing", "link": "http://ce.sharif.edu/courses/84-85/2/ce823", "teacher": "Dr. Kasaei"}
+{"courseID": "40824", "courseName": "Performance Evaluation of Computer Systems", "link": "http://ce.sharif.edu/courses/84-85/2/ce824", "teacher": "Dr. Jaffar Habibi"}
+{"courseID": "40883", "courseName": "Data Communications", "link": "http://ce.sharif.edu/courses/84-85/2/ce883", "teacher": "Dr. Manzuri"}
+{"courseID": "40893", "courseName": "Data Compression", "link": "http://ce.sharif.edu/courses/84-85/2/ce893", "teacher": "Dr. Hamid R. Rabiee"}
+{"courseID": "40424", "courseName": "Operating Systems", "link": "http://ce.sharif.edu/~"}
+{"courseID": "40434", "courseName": "Computer Networks", "link": "http://ce.sharif.edu/~"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/~/~ce474", "teacher": "Dr. Mirian"}
+{"courseID": "40506", "courseName": "Microprocessor Lab", "link": "http://ce.sharif.edu/~/~ce506", "teacher": "Dr. Miremadi"}
+{"courseID": "40663", "courseName": "Distributed Systems", "link": "http://ce.sharif.edu/~/~ce663", "teacher": "Dr. Jalili"}
+{"courseID": "40693", "courseName": "Advanced Computer Networks", "link": "http://ce.sharif.edu/~"}
+{"courseID": "40115", "courseName": "Discrete Structures", "link": "http://ce.sharif.edu/~ce115/", "teacher": "Dr. Tusserkani"}
+{"courseID": "40224", "courseName": "Data Structure and Algorithms", "link": "http://ce.sharif.edu/~ce224/", "teacher": "Dr. Ghodsi"}
+{"courseID": "40244", "courseName": "Advanced Programming", "link": "http://ce.sharif.edu/~ce244/", "teacher": "Mohammad Khanasari"}
+{"courseID": "40314", "courseName": "Information Storage And Retrieval", "link": "http://ce.sharif.edu/~ce314/", "teacher": "Dr. Mirian"}
+{"courseID": "40384", "courseName": "Database Systems", "link": "http://ce.sharif.edu/~ce384/", "teacher": "Dr. Jalili"}
+{"courseID": "40414", "courseName": "Compilers", "link": "http://ce.sharif.edu/~ce414/", "teacher": "Ghassem Jaberipour"}
+{"courseID": "40417", "courseName": "Artificial Intelligence  Group A", "link": "http://ce.sharif.edu/~ce417/", "teacher": "Dr. Sani"}
+{"courseID": "40417", "courseName": "Artificial Intelligence  Group B", "link": "http://ce.sharif.edu/~ce417b/", "teacher": "Hesham Faili"}
+{"courseID": "40418", "courseName": "Systems Analysis and Design", "link": "http://ce.sharif.edu/~ce418/", "teacher": "Dr. Habibi"}
+{"courseID": "40424", "courseName": "Operating Systems", "link": "http://ce.sharif.edu/~ce424/", "teacher": "Ali Mahjur"}
+{"courseID": "40443", "courseName": "Computer Networks", "link": "http://ce.sharif.edu/~ce443/", "teacher": "Dr. Rabiee"}
+{"courseID": "40637", "courseName": "Artificial Intelligence Planning", "link": "http://ce.sharif.edu/~ce637/", "teacher": "Dr. Sani"}
+{"courseID": "40663", "courseName": "Distributed Systems", "link": "http://ce.sharif.edu/~ce663/", "teacher": "Dr. Jalili"}
+{"courseID": "40126", "courseName": " Computer Structure & Language", "link": "http://ce.sharif.edu/~ce126b", "teacher": "Dr. Miremadi"}
+{"courseID": "40152", "courseName": " Advanced Programming in C++ ( electrical std.s )", "link": "http://ce.sharif.edu/~ce152c", "teacher": "M. Izadi"}
+{"courseID": "40203", "courseName": "Digital Systems Design Laboratory", "link": "http://ce.sharif.edu/~ce203", "teacher": "Oktie Hassanzadeh"}
+{"courseID": "40212", "courseName": "Logic Circuits", "link": "http://ce.sharif.edu/~ce212", "teacher": "Dr. Jahangir"}
+{"courseID": "40221", "courseName": "Scientific Presentation", "link": "http://ce.sharif.edu/~ce221", "teacher": "Dr. S.Kasaei"}
+{"courseID": "40242", "courseName": "Signals & Systems", "link": "http://ce.sharif.edu/~ce242", "teacher": "Dr. S. Kasaie"}
+{"courseID": "40244", "courseName": " Advanced Programming", "link": "http://ce.sharif.edu/~ce244b", "teacher": "Mohammad Saniee"}
+{"courseID": "40415", "courseName": "Theory of Machines and Languages", "link": "http://ce.sharif.edu/~ce415", "teacher": "Mr. Ghasem Jaberipour"}
+{"courseID": "40417", "courseName": " Artificial Intelegence", "link": "http://ce.sharif.edu/~ce417b", "teacher": "Hesham Feili"}
+{"courseID": "40418", "courseName": "System Analysis and Design", "link": "http://ce.sharif.edu/~ce418", "teacher": "Dr J.Habibi"}
+{"courseID": "40443", "courseName": " Computer Networks", "link": "http://ce.sharif.edu/~ce443b", "teacher": "Behzad Akbari and Dr. Rabiee"}
+{"courseID": "40506", "courseName": "Microprocessor Lab", "link": "http://ce.sharif.edu/~ce506", "teacher": "Zarandi"}
+{"courseID": "40657", "courseName": "Network Modeling", "link": "http://ce.sharif.edu/~ce657", "teacher": "Dr. Movaghar"}
+{"courseID": "40925", "courseName": "Database Security", "link": "http://ce.sharif.edu/courses/84-85/2/ce925", "teacher": "Dr Rasool Jalili"}
+{"courseID": "40967", "courseName": "Speech Processing", "link": "http://ce.sharif.edu/courses/84-85/2/ce967", "teacher": "Hossein Sameti"}
+{"courseID": "40745", "courseName": "Formal Specification and Verification of Programs", "link": "http://ce.sharif.edu/~ce745/", "teacher": "Dr. Mirian"}
+{"courseID": "40765", "courseName": "Advanced Algorithms", "link": "http://ce.sharif.edu/~ce765", "teacher": "M. Ghodsi"}
+{"courseID": "40924", "courseName": "Software Engineering 2", "link": "http://ce.sharif.edu/~ce924", "teacher": "Dr. Mirian"}
+{"courseID": "40938", "courseName": "Advanced Database", "link": "http://ce.sharif.edu/~ce938", "teacher": "Dr. Jalili"}
+{"courseID": "40171", "courseName": "Foundation of Computer Science  I", "link": "http://ce.sharif.edu/~ce171/", "teacher": "Dr. Ghodsi"}
+{"courseID": "40212", "courseName": "Logic Circuits", "link": "http://ce.sharif.edu/~ce212/", "teacher": "A. Ejlali"}
+{"courseID": "40224", "courseName": "Data Structures and Algorithms", "link": "http://ce.sharif.edu/~ce224a/", "teacher": "Dr. Ghodsi"}
+{"courseID": "40226", "courseName": "Hardware/Software Codesign of Embedded Systems", "link": "http://ce.sharif.edu/~ce226/", "teacher": "Maziar Gudarzi"}
+{"courseID": "40244", "courseName": "Advanced Programming", "link": "http://ce.sharif.edu/~ce244/", "teacher": "Ramtin Khosravi"}
+{"courseID": "40384", "courseName": "Database Management Systems", "link": "http://ce.sharif.edu/~ce384/", "teacher": "Dr. Jalili"}
+{"courseID": "40415", "courseName": "Theory of Machines and Languages", "link": "http://ce.sharif.edu/~ce415/", "teacher": "Dr. Movaghar"}
+{"courseID": "40443", "courseName": "Compter Networks", "link": "http://ce.sharif.edu/~ce443/", "teacher": "Dr. Rabiee"}
+{"courseID": "40108", "courseName": "Computer Workshop", "link": "http://ce.sharif.edu/~ce108/", "teacher": "Saeed Ayat"}
+{"courseID": "40151", "courseName": " Pascal Programming", "link": "http://ce.sharif.edu/~ce151g/", "teacher": "Abolfazl Keighobadi"}
+{"courseID": "40224", "courseName": "Data Structures and Algorithms", "link": "http://ce.sharif.edu/~ce224/", "teacher": "Dr. Ghodsi"}
+{"courseID": "40225", "courseName": "Foundations of Computer Science 2", "link": "http://ce.sharif.edu/~ce225/", "teacher": "Dr. Tusserkani"}
+{"courseID": "40244", "courseName": "Advanced Programming", "link": "http://ce.sharif.edu/~ce244/", "teacher": "Mohammad Khansari"}
+{"courseID": "40323", "courseName": "Computer Organization and Design", "link": "http://ce.sharif.edu/~ce323/", "teacher": "Amir Masoud Gharehbaghi"}
+{"courseID": "40364", "courseName": "Programming Languages", "link": "http://ce.sharif.edu/~ce364/", "teacher": "Ghassem Jaberipour"}
+{"courseID": "40414", "courseName": "Compilers", "link": "http://ce.sharif.edu/~ce414/", "teacher": "Ghassem Jaberipour"}
+{"courseID": "40417", "courseName": "Artificial Intelligence", "link": "http://ce.sharif.edu/~ce417/", "teacher": "Dr. Sani"}
+{"courseID": "40443", "courseName": "Computer Networks", "link": "http://ce.sharif.edu/~ce443/", "teacher": "Dr. Rabiee"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/~ce474/", "teacher": "Dr. Mirian"}
+{"courseID": "40493", "courseName": "Programmable Logic Design", "link": "http://ce.sharif.edu/~ce493/", "teacher": "Maziar Gudarzi"}
+{"courseID": "40665", "courseName": "Verification of Reactive Systems", "link": "http://ce.sharif.edu/~ce665/", "teacher": "Dr. Movaghar"}
+{"courseID": "40684", "courseName": "Program Development from Formal Specification", "link": "http://ce.sharif.edu/~ce684/", "teacher": "Dr. Mirian"}
+{"courseID": "40343", "courseName": "Data Communication", "link": "http://ce.sharif.edu/courses/83-84/1/ce343", "teacher": "Dr. Rabiee"}
+{"courseID": "40695", "courseName": "Stochastic Processes", "link": "http://ce.sharif.edu/courses/83-84/1/ce695", "teacher": "Dr. Rabiee"}
+{"courseID": "40443", "courseName": "Computer Networks", "link": "http://ce.sharif.edu/courses/83-84/1/ce443", "teacher": "Mr. Akbari"}
+{"courseID": "40354", "courseName": "Design And Analysis Algorithms", "link": "http://ce.sharif.edu/courses/83-84/1/ce354", "teacher": "Dr. Beigy"}
+{"courseID": "40717", "courseName": "Machine Learning", "link": "http://ce.sharif.edu/courses/83-84/1/ce717", "teacher": "Dr. Beigy"}
+{"courseID": "40415", "courseName": "Theory of Machines and Languages", "link": "http://ce.sharif.edu/courses/83-84/1/ce415a", "teacher": "Mr.Izadi <font class=\"mailLink\">izadi<b>@"}
+{"courseID": "40415", "courseName": "Finite Automata", "link": "http://ce.sharif.edu/courses/83-84/1/ce415b", "teacher": "Dr. M. H. Shirali Shahreza  <font class=\"mailLink\">shahreza<b>@"}
+{"courseID": "40242", "courseName": "Signals & Systems", "link": "http://ce.sharif.edu/courses/83-84/1/ce242", "teacher": "Mrs. Kasaie   <font class=\"mailLink\">skasaie<b>@"}
+{"courseID": "40244", "courseName": " Object Oriented Programming in Java", "link": "http://ce.sharif.edu/courses/83-84/1/ce244", "teacher": "Ramtin Khosravi   <font class=\"mailLink\">ramtin<b>@"}
+{"courseID": "40254", "courseName": " Data Structures and Algorithms Fundamentals", "link": "http://ce.sharif.edu/courses/83-84/1/ce254", "teacher": "Dr Mohammad Ghodsi"}
+{"courseID": "40254", "courseName": "  Data Structures and Algorithms Fundamentals", "link": "http://ce.sharif.edu/courses/83-84/1/ce254b", "teacher": "Dr Jamzad    <br>  + \tTA : Arash Tavakkol"}
+{"courseID": "40938", "courseName": "Advanced Database", "link": "http://ce.sharif.edu/~ce938/", "teacher": "Dr. Jalili"}
+{"courseID": "40428", "courseName": " Project Management", "link": "http://ce.sharif.edu/courses/83-84/1/ce428", "teacher": "Dr. jalalian   <br>"}
+{"courseID": "40414", "courseName": "Compiler", "link": "http://ce.sharif.edu/courses/83-84/1/ce414", "teacher": "Gassem Jaberi Pour"}
+{"courseID": "40417", "courseName": " Artificial Intelligence", "link": "http://ce.sharif.edu/courses/83-84/1/ce417", "teacher": "Dr. Gholamreza Ghassem-Sani"}
+{"courseID": "40677", "courseName": " Natural Language Processing", "link": "http://ce.sharif.edu/courses/83-84/1/ce677", "teacher": "Dr. Gholamreza Ghassem-Sani"}
+{"courseID": "40763", "courseName": " Digital Signal Processing", "link": "http://ce.sharif.edu/courses/83-84/1/ce763", "teacher": "Mohammad Taghi Manzuri"}
+{"courseID": "40221", "courseName": "  Scientific & Technical Presentation", "link": "http://ce.sharif.edu/courses/83-84/1/ce221", "teacher": "DR S. Kasaei"}
+{"courseID": "40223", "courseName": "Digital System Design", "link": "http://ce.sharif.edu/courses/83-84/1/ce223", "teacher": "Shahin Hessabi"}
+{"courseID": "40474", "courseName": "  Software Engineering", "link": "http://ce.sharif.edu/courses/83-84/1/ce474", "teacher": "DR. Habibi"}
+{"courseID": "40534", "courseName": " Operating System 2", "link": "http://ce.sharif.edu/courses/83-84/1/ce534", "teacher": "Rasool Jalili"}
+{"courseID": "40548", "courseName": " Decision Support Systems (DSS)", "link": "http://ce.sharif.edu/courses/83-84/1/ce548", "teacher": "Dr. Habibi"}
+{"courseID": "40712", "courseName": "   Digital Video Systems", "link": "http://ce.sharif.edu/courses/83-84/1/ce712", "teacher": "DR S. Kasaei"}
+{"courseID": "40824", "courseName": "  Performance Evaluation", "link": "http://ce.sharif.edu/courses/83-84/1/ce824", "teacher": "Dr. Habibi"}
+{"courseID": "40765", "courseName": "Advanced Algorithms", "link": "http://ce.sharif.edu/courses/83-84/1/adv-alg", "teacher": "Dr. M. Ghodsi"}
+{"courseID": "40126", "courseName": "Computer Structure and Language", "link": "http://ce.sharif.edu/courses/83-84/1/ce126a", "teacher": "Dr. Miremadi"}
+{"courseID": "40424", "courseName": "Operating System", "link": "http://ce.sharif.edu/courses/83-84/1/ce424", "teacher": "Dr. Azmi \t\t<br>\t\t+ \t\t\tTA : Siavosh Benabbas"}
+{"courseID": "40115", "courseName": "Discrete Structures", "link": "http://ce.sharif.edu/~ce115/", "teacher": "Dr. Tusserkani"}
+{"courseID": "40152", "courseName": "Structured C Programming", "link": "http://ce.sharif.edu/~ce152/", "teacher": "Mohammad Izadi"}
+{"courseID": "40165", "courseName": "Java Programming", "link": "http://ce.sharif.edu/~ce165/", "teacher": "Ramtin Khosravi"}
+{"courseID": "40224", "courseName": "Data Structures and Algorithms", "link": "http://ce.sharif.edu/~ce224/", "teacher": "Hamid Zarrabi Zadeh"}
+{"courseID": "40244", "courseName": "Advanced Programming", "link": "http://ce.sharif.edu/~ce244/", "teacher": "Mahdi Foladgar"}
+{"courseID": "40254", "courseName": "Data Structures and Algorithms Fundamentals", "link": "http://ce.sharif.edu/~ce254/", "teacher": "Dr. Ghodsi"}
+{"courseID": "40384", "courseName": "Introduction to Database Systems", "link": "http://ce.sharif.edu/~ce384/", "teacher": "Dr. Jalili"}
+{"courseID": "40415", "courseName": "Theory of Machines and Languages", "link": "http://ce.sharif.edu/~ce415/", "teacher": "Dr. Movaghar"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/~ce474/", "teacher": "Dr. Mirian"}
+{"courseID": "40665", "courseName": "Verification of Reactive Systems", "link": "http://ce.sharif.edu/~ce665/", "teacher": "Dr. Movaghar"}
+{"courseID": "40712", "courseName": "Digital Video Systems", "link": "http://ce.sharif.edu/~ce712/", "teacher": "Dr. Rabiee"}
+{"courseID": "40938", "courseName": "Advance Database", "link": "http://ce.sharif.edu/~ce938/", "teacher": "Dr. Jalili"}
+{"courseID": "40102", "courseName": "Hardware Lab", "link": "http://ce.sharif.edu/courses/85-86/2/ce102", "teacher": "TA : Mohsen Bashiri"}
+{"courseID": "40115", "courseName": "Discrete Structure", "link": "http://ce.sharif.edu/courses/85-86/2/ce115", "teacher": "Hamid Mahini"}
+{"courseID": "40115", "courseName": "Discrete Mathematics", "link": "http://ce.sharif.edu/courses/85-86/2/ce115b", "teacher": "Alireza Zarei"}
+{"courseID": "40121", "courseName": "Electrical Circuits", "link": "http://ce.sharif.edu/courses/85-86/2/ce121", "teacher": "Seyyed Hossein Khasteh"}
+{"courseID": "40126", "courseName": "Computer Architecture and Assembly Language", "link": "http://ce.sharif.edu/courses/85-86/2/ce126", "teacher": "Shirali-Shahreza"}
+{"courseID": "40151", "courseName": "Pascal Programming", "link": "http://ce.sharif.edu/courses/85-86/2/ce151c", "teacher": "Javad Safaei"}
+{"courseID": "40151", "courseName": "Pascal Programming Language", "link": "http://ce.sharif.edu/courses/85-86/2/ce151d", "teacher": "Shervin Daneshpajouh"}
+{"courseID": "40151", "courseName": "Pascal programming", "link": "http://ce.sharif.edu/courses/85-86/2/ce151e", "teacher": "S.M. Reza Rokneddini"}
+{"courseID": "40153", "courseName": "Introduction to programming", "link": "http://ce.sharif.edu/courses/85-86/2/ce153", "teacher": "Ali Haj Abutalebi"}
+{"courseID": "40153", "courseName": "Introduction to Computer Programming", "link": "http://ce.sharif.edu/courses/85-86/2/ce153c", "teacher": "Ehsan Nazerfard"}
+{"courseID": "40153", "courseName": "Introduction to Programming", "link": "http://ce.sharif.edu/courses/85-86/2/ce153d", "teacher": "Hedieh Sajedi"}
+{"courseID": "40181", "courseName": "Engineering Probability and Statistics", "link": "http://ce.sharif.edu/courses/85-86/2/ce181", "teacher": "Hossein Sameti"}
+{"courseID": "40203", "courseName": "Digital System Design Lab.", "link": "http://ce.sharif.edu/courses/85-86/2/ce203e", "teacher": "Mehdi Modarressi"}
+{"courseID": "40212", "courseName": "Digital Circuit", "link": "http://ce.sharif.edu/courses/85-86/2/ce212", "teacher": "Dr. Ejlali"}
+{"courseID": "40212", "courseName": "Digital Circuits", "link": "http://ce.sharif.edu/courses/85-86/2/ce212b", "teacher": "Amir Moradi"}
+{"courseID": "40221", "courseName": "Scientific and Technical Presentation", "link": "http://ce.sharif.edu/courses/85-86/2/ce221", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40221", "courseName": " Scientific and Technical Presentation", "link": "http://ce.sharif.edu/courses/85-86/2/ce221b", "teacher": "Dr. S.Kasaei"}
+{"courseID": "40222", "courseName": "Web Programming", "link": "http://ce.sharif.edu/courses/85-86/2/ce222", "teacher": "Dr. Ramtin Khosravi"}
+{"courseID": "40223", "courseName": "Digital Systems Design", "link": "http://ce.sharif.edu/courses/85-86/2/ce223", "teacher": "Dr. Ejlali"}
+{"courseID": "40242", "courseName": "Signals and Systems", "link": "http://ce.sharif.edu/courses/85-86/2/ce242", "teacher": "Mehran Safayani"}
+{"courseID": "40244", "courseName": " Java, Advanced Programming", "link": "http://ce.sharif.edu/courses/85-86/2/ce244a", "teacher": "Habib Rostami"}
+{"courseID": "40244", "courseName": "Advanced Programming", "link": "http://ce.sharif.edu/courses/85-86/2/ce244b", "teacher": "Soheil Hassas Yeganeh"}
+{"courseID": "40254", "courseName": "Fundamantals of Data Structures and Algorithms", "link": "http://ce.sharif.edu/courses/85-86/2/ce254", "teacher": "Dr. Hamid Beigy"}
+{"courseID": "40312", "courseName": "Digital Electronics", "link": "http://ce.sharif.edu/courses/85-86/2/ce312", "teacher": "Dr. Manzuri"}
+{"courseID": "40317", "courseName": "Internet Engineering", "link": "http://ce.sharif.edu/courses/85-86/2/ce317", "teacher": "Ali Kamandi"}
+{"courseID": "40323", "courseName": "Computer Architecture", "link": "http://ce.sharif.edu/courses/85-86/2/ce323a", "teacher": "Amir Hossein Jahangir"}
+{"courseID": "40323", "courseName": "Computer Architecture", "link": "http://ce.sharif.edu/courses/85-86/2/ce323b", "teacher": "Dr. Amir Hossein Jahangir"}
+{"courseID": "40324", "courseName": "Modern Information Retrieval", "link": "http://ce.sharif.edu/courses/85-86/2/ce324", "teacher": "Hassan Abolhassani"}
+{"courseID": "40342", "courseName": "Multimedia Systems", "link": "http://ce.sharif.edu/courses/85-86/2/ce342", "teacher": "Dr. Hamid R. Rabiee"}
+{"courseID": "40354", "courseName": "Design and Analysis of Algorithms", "link": "http://ce.sharif.edu/courses/85-86/2/ce354", "teacher": "Dr.Hamid Beigy"}
+{"courseID": "40364", "courseName": "Designing and Implementing Programming Languages", "link": "http://ce.sharif.edu/courses/85-86/2/ce364", "teacher": "TA : Pooya Zandevakili"}
+{"courseID": "40384", "courseName": "Database Course", "link": "http://ce.sharif.edu/courses/85-86/2/ce384", "teacher": "TA : Hamed Yaghoubi Shahir"}
+{"courseID": "40404", "courseName": "Software Engineering Lab", "link": "http://ce.sharif.edu/courses/85-86/2/ce404", "teacher": "Dr. Mirian"}
+{"courseID": "40408", "courseName": "Operating Systems Lab", "link": "http://ce.sharif.edu/courses/85-86/2/ce408", "teacher": "Payam Bahreyni"}
+{"courseID": "40415", "courseName": "Theory of Languages and Machines", "link": "http://ce.sharif.edu/courses/85-86/2/ce415", "teacher": "Dr. Ali Movaghar"}
+{"courseID": "40415", "courseName": "\u0646\u0638\u0631\u064a\u0647 \u0632\u0628\u0627\u0646\u0647\u0627 \u0648 \u0645\u0627\u0634\u064a\u0646\u0647\u0627 Finite Automata", "link": "http://ce.sharif.edu/courses/85-86/2/ce415b", "teacher": "Shirali-Shahreza"}
+{"courseID": "40417", "courseName": "An Introduction to Artificial Intelligence", "link": "http://ce.sharif.edu/courses/85-86/2/ce417", "teacher": "Ramin Halavati"}
+{"courseID": "40424", "courseName": "Operating Systems", "link": "http://ce.sharif.edu/courses/85-86/2/ce424", "teacher": "Mehdi Kargahi"}
+{"courseID": "40428", "courseName": "ICT Project Management", "link": "http://ce.sharif.edu/courses/85-86/2/ce428", "teacher": "Ghafary"}
+{"courseID": "40438", "courseName": "Electronic Commerce", "link": "http://ce.sharif.edu/courses/85-86/2/ce438", "teacher": "Dr. Isaai"}
+{"courseID": "40442", "courseName": "Data & Network Security", "link": "http://ce.sharif.edu/courses/85-86/2/ce442", "teacher": "Dr. Jalili"}
+{"courseID": "40443", "courseName": "Computer Networks", "link": "http://ce.sharif.edu/courses/85-86/2/ce443", "teacher": "Ehsan Malekian"}
+{"courseID": "40448", "courseName": "Information Technology Strategic Management and Planning", "link": "http://ce.sharif.edu/courses/85-86/2/ce448", "teacher": "Seyed Ebrahim abtahi"}
+{"courseID": "40467", "courseName": "Information Technology", "link": "http://ce.sharif.edu/courses/85-86/2/ce467", "teacher": "Ali Kamandi"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/courses/85-86/2/ce474", "teacher": "Dr Mirian"}
+{"courseID": "40478", "courseName": "Application (Re)\u064d\u064dEngineering", "link": "http://ce.sharif.edu/courses/85-86/2/ce478", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "483 V", "courseName": "DL", "link": "http://ce.sharif.edu/courses/85-86/2/ce483"}
+{"courseID": "40667", "courseName": "Neural Networks", "link": "http://ce.sharif.edu/courses/85-86/2/ce667", "teacher": "Dr. Bagheri"}
+{"courseID": "40683", "courseName": "Embedded System Design", "link": "http://ce.sharif.edu/courses/85-86/2/ce683", "teacher": "Dr. Ejlali"}
+{"courseID": "40693", "courseName": "Advanced Computer Networks", "link": "http://ce.sharif.edu/courses/85-86/2/ce693", "teacher": "Dr. Nasser Yazdani"}
+{"courseID": "40108", "courseName": "Computer Workshop", "link": "http://ce.sharif.edu/courses/84-85/1/ce108", "teacher": "Dr. Jalili"}
+{"courseID": "40115", "courseName": "Discrete Mathematics", "link": "http://ce.sharif.edu/courses/84-85/1/ce115", "teacher": "Alireza Zarei"}
+{"courseID": "40126", "courseName": " Computer Structure and Language", "link": "http://ce.sharif.edu/courses/84-85/1/ce126a", "teacher": "Dr. Miremadi"}
+{"courseID": "40126", "courseName": " Computer Structure and Language", "link": "http://ce.sharif.edu/courses/84-85/1/ce126b", "teacher": "Dr. H. Sarbazi Azad"}
+{"courseID": "40151", "courseName": "Pascal Programming Language", "link": "http://ce.sharif.edu/courses/84-85/1/ce151a", "teacher": "Ali Kamandi"}
+{"courseID": "40151", "courseName": "Pascal Programming Language", "link": "http://ce.sharif.edu/courses/84-85/1/ce151b", "teacher": "Ali Sharifi Zarchi"}
+{"courseID": "40151", "courseName": " Pascal Programming Language", "link": "http://ce.sharif.edu/courses/84-85/1/ce151c", "teacher": "Ramin Halavati"}
+{"courseID": "40153", "courseName": "Introduction to Programming", "link": "http://ce.sharif.edu/courses/84-85/1/ce153", "teacher": "TA : Saeed Aliakbarian"}
+{"courseID": "40211", "courseName": "Computer Engineering English", "link": "http://ce.sharif.edu/courses/84-85/1/ce211", "teacher": "Dr. Eskrootchi"}
+{"courseID": "40221", "courseName": "Scientific and Technical Presentation", "link": "http://ce.sharif.edu/courses/84-85/1/ce221", "teacher": "Dr. Sharif"}
+{"courseID": "40694", "courseName": "Semantic Web", "link": "http://ce.sharif.edu/courses/85-86/2/ce694", "teacher": "Hassan Abolhassani"}
+{"courseID": "40695", "courseName": "Stochastic Processes", "link": "http://ce.sharif.edu/courses/85-86/2/ce695", "teacher": "Dr. M. Shahram Moin"}
+{"courseID": "40712", "courseName": "Digital Video Systems", "link": "http://ce.sharif.edu/courses/85-86/2/ce712", "teacher": "Shohreh Kasaei"}
+{"courseID": "40717", "courseName": "Machine Learning", "link": "http://ce.sharif.edu/courses/85-86/2/ce717", "teacher": "Dr. Beigy"}
+{"courseID": "40725", "courseName": "Pattern Recognition", "link": "http://ce.sharif.edu/courses/85-86/2/ce725", "teacher": "Dr.H R.Rabiee"}
+{"courseID": "40765", "courseName": "Advanced Algorithms", "link": "http://ce.sharif.edu/courses/85-86/2/ce765", "teacher": "Prof. Ghodsi"}
+{"courseID": "40823", "courseName": " Advanced Image Processing", "link": "http://ce.sharif.edu/courses/85-86/2/ce823", "teacher": "Dr. S.Kasaei"}
+{"courseID": "40824", "courseName": "Computer System Performance Evaluation", "link": "http://ce.sharif.edu/courses/85-86/2/ce824", "teacher": "Dr. Ali Movaghar"}
+{"courseID": "ce883", "courseName": "Data Communications", "link": "http://ce.sharif.edu/courses/85-86/2/ce883", "teacher": "Dr. Manzuri"}
+{"courseID": "40924", "courseName": "Advanced Software Engineering", "link": "http://ce.sharif.edu/courses/85-86/2/ce924", "teacher": "Dr. Jafar Habibi"}
+{"courseID": "40925", "courseName": "Database Security", "link": "http://ce.sharif.edu/courses/85-86/2/ce925", "teacher": "Dr Rasool Jalili"}
+{"courseID": "40967", "courseName": "Speech Processing", "link": "http://ce.sharif.edu/courses/85-86/2/ce967", "teacher": "Hossein Sameti"}
+{"courseID": "40223", "courseName": "Digital System Design", "link": "http://ce.sharif.edu/courses/84-85/1/ce223", "teacher": "Maziar Goudarzi, Amir Massoud GharehBaghi"}
+{"courseID": "40226", "courseName": "Advanced Topics in Hardware Engineering (Design & Codesign of Embedded Systems)", "link": "http://ce.sharif.edu/courses/84-85/1/ce226", "teacher": "Maziar Goudarzi"}
+{"courseID": "40242", "courseName": "Signals & Systems", "link": "http://ce.sharif.edu/courses/84-85/1/ce242", "teacher": "Dr. S.Kasaei"}
+{"courseID": "40244", "courseName": "Java Advanced Programming", "link": "http://ce.sharif.edu/courses/84-85/1/ce244", "teacher": "Ramtin Khosravi"}
+{"courseID": "40254", "courseName": "Data Structures and Algorithms Fundamentals", "link": "http://ce.sharif.edu/courses/84-85/1/ce254", "teacher": "Dr.Ghodsi"}
+{"courseID": "40254", "courseName": " Data Structures and Algorithms Fundamentals", "link": "http://ce.sharif.edu/courses/84-85/1/ce254b", "teacher": "Jamzad"}
+{"courseID": "40312", "courseName": "Digital Electronics", "link": "http://ce.sharif.edu/courses/84-85/1/ce312", "teacher": "Dr. Manzuri"}
+{"courseID": "40324", "courseName": "Modern Information Retrieval", "link": "http://ce.sharif.edu/courses/84-85/1/ce324", "teacher": "Dr. Abolhassani"}
+{"courseID": "40342", "courseName": "Multimedia", "link": "http://ce.sharif.edu/courses/84-85/1/ce342", "teacher": "Dr. Hamid R. Rabiee"}
+{"courseID": "40354", "courseName": "Design and Analysis of Algorithms", "link": "http://ce.sharif.edu/courses/84-85/1/ce354", "teacher": "Dr. Beigy"}
+{"courseID": "40364", "courseName": "Programming languages", "link": "http://ce.sharif.edu/courses/84-85/1/ce364", "teacher": "Dr.Sehatniaki"}
+{"courseID": "40384", "courseName": "Database Systems", "link": "http://ce.sharif.edu/courses/84-85/1/ce384", "teacher": "TA : Babak Bagheri Hariri"}
+{"courseID": "40415", "courseName": "Theory of Languages and Machines", "link": "http://ce.sharif.edu/courses/84-85/1/ce415", "teacher": "Dr. Ali Movaghar"}
+{"courseID": "40418", "courseName": "Design and Analysis System", "link": "http://ce.sharif.edu/courses/84-85/1/ce418", "teacher": "Habibi"}
+{"courseID": "40424", "courseName": "Operating Systems", "link": "http://ce.sharif.edu/courses/84-85/1/ce424", "teacher": "Dr. Rasool Jalili"}
+{"courseID": "40428", "courseName": "Project Management", "link": "http://ce.sharif.edu/courses/84-85/1/ce428", "teacher": "Mohammad Ghaffary"}
+{"courseID": "40443", "courseName": "Computer Networks", "link": "http://ce.sharif.edu/courses/84-85/1/ce443", "teacher": "Behzad Akbari"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/courses/84-85/1/ce474", "teacher": "Mirian"}
+{"courseID": "40506", "courseName": "Microprocessor laboratory", "link": "http://ce.sharif.edu/courses/84-85/1/ce506", "teacher": "TA : Mohsen Bashiri"}
+{"courseID": "40516", "courseName": "Introduction to Robotics", "link": "http://ce.sharif.edu/courses/84-85/1/ce516", "teacher": "Dr. Leila Sharif"}
+{"courseID": "40534", "courseName": "Advanced Operating Systems", "link": "http://ce.sharif.edu/courses/84-85/1/ce534", "teacher": "Dr Rasool Jalili"}
+{"courseID": "40634", "courseName": "Simulation", "link": "http://ce.sharif.edu/courses/84-85/1/ce634", "teacher": "Dr. Ghazizadeh"}
+{"courseID": "40675", "courseName": "Cryptography Theory", "link": "http://ce.sharif.edu/courses/84-85/1/ce675", "teacher": "Dr. Mahmoud Salmasizadeh"}
+{"courseID": "40695", "courseName": "Stochastic Processes", "link": "http://ce.sharif.edu/courses/84-85/1/ce695", "teacher": "Dr. Hamid R. Rabiee"}
+{"courseID": "40712", "courseName": "Digital Video Systems", "link": "http://ce.sharif.edu/courses/84-85/1/ce712", "teacher": "Shohreh Kasaei"}
+{"courseID": "40714", "courseName": "Machine Learning", "link": "http://ce.sharif.edu/courses/84-85/1/ce714", "teacher": "Dr. Beigy"}
+{"courseID": "40765", "courseName": "Advanced Algorithms", "link": "http://ce.sharif.edu/courses/84-85/1/ce765", "teacher": "Prof. Ghodsi"}
+{"courseID": "40126", "courseName": "Computer Structure and Language", "link": "http://ce.sharif.edu/courses/87-88/1/ce126-1", "teacher": "Seyed Ghassem Miremadi"}
+{"courseID": "40221", "courseName": "Technical Presentation  ( \u0634\u06cc\u0648\u0647 \u0647\u0627\u06cc \u0627\u0631\u0627\u0626\u0647 \u0645\u0637\u0627\u0644\u0628 \u0639\u0644\u0645\u06cc \u0648 \u0641\u0646\u06cc )", "link": "http://ce.sharif.edu/courses/87-88/1/ce221", "teacher": "seyed ebrahim abtahi(\u0633\u06cc\u062f \u0627\u0628\u0631\u0627\u0647\u06cc\u0645 \u0627\u0628\u0637\u062d\u06cc)"}
+{"courseID": "40342", "courseName": "Multimedia Systems", "link": "http://ce.sharif.edu/courses/87-88/1/ce342", "teacher": "Dr. Hamid Reza Rabiee"}
+{"courseID": "40467", "courseName": "Information Technology (\u0641\u0646\u0627\u0648\u0631\u06cc \u0627\u0637\u0644\u0627\u0639\u0627\u062a )", "link": "http://ce.sharif.edu/courses/87-88/1/ce347", "teacher": "seyed ebrahim abtahi(\u0633\u06cc\u062f \u0627\u0628\u0631\u0627\u0647\u06cc\u0645 \u0627\u0628\u0637\u062d\u06cc)"}
+{"courseID": "40354", "courseName": "Design and Analysis of Algorithms", "link": "http://ce.sharif.edu/courses/87-88/1/ce354", "teacher": "Dr. Hamid Beigy"}
+{"courseID": "40384", "courseName": "Database", "link": "http://ce.sharif.edu/courses/87-88/1/ce40384", "teacher": "Rohani Rankouhi"}
+{"courseID": "40448", "courseName": "Information Technology Strategic Management and Planning", "link": "http://ce.sharif.edu/courses/87-88/1/ce448", "teacher": "seyed ebrahim abtahi(\u0633\u06cc\u062f \u0627\u0628\u0631\u0627\u0647\u06cc\u0645 \u0627\u0628\u0637\u062d\u06cc)"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/courses/87-88/1/ce474", "teacher": "Dr. Mirian"}
+{"courseID": "40693", "courseName": "Advanced Computer Networks", "link": "http://ce.sharif.edu/courses/87-88/1/ce693", "teacher": "Dr. Khonsari"}
+{"courseID": "40717", "courseName": "Machine Learning", "link": "http://ce.sharif.edu/courses/87-88/1/ce717", "teacher": "Dr. Hamid Beigy"}
+{"courseID": "40833", "courseName": "Speech Recognition", "link": "http://ce.sharif.edu/courses/84-85/1/ce833", "teacher": "Hossein Sameti"}
+{"courseID": "40925", "courseName": "Data Mining", "link": "http://ce.sharif.edu/courses/84-85/1/ce925", "teacher": "Dr. Hassan Abolhassani"}
+{"courseID": "40926", "courseName": "Semantic Web", "link": "http://ce.sharif.edu/courses/84-85/1/ce926", "teacher": "Dr. Abolhassani"}
+{"courseID": "40223", "courseName": "Digital System Design", "link": "http://ce.sharif.edu/courses/83-84/2/111", "teacher": "Amir Masoud Gharehbaghi"}
+{"courseID": "40115", "courseName": "Discrete Structures", "link": "http://ce.sharif.edu/courses/83-84/2/ce115", "teacher": "TA : Mohammad Derakhshani"}
+{"courseID": "CE121", "courseName": "Electrical Circuit", "link": "http://ce.sharif.edu/courses/83-84/2/ce121", "teacher": "TA : Mohammad Sadegh Talebi"}
+{"courseID": "40221", "courseName": "Scientific and Technical Presentation", "link": "http://ce.sharif.edu/courses/83-84/2/ce221", "teacher": "Dr. S.Kasaei"}
+{"courseID": "40223", "courseName": "Digital System Design", "link": "http://ce.sharif.edu/courses/83-84/2/ce223", "teacher": "Amir Masoud Gharehbaghi"}
+{"courseID": "40242", "courseName": "Signals & Systems", "link": "http://ce.sharif.edu/courses/83-84/2/ce242", "teacher": "Dr. Manzuri"}
+{"courseID": "40244", "courseName": " Object Oriented Programming in Java", "link": "http://ce.sharif.edu/courses/83-84/2/ce244", "teacher": "Ramtin Khosravi"}
+{"courseID": "40254", "courseName": "Data Structures and Algorithms Fundamentals", "link": "http://ce.sharif.edu/courses/83-84/2/ce254", "teacher": "Dr.Beigy"}
+{"courseID": "40324", "courseName": "Modern Information Retrieval", "link": "http://ce.sharif.edu/courses/83-84/2/ce324", "teacher": "Dr. Abolhassani"}
+{"courseID": "40354", "courseName": "Design and Analysis of Algorithms", "link": "http://ce.sharif.edu/courses/83-84/2/ce354", "teacher": "Dr. Beigy"}
+{"courseID": "40384", "courseName": "Database Systems", "link": "http://ce.sharif.edu/courses/83-84/2/ce384", "teacher": "TA : Babak Bagheri Hariri"}
+{"courseID": "40415", "courseName": " Theory of Machines and Languages", "link": "http://ce.sharif.edu/courses/83-84/2/ce415", "teacher": "Mohammad Izadi"}
+{"courseID": "40102", "courseName": "Computer Hardware Laboratory", "link": "http://ce.sharif.edu/courses/86-87/2/ce102", "teacher": "Dr. Seyed Ghassem Miremadi"}
+{"courseID": "40115", "courseName": "\u0633\u0627\u062e\u062a\u0645\u0627\u0646\u0647\u0627\u06cc \u06af\u0633\u0633\u062a\u0647", "link": "http://ce.sharif.edu/courses/86-87/2/ce115-2", "teacher": "\u0639\u0644\u06cc \u0634\u0631\u06cc\u0641\u06cc \u0632\u0627\u0631\u0686\u06cc"}
+{"courseID": "40115", "courseName": "Discrete Structure", "link": "http://ce.sharif.edu/courses/86-87/2/ce115b", "teacher": "Hamid Mahini"}
+{"courseID": "40151", "courseName": "Pascal Programming", "link": "http://ce.sharif.edu/courses/86-87/2/ce151d", "teacher": "Mojtaba Nouri"}
+{"courseID": "40153", "courseName": "Introduction to Programming", "link": "http://ce.sharif.edu/courses/86-87/2/ce153", "teacher": "Hamid Mousavi"}
+{"courseID": "40181", "courseName": "Probability and Statistics", "link": "http://ce.sharif.edu/courses/86-87/2/ce181", "teacher": "Dr. Hossein Sameti"}
+{"courseID": "40417", "courseName": "Artificial Intelligence", "link": "http://ce.sharif.edu/courses/83-84/2/ce417", "teacher": "Dr. Shamsfard"}
+{"courseID": "40424", "courseName": "Operating System", "link": "http://ce.sharif.edu/courses/83-84/2/ce424", "teacher": "Dr. Rasool Jalili"}
+{"courseID": "40442", "courseName": "Data and Network Security", "link": "http://ce.sharif.edu/courses/83-84/2/ce442", "teacher": "Hamid Reza Shahriari"}
+{"courseID": "40443", "courseName": "Computer Networks", "link": "http://ce.sharif.edu/courses/83-84/2/ce443", "teacher": "Behzad Akbari"}
+{"courseID": "40447", "courseName": "Computer Graphics", "link": "http://ce.sharif.edu/courses/83-84/2/ce447", "teacher": "Dr. Jamzad"}
+{"courseID": "40 44", "courseName": " Strategic Planning for IS", "link": "http://ce.sharif.edu/courses/83-84/2/ce448", "teacher": "Jalal Jalalian"}
+{"courseID": "40513", "courseName": "Microprocessor", "link": "http://ce.sharif.edu/courses/83-84/2/ce513", "teacher": "Dr. S.G.Miremadi"}
+{"courseID": "40647", "courseName": "Parallel Processing", "link": "http://ce.sharif.edu/courses/83-84/2/ce647"}
+{"courseID": "40665", "courseName": "Verification of Reactive Systems", "link": "http://ce.sharif.edu/courses/83-84/2/ce665", "teacher": "Dr. movaghar"}
+{"courseID": "40666", "courseName": "Evolutionary Computing", "link": "http://ce.sharif.edu/courses/83-84/2/ce666", "teacher": "Dr. Beigy"}
+{"courseID": "40693", "courseName": "Advanced Computer Networks", "link": "http://ce.sharif.edu/courses/83-84/2/ce693", "teacher": "Dr.Hamid R.Rabiee"}
+{"courseID": "40693", "courseName": "Advanecd Networks", "link": "http://ce.sharif.edu/courses/83-84/2/ce693b", "teacher": "Dr. Ahmad Khonsari"}
+{"courseID": "40725", "courseName": "Pattern Recognition", "link": "http://ce.sharif.edu/courses/83-84/2/ce725", "teacher": "Dr.Hamid R.Rabiee"}
+{"courseID": "ce745", "courseName": "Formal Specification and Verification of Programs", "link": "http://ce.sharif.edu/courses/83-84/2/ce745", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "ce783", "courseName": "Advanced VLSI Design", "link": "http://ce.sharif.edu/courses/83-84/2/ce783", "teacher": "Shaahin Hessabi"}
+{"courseID": "40823", "courseName": "Advanced Digital Image Processing", "link": "http://ce.sharif.edu/courses/83-84/2/ce823", "teacher": "Dr. S. Kasaei"}
+{"courseID": "40212", "courseName": "Digital Circuit", "link": "http://ce.sharif.edu/courses/86-87/2/ce212", "teacher": "Dr. Ejlali"}
+{"courseID": "40221", "courseName": "Technical Presentation  ( \u0634\u06cc\u0648\u0647 \u0647\u0627\u06cc \u0627\u0631\u0627\u0626\u0647 \u0645\u0637\u0627\u0644\u0628 \u0639\u0644\u0645\u06cc \u0648 \u0641\u0646\u06cc )", "link": "http://ce.sharif.edu/courses/86-87/2/ce221", "teacher": "seyed ebrahim abtahi(\u0633\u06cc\u062f \u0627\u0628\u0631\u0627\u0647\u06cc\u0645 \u0627\u0628\u0637\u062d\u06cc)"}
+{"courseID": "40223", "courseName": "Digital Systems Design", "link": "http://ce.sharif.edu/courses/86-87/2/ce223", "teacher": "Dr. Alireza Ejlali"}
+{"courseID": "40242", "courseName": " signals and systems", "link": "http://ce.sharif.edu/courses/86-87/2/ce242", "teacher": "Dr. S.Kasaei"}
+{"courseID": "40254", "courseName": "Data Structures and Algorithms", "link": "http://ce.sharif.edu/courses/86-87/2/ce254", "teacher": "Dr. Hamid Beigy"}
+{"courseID": "40317", "courseName": "Internet Engineering", "link": "http://ce.sharif.edu/courses/86-87/2/ce317", "teacher": "Mohammad Reza Borujerdi"}
+{"courseID": "323 C", "courseName": "mputer Architecture", "link": "http://ce.sharif.edu/courses/86-87/2/ce323", "teacher": "Dr. Jahangir"}
+{"courseID": "40333", "courseName": "Hardware/Software Codesign", "link": "http://ce.sharif.edu/courses/86-87/2/ce333", "teacher": "Mehdi Modarressi"}
+{"courseID": "40243", "courseName": "Multimedia Systems", "link": "http://ce.sharif.edu/courses/86-87/2/ce342", "teacher": "Dr. Hamid R. Rabiee"}
+{"courseID": "40347", "courseName": "Information Technology Ethics     (\u0622\u062f\u0627\u0628 \u0641\u0646\u0627\u0648\u0631\u06cc \u0627\u0637\u0644\u0627\u0639\u0627\u062a)", "link": "http://ce.sharif.edu/courses/86-87/2/ce347", "teacher": "Seyed Ebrahim Abtahi  (\u0633\u06cc\u062f \u0627\u0628\u0631\u0627\u0647\u06cc\u0645 \u0627\u0628\u0637\u062d\u06cc)"}
+{"courseID": "40353", "courseName": "VLSI Design", "link": "http://ce.sharif.edu/courses/86-87/2/ce353", "teacher": "Somayyeh Koohi"}
+{"courseID": "40354", "courseName": "Design and Analysis of Algorithms", "link": "http://ce.sharif.edu/courses/86-87/2/ce354", "teacher": "Dr. Hamid Beigy"}
+{"courseID": "40364", "courseName": "Design and Implementation of Programming Languages", "link": "http://ce.sharif.edu/courses/86-87/2/ce364", "teacher": "Dr. Hassan Rashidi"}
+{"courseID": "40384", "courseName": "Database", "link": "http://ce.sharif.edu/courses/86-87/2/ce384", "teacher": "Rohani Rankouhi"}
+{"courseID": "40153", "courseName": "Introduction to Programming", "link": "http://ce.sharif.edu/courses/86-87/2/ce40153-5", "teacher": "Arash Tavakkol"}
+{"courseID": "40212", "courseName": "Digital Circuit", "link": "http://ce.sharif.edu/courses/86-87/2/ce40212-2", "teacher": "A. E. Kiasari"}
+{"courseID": "40404", "courseName": "Software Engineering Lab", "link": "http://ce.sharif.edu/courses/86-87/2/ce404", "teacher": "Dr. Mirian"}
+{"courseID": "40408", "courseName": "Operating System Laboratory", "link": "http://ce.sharif.edu/courses/86-87/2/ce408", "teacher": "Mohsen Taherian"}
+{"courseID": "40108", "courseName": "Computer Workshop (\u06a9\u0627\u0631\u06af\u0627\u0647 \u06a9\u0627\u0645\u067e\u06cc\u0648\u062a\u0631)", "link": "http://ce.sharif.edu/courses/86-87/1/ce108", "teacher": "Dr. Jalili"}
+{"courseID": "40115", "courseName": "Discrete Structure", "link": "http://ce.sharif.edu/courses/86-87/1/ce115", "teacher": "Hamid Mahini"}
+{"courseID": "40126", "courseName": "Computer Structure and Language", "link": "http://ce.sharif.edu/courses/86-87/1/ce126", "teacher": "Dr.S.G.Miremadi"}
+{"courseID": "40151", "courseName": "Computer Programming: Pascal", "link": "http://ce.sharif.edu/courses/86-87/1/ce151d", "teacher": "Mohammad Reza Hoseiny"}
+{"courseID": "40926", "courseName": "Advanced Topics in Software Engineering (Semantic Web)", "link": "http://ce.sharif.edu/courses/83-84/2/ce926", "teacher": "Dr. Abolhassani"}
+{"courseID": "40967", "courseName": "Speech Processing", "link": "http://ce.sharif.edu/courses/83-84/2/ce967", "teacher": "Hossein Sameti"}
+{"courseID": "40415", "courseName": "Theory of Languages and Automata", "link": "http://ce.sharif.edu/courses/86-87/2/ce415", "teacher": "Dr. Ali Movaghar"}
+{"courseID": "40416", "courseName": "Network and Data Communication Laboratory", "link": "http://ce.sharif.edu/courses/86-87/2/ce416", "teacher": "Arash Azarfar , Farshid Farjad"}
+{"courseID": "40417", "courseName": "An Introduction to Artificial Intelligence", "link": "http://ce.sharif.edu/courses/86-87/2/ce417", "teacher": "Ramin Halavati"}
+{"courseID": "40418", "courseName": "System Analysis and Design (\u062a\u062d\u0644\u06cc\u0644 \u0648 \u0637\u0631\u0627\u062d\u06cc \u0633\u0627\u0645\u0627\u0646\u0647 \u0647\u0627\u06cc \u0627\u0637\u0644\u0627\u0639\u0627\u062a\u06cc)", "link": "http://ce.sharif.edu/courses/86-87/2/ce418", "teacher": "Seyed Ebrahim Abtahi (\u0633\u06cc\u062f \u0627\u0628\u0631\u0627\u0647\u06cc\u0645 \u0627\u0628\u0637\u062d\u06cc)"}
+{"courseID": "40418", "courseName": "System Analysis and Design", "link": "http://ce.sharif.edu/courses/86-87/2/ce418b", "teacher": "Jaffar Habibi"}
+{"courseID": "40424", "courseName": "Operating Systems", "link": "http://ce.sharif.edu/courses/86-87/2/ce424", "teacher": "Mehdi Kargahi"}
+{"courseID": "40438", "courseName": "ECommerce", "link": "http://ce.sharif.edu/courses/86-87/2/ce438", "teacher": "Dr. Isaai"}
+{"courseID": "40442", "courseName": "Data and Network Security", "link": "http://ce.sharif.edu/courses/86-87/2/ce442", "teacher": "Dr. Rasool Jalili"}
+{"courseID": "40443", "courseName": "Computer Networks", "link": "http://ce.sharif.edu/courses/86-87/2/ce443", "teacher": "Kambiz Mizanian"}
+{"courseID": "40447", "courseName": "Computer Graphics", "link": "http://ce.sharif.edu/courses/86-87/2/ce447", "teacher": "Dr. Mansoor Jamzad"}
+{"courseID": "40474", "courseName": "Software Engineering 1", "link": "http://ce.sharif.edu/courses/86-87/2/ce474", "teacher": "Dr Mirian"}
+{"courseID": "40666", "courseName": "Evolutionary Computing", "link": "http://ce.sharif.edu/courses/86-87/2/ce666", "teacher": "Dr. Hamid Beigy"}
+{"courseID": "40667", "courseName": "Neural Networks", "link": "http://ce.sharif.edu/courses/86-87/2/ce667", "teacher": "Dr. Saeed Bagheri Shouraki"}
+{"courseID": "40151", "courseName": "Pascal Programming", "link": "http://ce.sharif.edu/courses/86-87/1/ce151e", "teacher": "Mojtaba Nouri"}
+{"courseID": "40151", "courseName": "Computer Programming: Pascal", "link": "http://ce.sharif.edu/courses/86-87/1/ce151f", "teacher": "Fatemeh Ghassemi"}
+{"courseID": "40153", "courseName": "Introduction to Programming", "link": "http://ce.sharif.edu/courses/86-87/1/ce153", "teacher": "Hedieh Sajedi"}
+{"courseID": "40153", "courseName": "Introduction to programming", "link": "http://ce.sharif.edu/courses/86-87/1/ce153a", "teacher": "Ali Haj Abutalebi"}
+{"courseID": "40153", "courseName": "Introduction to programming", "link": "http://ce.sharif.edu/courses/86-87/1/ce153c", "teacher": "Hamid Mousavi"}
+{"courseID": "40153", "courseName": "Introduction to Programming", "link": "http://ce.sharif.edu/courses/86-87/1/ce153e", "teacher": "Mahdieh Soleymani"}
+{"courseID": "40153", "courseName": "Introduction to Programming  (\u0645\u0628\u0627\u0646\u06cc \u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06cc\u0633\u06cc)", "link": "http://ce.sharif.edu/courses/86-87/1/ce153f", "teacher": "Sajad Shirali-Shahreza"}
+{"courseID": "40211", "courseName": "English for Computer Science", "link": "http://ce.sharif.edu/courses/86-87/1/ce211", "teacher": "Ehsan Akhgari"}
+{"courseID": "40212", "courseName": "Logic Circuits", "link": "http://ce.sharif.edu/courses/86-87/1/ce212", "teacher": "D. Rahmati"}
+{"courseID": "40221", "courseName": "Technical Presentation \u0634\u06cc\u0648\u0647 \u0647\u0627\u06cc \u0627\u0631\u0627\u0626\u0647 \u0645\u0637\u0627\u0644\u0628 \u0639\u0644\u0645\u06cc \u0648 \u0641\u0646\u06cc", "link": "http://ce.sharif.edu/courses/86-87/1/ce221", "teacher": "seyed ebrahim abtahi(\u0633\u06cc\u062f \u0627\u0628\u0631\u0627\u0647\u06cc\u0645 \u0627\u0628\u0637\u062d\u06cc)"}
+{"courseID": "40221", "courseName": "Presentation Methods", "link": "http://ce.sharif.edu/courses/86-87/1/ce221b", "teacher": "Soheil Hassas Yeganeh"}
+{"courseID": "Digit", "courseName": "l Systems Design", "link": "http://ce.sharif.edu/courses/86-87/1/ce223", "teacher": "Dr. Ejlali"}
+{"courseID": "40108", "courseName": "Computer Workshop \u0643\u0627\u0631\u06af\u0627\u0647 \u0643\u0627\u0645\u067e\u064a\u0648\u062a\u0631", "link": "http://ce.sharif.edu/courses/85-86/1/ce108", "teacher": "Dr. Jalili"}
+{"courseID": "40115", "courseName": "Discrete Structure", "link": "http://ce.sharif.edu/courses/85-86/1/ce115", "teacher": "Hamid Mahini"}
+{"courseID": "40126", "courseName": "Computer Structure and Language", "link": "http://ce.sharif.edu/courses/85-86/1/ce126", "teacher": "Dr. Miremadi"}
+{"courseID": "40151", "courseName": "Pascal Programming Language", "link": "http://ce.sharif.edu/courses/85-86/1/ce151c", "teacher": "Shervin Daneshpajouh"}
+{"courseID": "40151", "courseName": "Pascal Programming Language", "link": "http://ce.sharif.edu/courses/85-86/1/ce151e", "teacher": "Mahdieh Soleymani Baghshah"}
+{"courseID": "40151", "courseName": "   Pascal Programming Language", "link": "http://ce.sharif.edu/courses/85-86/1/ce151g", "teacher": "Mostafa Nouri"}
+{"courseID": "40153", "courseName": "Introduction to programming", "link": "http://ce.sharif.edu/courses/85-86/1/ce153", "teacher": "Ali Haj Abutalebi"}
+{"courseID": "40153", "courseName": "C/C++ Programming Language", "link": "http://ce.sharif.edu/courses/85-86/1/ce153c", "teacher": "Ehsan Nazerfard"}
+{"courseID": "40203", "courseName": "Digital Systems Design Lab", "link": "http://ce.sharif.edu/courses/85-86/1/ce203", "teacher": "Arash Tavakkol, Sina Me'raji"}
+{"courseID": "40687", "courseName": "Machine Vision", "link": "http://ce.sharif.edu/courses/86-87/2/ce687", "teacher": "Dr. Mansour Jamzad"}
+{"courseID": "40695", "courseName": "Stochastic Process", "link": "http://ce.sharif.edu/courses/86-87/2/ce695", "teacher": "Dr. Hamid R. Rabiee"}
+{"courseID": "40712", "courseName": "Digital Video Systems", "link": "http://ce.sharif.edu/courses/86-87/2/ce712", "teacher": "Shohreh Kasaei"}
+{"courseID": "40725", "courseName": "Pattern Recognition", "link": "http://ce.sharif.edu/courses/86-87/2/ce725", "teacher": "Dr. Hamid R. Rabiee"}
+{"courseID": "40734", "courseName": "Database Security", "link": "http://ce.sharif.edu/courses/86-87/2/ce734", "teacher": "Dr. Rasool Jalili"}
+{"courseID": "40824", "courseName": "Computer System Performance Evaluation", "link": "http://ce.sharif.edu/courses/86-87/2/ce824", "teacher": "Pro. Movaghar"}
+{"courseID": "40833", "courseName": "Speech Recognition", "link": "http://ce.sharif.edu/courses/86-87/2/ce833", "teacher": "Dr. Hossein Sameti"}
+{"courseID": "40924", "courseName": "Software Engineering II", "link": "http://ce.sharif.edu/courses/86-87/2/ce924", "teacher": "Dr. Jafar Habibi"}
+{"courseID": "40242", "courseName": "signals and systems", "link": "http://ce.sharif.edu/courses/86-87/1/ce242", "teacher": "Dr. S.Kasaei"}
+{"courseID": "40244", "courseName": "Advanced Programming", "link": "http://ce.sharif.edu/courses/86-87/1/ce244", "teacher": "Soheil Hassas Yeganeh"}
+{"courseID": "40254", "courseName": "Data Structures and Algorithms", "link": "http://ce.sharif.edu/courses/86-87/1/ce254", "teacher": "Dr. Mansour Jamzad"}
+{"courseID": "40254", "courseName": "Data Structures and Algorithms", "link": "http://ce.sharif.edu/courses/86-87/1/ce254b", "teacher": "Dr. Mohammad Ghodsi"}
+{"courseID": "40317", "courseName": "Internet Engineering", "link": "http://ce.sharif.edu/courses/86-87/1/ce317", "teacher": "Ali Kamandi"}
+{"courseID": "40323", "courseName": "Computer Architecture", "link": "http://ce.sharif.edu/courses/86-87/1/ce323", "teacher": "Dr. Jahangir"}
+{"courseID": "40342", "courseName": " Signals & Systems", "link": "http://ce.sharif.edu/courses/86-87/1/ce342", "teacher": "Hamid R. Rabiee, PhD"}
+{"courseID": "40347", "courseName": "Information Technology Ethics (\u0622\u062f\u0627\u0628 \u0641\u0646\u0627\u0648\u0631\u06cc \u0627\u0637\u0644\u0627\u0639\u0627\u062a)", "link": "http://ce.sharif.edu/courses/86-87/1/ce347", "teacher": "seyed ebrahim abtahi (\u0633\u06cc\u062f \u0627\u0628\u0631\u0627\u0647\u06cc\u0645 \u0627\u0628\u0637\u062d\u06cc)"}
+{"courseID": "40354", "courseName": "Design and Analysis of Algorithms", "link": "http://ce.sharif.edu/courses/86-87/1/ce354", "teacher": "Dr. Hamid Beigy"}
+{"courseID": "40384", "courseName": "Database Systems", "link": "http://ce.sharif.edu/courses/86-87/1/ce384", "teacher": "TA : Hamed Yaghoubi Shahir"}
+{"courseID": "40404", "courseName": "Software Engineering Lab", "link": "http://ce.sharif.edu/courses/86-87/1/ce404", "teacher": "Dr Mirian"}
+{"courseID": "40414", "courseName": "Compiler", "link": "http://ce.sharif.edu/courses/86-87/1/ce414", "teacher": "Hassan Abolhassani"}
+{"courseID": "40221", "courseName": "Scientific and Technical Presentation", "link": "http://ce.sharif.edu/courses/85-86/1/ce221", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40223", "courseName": "Digital Systems Design", "link": "http://ce.sharif.edu/courses/85-86/1/ce223", "teacher": "Dr.Ejlali"}
+{"courseID": "40242", "courseName": "Signals and Systems", "link": "http://ce.sharif.edu/courses/85-86/1/ce242", "teacher": "Dr. S.Kasaei"}
+{"courseID": "40242", "courseName": "signals and systems", "link": "http://ce.sharif.edu/courses/85-86/1/ce242b", "teacher": "Dr.Sameti"}
+{"courseID": "40244", "courseName": "Advanced Programming", "link": "http://ce.sharif.edu/courses/85-86/1/ce244", "teacher": "Dr. Ramtin Khosravi"}
+{"courseID": "40254", "courseName": "Data Structures and Algorithms", "link": "http://ce.sharif.edu/courses/85-86/1/ce254", "teacher": "Dr. Ghodsi"}
+{"courseID": "40254", "courseName": "Data Structures and Algorithms", "link": "http://ce.sharif.edu/courses/85-86/1/ce254b", "teacher": "Dr.Hamid Beigy"}
+{"courseID": "40312", "courseName": "Digital Electronics", "link": "http://ce.sharif.edu/courses/85-86/1/ce312", "teacher": "Dr. Manzuri"}
+{"courseID": "40323", "courseName": "Computer Architecture", "link": "http://ce.sharif.edu/courses/85-86/1/ce323", "teacher": "Dr. Amir Hossein Jahangir"}
+{"courseID": "40342", "courseName": "Multimedia Systems", "link": "http://ce.sharif.edu/courses/85-86/1/ce342", "teacher": "Dr.H R.Rabiee"}
+{"courseID": "40354", "courseName": "Design and Analysis of Algorithms", "link": "http://ce.sharif.edu/courses/85-86/1/ce354", "teacher": "Dr.Hamid Beigy"}
+{"courseID": "40384", "courseName": "Database Systems", "link": "http://ce.sharif.edu/courses/85-86/1/ce384", "teacher": "TA : Ehsan Akhgari"}
+{"courseID": "40404", "courseName": "Software Engineering Lab", "link": "http://ce.sharif.edu/courses/85-86/1/ce404", "teacher": "Dr. Mirian"}
+{"courseID": "40408", "courseName": "Operating System Lab", "link": "http://ce.sharif.edu/courses/85-86/1/ce408", "teacher": "Dr. Rasool Jalili"}
+{"courseID": "40414", "courseName": "Compiler Design", "link": "http://ce.sharif.edu/courses/85-86/1/ce414", "teacher": "Hassan Abolhassani"}
+{"courseID": "40415", "courseName": "Theory of Languages and Automata", "link": "http://ce.sharif.edu/courses/86-87/1/ce415", "teacher": "Dr. Ali Movaghar"}
+{"courseID": "40416", "courseName": "Network Lab", "link": "http://ce.sharif.edu/courses/86-87/1/ce416", "teacher": "Farshid Farjad"}
+{"courseID": "40418", "courseName": "System Analysis and Design", "link": "http://ce.sharif.edu/courses/86-87/1/ce418", "teacher": "Dr. Jafar Habibi"}
+{"courseID": "40424", "courseName": "Operating System", "link": "http://ce.sharif.edu/courses/86-87/1/ce424", "teacher": "Dr. Rasool Jalili"}
+{"courseID": "40427", "courseName": "Expert Systems", "link": "http://ce.sharif.edu/courses/86-87/1/ce427", "teacher": "Ramin Halavati"}
+{"courseID": "40428", "courseName": "Information Technology Project Manage(\u0645\u062f\u06cc\u0631\u06cc\u062a \u067e\u0631\u0648\u0698\u0647\u0627\u06cc \u0641\u0646\u0627\u0648\u0631\u06cc \u0627\u0637\u0644\u0627\u0639\u0627\u062a)", "link": "http://ce.sharif.edu/courses/86-87/1/ce428", "teacher": "seyed ebrahim abtahi (\u0633\u06cc\u062f \u0627\u0628\u0631\u0627\u0647\u06cc\u0645 \u0627\u0628\u0637\u062d\u06cc)"}
+{"courseID": "40438", "courseName": "Electronic Commerce", "link": "http://ce.sharif.edu/courses/86-87/1/ce438", "teacher": "Ali Kamandi"}
+{"courseID": "40443", "courseName": "Computer Networks", "link": "http://ce.sharif.edu/courses/86-87/1/ce443", "teacher": "Dr. Ehsan Malekian"}
+{"courseID": "40447", "courseName": "Computer Graphics", "link": "http://ce.sharif.edu/courses/86-87/1/ce447", "teacher": "Sayed Kamaledin Ghiasi Shirazi"}
+{"courseID": "40467", "courseName": "Information Technology   (\u0641\u0646\u0627\u0648\u0631\u06cc \u0627\u0637\u0644\u0627\u0639\u0627\u062a)", "link": "http://ce.sharif.edu/courses/86-87/1/ce467", "teacher": "seyed ebrahim abtahi(\u0633\u06cc\u062f \u0627\u0628\u0631\u0627\u0647\u06cc\u0645 \u0627\u0628\u0637\u062d\u06cc)"}
+{"courseID": "40474", "courseName": " Software Engineering", "link": "http://ce.sharif.edu/courses/86-87/1/ce474", "teacher": "Dr. Mirian"}
+{"courseID": "40534", "courseName": "Advanced Operating Systems", "link": "http://ce.sharif.edu/courses/86-87/1/ce534", "teacher": "Dr. Rasool  Jalili"}
+{"courseID": "40548", "courseName": "Decision Support Systems", "link": "http://ce.sharif.edu/courses/86-87/1/ce548", "teacher": "Dr. Jafar Habibi"}
+{"courseID": "40645", "courseName": "Fuzzy Sets and Systems", "link": "http://ce.sharif.edu/courses/86-87/1/ce645", "teacher": "Saeed Bagheri Shoraki"}
+{"courseID": "40657", "courseName": "Modelling and Analysis of Computer Networks", "link": "http://ce.sharif.edu/courses/86-87/1/ce657", "teacher": "Dr. Ali Movaghar"}
+{"courseID": "40415", "courseName": "Theory of Languages and Machines", "link": "http://ce.sharif.edu/courses/85-86/1/ce415", "teacher": "Dr. Ali Movaghar"}
+{"courseID": "40417", "courseName": "An Introducion to Artificial Intelligence", "link": "http://ce.sharif.edu/courses/85-86/1/ce417", "teacher": "Ramin Halavati"}
+{"courseID": "40418", "courseName": "System Analysis and Design", "link": "http://ce.sharif.edu/courses/85-86/1/ce418", "teacher": "Dr. Habibi"}
+{"courseID": "40424", "courseName": "Operating Systems", "link": "http://ce.sharif.edu/courses/85-86/1/ce424", "teacher": "Rasool Jalili"}
+{"courseID": "40428", "courseName": "IT Project Management \u0645\u062f\u06cc\u0631\u06cc\u062a \u067e\u0631\u0648\u0698\u0647 \u0647\u0627\u06cc \u0641\u0646\u0627\u0648\u0631\u06cc \u0627\u0637\u0644\u0627\u0639\u0627\u062a", "link": "http://ce.sharif.edu/courses/85-86/1/ce428", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40443", "courseName": "Computer Networks", "link": "http://ce.sharif.edu/courses/85-86/1/ce443", "teacher": "Ehsan Malekian"}
+{"courseID": "40467", "courseName": "Information Technology   \u0641\u0646\u0627\u0648\u0631\u06cc \u0627\u0637\u0644\u0627\u0639\u0627\u062a", "link": "http://ce.sharif.edu/courses/85-86/1/ce467", "teacher": "seyed Ebrahim Abtahi"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/courses/85-86/1/ce474", "teacher": "Dr Mirian"}
+{"courseID": "40534", "courseName": "Advanced Operating System", "link": "http://ce.sharif.edu/courses/85-86/1/ce534", "teacher": "Rasool Jalili"}
+{"courseID": "40645", "courseName": "Fuzzy System", "link": "http://ce.sharif.edu/courses/85-86/1/ce645"}
+{"courseID": "ce647", "courseName": "Parallel Processing", "link": "http://ce.sharif.edu/courses/85-86/1/ce647", "teacher": "Mohammad Ghodsi"}
+{"courseID": "40657", "courseName": "Modeling and Analysis of Computer Networks", "link": "http://ce.sharif.edu/courses/85-86/1/ce657", "teacher": "Dr. Ali Movaghar"}
+{"courseID": "40666", "courseName": "Introduction To Evolutionary Computing", "link": "http://ce.sharif.edu/courses/85-86/1/ce666", "teacher": "Dr.Hamid Beigy"}
+{"courseID": "40675", "courseName": "Cryptography Theory", "link": "http://ce.sharif.edu/courses/86-87/1/ce675"}
+{"courseID": "40693", "courseName": "Advanced Computer Network", "link": "http://ce.sharif.edu/courses/86-87/1/ce693", "teacher": "Dr. Ahmad Khonsari"}
+{"courseID": "40695", "courseName": "Stochastic Process", "link": "http://ce.sharif.edu/courses/86-87/1/ce695", "teacher": "Hamid R. Rabiee, PhD"}
+{"courseID": "40714", "courseName": "Data Mining", "link": "http://ce.sharif.edu/courses/86-87/1/ce714", "teacher": "Hassan Abolhassani"}
+{"courseID": "40717", "courseName": "Machine Learning", "link": "http://ce.sharif.edu/courses/86-87/1/ce717", "teacher": "Dr. Hamid Beigy"}
+{"courseID": "40763", "courseName": "DiscreteTime signal processing", "link": "http://ce.sharif.edu/courses/86-87/1/ce763", "teacher": "Dr. Hossein Sameti"}
+{"courseID": "40795", "courseName": "Mobile Computing", "link": "http://ce.sharif.edu/courses/86-87/1/ce795", "teacher": "Dr. Hamid Beigy"}
+{"courseID": "40832", "courseName": "Advanced Image Processing", "link": "http://ce.sharif.edu/courses/86-87/1/ce823", "teacher": "Dr Shohreh Kasaei"}
+{"courseID": "40843", "courseName": "Special Topics in Computer Architecture (Low Power Design)", "link": "http://ce.sharif.edu/courses/86-87/1/ce843", "teacher": "Dr.A.Ejlali"}
+{"courseID": "40900", "courseName": "Software Seminars", "link": "http://ce.sharif.edu/courses/86-87/1/ce900", "teacher": "TA : Nima Haghpanah"}
+{"courseID": "40933", "courseName": "Digital Image Processing", "link": "http://ce.sharif.edu/courses/86-87/1/ce933", "teacher": "Dr.Mansour Jamzad"}
+{"courseID": "40938", "courseName": "Advanced Database", "link": "http://ce.sharif.edu/courses/86-87/1/ce938", "teacher": "Dr Rasool Jalili"}
+{"courseID": "40967", "courseName": "Speech Processing", "link": "http://ce.sharif.edu/courses/86-87/1/ce967", "teacher": "Dr. Hossein Sameti"}
+{"courseID": "40695", "courseName": "Stochastic Process", "link": "http://ce.sharif.edu/courses/85-86/1/ce695", "teacher": "Dr.H R.Rabiee"}
+{"courseID": "40725", "courseName": "Pattern Recognition", "link": "http://ce.sharif.edu/courses/85-86/1/ce725", "teacher": "Dr.H R.Rabiee"}
+{"courseID": "40753", "courseName": "Testability", "link": "http://ce.sharif.edu/courses/85-86/1/ce753", "teacher": "Shaahin Hessabi"}
+{"courseID": "40763", "courseName": "Digital Signal Processing", "link": "http://ce.sharif.edu/courses/85-86/1/ce763", "teacher": "Dr. Manzuri"}
+{"courseID": "40793", "courseName": "Advanced Digital Signal Processing", "link": "http://ce.sharif.edu/courses/85-86/1/ce793", "teacher": "Dr. Manzuri"}
+{"courseID": "40823", "courseName": "Advanced digital image processing", "link": "http://ce.sharif.edu/courses/85-86/1/ce823", "teacher": "Dr S. Kasaei"}
+{"courseID": "40833", "courseName": "Speech Recognition", "link": "http://ce.sharif.edu/courses/85-86/1/ce833", "teacher": "Hossein Sameti"}
+{"courseID": "40843", "courseName": "Special Topics in Computer Architecture (Low Power Design)", "link": "http://ce.sharif.edu/courses/85-86/1/ce843", "teacher": "Dr. Ejlali"}
+{"courseID": "40924", "courseName": "Software Engineering II", "link": "http://ce.sharif.edu/courses/85-86/1/ce924", "teacher": "Dr. Jafar Habibi"}
+{"courseID": "40925", "courseName": "Data Mining", "link": "http://ce.sharif.edu/courses/85-86/1/ce925", "teacher": "Hassan Abolhassani"}
+{"courseID": "Softw", "courseName": "re Seminars", "link": "http://ce.sharif.edu/courses/85-86/1/seminar", "teacher": "TA : Naeem Esfahani \t\t+ TA : Ehsan Akhgari \t\t+ TA : Mahmood Neshati"}
+{"courseID": "40404", "courseName": " Software Engineering Lab", "link": "http://ce.sharif.edu/courses/84-85/summer/ce404a", "teacher": "Sobhani"}
+{"courseID": "40404", "courseName": " Software Engineering Lab", "link": "http://ce.sharif.edu/courses/84-85/summer/ce404b", "teacher": "Hassan Shojaee"}
+{"courseID": "40102", "courseName": "Computer Hardware Laboratory", "link": "http://ce.sharif.edu/courses/87-88/2/ce102", "teacher": "Dr. Seyed Ghassem Miremadi"}
+{"courseID": "40126", "courseName": "Computer Structure and Language", "link": "http://ce.sharif.edu/courses/87-88/2/ce126-1", "teacher": "Dr. Hamid Sarbazi-Azad"}
+{"courseID": "40151", "courseName": " Pascal Programming Language", "link": "http://ce.sharif.edu/courses/87-88/2/ce151-5", "teacher": "Mostafa Nouri"}
+{"courseID": "40244", "courseName": "Advanced Programming", "link": "http://ce.sharif.edu/courses/87-88/2/ce244-2", "teacher": "Soheil Hassas Yeganeh"}
+{"courseID": "40254", "courseName": "Data Structures & Algorithms", "link": "http://ce.sharif.edu/courses/87-88/2/ce254", "teacher": "\u0639\u0644\u06cc \u0634\u0631\u06cc\u0641\u06cc \u0632\u0627\u0631\u0686\u06cc"}
+{"courseID": "40342", "courseName": "Multimedia Systems", "link": "http://ce.sharif.edu/courses/87-88/2/ce342", "teacher": "Hamid Reza Rabiee"}
+{"courseID": "40347", "courseName": "Information Technology Ethics (\u0622\u062f\u0627\u0628 \u0641\u0646\u0627\u0648\u0631\u06cc \u0627\u0637\u0644\u0627\u0639\u0627\u062a  347 40  )", "link": "http://ce.sharif.edu/courses/87-88/2/ce347", "teacher": "Seyed Ebrahim Abtahi (\u0633\u06cc\u062f \u0627\u0628\u0631\u0627\u0647\u06cc\u0645 \u0627\u0628\u0637\u062d\u06cc)"}
+{"courseID": "40353", "courseName": "VLSI Design", "link": "http://ce.sharif.edu/courses/87-88/2/ce353", "teacher": "Hossein Asadi"}
+{"courseID": "40384", "courseName": "Database", "link": "http://ce.sharif.edu/courses/87-88/2/ce384", "teacher": "Rouhani Rankoohi"}
+{"courseID": "40415", "courseName": "Theory of Languages and Automata", "link": "http://ce.sharif.edu/courses/87-88/2/ce415", "teacher": "Prof. Ali Movaghar"}
+{"courseID": "40418", "courseName": " System Analysis and Design (\u062a\u062d\u0644\u06cc\u0644 \u0648 \u0637\u0631\u0627\u062d\u06cc \u0633\u0627\u0645\u0627\u0646\u0647 \u0647\u0627\u06cc \u0627\u0637\u0644\u0627\u0639\u0627\u062a\u06cc 40418)", "link": "http://ce.sharif.edu/courses/87-88/2/ce418", "teacher": "Seyed Ebrahim Abtahi (\u0633\u06cc\u062f \u0627\u0628\u0631\u0627\u0647\u06cc\u0645 \u0627\u0628\u0637\u062d\u06cc)"}
+{"courseID": "lasdk", "courseName": "lasdj Testing to see if this works!!!", "link": "http://ce.sharif.edu/courses/87-88/2/ce418-1", "teacher": "asldkjalskdj"}
+{"courseID": "40442", "courseName": "Data & Network Security", "link": "http://ce.sharif.edu/courses/87-88/2/ce442", "teacher": "Rasool Jalili"}
+{"courseID": "40448", "courseName": "Information Technology Strategic Management and Planning", "link": "http://ce.sharif.edu/courses/87-88/2/ce448", "teacher": "seyed ebrahim abtahi(\u0633\u06cc\u062f \u0627\u0628\u0631\u0627\u0647\u06cc\u0645 \u0627\u0628\u0637\u062d\u06cc)"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/courses/87-88/2/ce474", "teacher": "Dr. S. H. Mirian"}
+{"courseID": "40513", "courseName": "Microprocessor", "link": "http://ce.sharif.edu/courses/87-88/2/ce513", "teacher": "Dr. Seyed Ghassem Miremadi"}
+{"courseID": "40657", "courseName": "Modeling and Analysis of Computer Networks ", "link": "http://ce.sharif.edu/courses/87-88/2/ce657", "teacher": "Prof. Ali Movaghar"}
+{"courseID": "40666", "courseName": "Evolutionary Computing", "link": "http://ce.sharif.edu/courses/87-88/2/ce666", "teacher": "Dr H.Beigy"}
+{"courseID": "40695", "courseName": "Stochastic Process", "link": "http://ce.sharif.edu/courses/87-88/2/ce695", "teacher": "Dr. H. R. Rabiee"}
+{"courseID": "40725", "courseName": "Statistical Pattern Recognition", "link": "http://ce.sharif.edu/courses/87-88/2/ce725", "teacher": "Dr. H. R. Rabiee"}
+{"courseID": "40734", "courseName": "Database Security", "link": "http://ce.sharif.edu/courses/87-88/2/ce734", "teacher": "Dr Rasool Jalili"}
+{"courseID": "40108", "courseName": "Computer Workshop", "link": "http://ce.sharif.edu/courses/88-89/1/ce108-1", "teacher": "Mohammad Sadeq Dousti"}
+{"courseID": "40126", "courseName": "Computer Structure and Language", "link": "http://ce.sharif.edu/courses/88-89/1/ce126-1", "teacher": "Seyed Ghassem Miremadi"}
+{"courseID": "40126", "courseName": "Computer Structure and Language", "link": "http://ce.sharif.edu/courses/88-89/1/ce126-2", "teacher": "Hossein Asadi"}
+{"courseID": "40141", "courseName": "Pascal Programming Language", "link": "http://ce.sharif.edu/courses/88-89/1/ce151-1", "teacher": "Mostafa Nouri"}
+{"courseID": "40153", "courseName": "Introduction to programming", "link": "http://ce.sharif.edu/courses/88-89/1/ce153-1", "teacher": "Ali Haj Abutalebi"}
+{"courseID": "40181", "courseName": "Engineering Probability and Statistics", "link": "http://ce.sharif.edu/courses/88-89/1/ce181-1", "teacher": "Prof. Hamid R. Rabiee"}
+{"courseID": "40221", "courseName": " Technical Presentation ( \u0634\u06cc\u0648\u0647 \u0647\u0627\u06cc \u0627\u0631\u0627\u0626\u0647 \u0645\u0637\u0627\u0644\u0628 \u0639\u0644\u0645\u06cc \u0648 \u0641\u0646\u06cc   40221 )", "link": "http://ce.sharif.edu/courses/88-89/1/ce221-2", "teacher": "seyed ebrahim abtahi (\u0633\u06cc\u062f \u0627\u0628\u0631\u0627\u0647\u06cc\u0645 \u0627\u0628\u0637\u062d\u06cc)"}
+{"courseID": "40223", "courseName": "Digital System Design", "link": "http://ce.sharif.edu/courses/88-89/1/ce223-1", "teacher": "Alireza Ejlali"}
+{"courseID": "40254", "courseName": "\u062f\u0627\u062f\u0647 \u0633\u0627\u062e\u062a\u0627\u0631\u0647\u0627 \u0648 \u0627\u0644\u06af\u0648\u0631\u06cc\u062a\u0645\u200c\u0647\u0627", "link": "http://ce.sharif.edu/courses/88-89/1/ce254-1", "teacher": "\u0645\u062d\u0645\u062f \u0642\u062f\u0633\u06cc"}
+{"courseID": "40312", "courseName": "Digital Electronics", "link": "http://ce.sharif.edu/courses/88-89/1/ce312-2", "teacher": "M.T. Manzuri"}
+{"courseID": "40317", "courseName": "Internet Engineering", "link": "http://ce.sharif.edu/courses/88-89/1/ce317-1", "teacher": "Hasan Abolhassani"}
+{"courseID": "40323", "courseName": "Computer Architecture", "link": "http://ce.sharif.edu/courses/88-89/1/ce323-1", "teacher": "Amir Hossein Jahangir"}
+{"courseID": "40354", "courseName": "Design and Analysis of Algorithms", "link": "http://ce.sharif.edu/courses/88-89/1/ce354-1", "teacher": "Hamid Mahini"}
+{"courseID": "40404", "courseName": "Software Engineering Laboratory", "link": "http://ce.sharif.edu/courses/88-89/1/ce404-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40414", "courseName": "Compilers Design", "link": "http://ce.sharif.edu/courses/88-89/1/ce414-1", "teacher": "Dr. Hassan Abolhassani"}
+{"courseID": "40415", "courseName": "Theory of Languages and Automata", "link": "http://ce.sharif.edu/courses/88-89/1/ce415-1", "teacher": "Ali Movaghar"}
+{"courseID": "40424", "courseName": "Operating Systems", "link": "http://ce.sharif.edu/courses/88-89/1/ce424-1", "teacher": "Dr. Hamid Beigy"}
+{"courseID": "40428", "courseName": " Information Technology Project Manage(\u0645\u062f\u06cc\u0631\u06cc\u062a \u067e\u0631\u0648\u0698\u0647\u0627\u06cc \u0641\u0646\u0627\u0648\u0631\u06cc \u0627\u0637\u0644\u0627\u0639\u0627\u062a)", "link": "http://ce.sharif.edu/courses/88-89/1/ce428-1", "teacher": "seyed ebrahim abtahi (\u0633\u06cc\u062f \u0627\u0628\u0631\u0627\u0647\u06cc\u0645 \u0627\u0628\u0637\u062d\u06cc)"}
+{"courseID": "40442", "courseName": "Data & Network Security", "link": "http://ce.sharif.edu/courses/88-89/1/ce442-1", "teacher": "Morteza Amini"}
+{"courseID": "40467", "courseName": "Information Technology (\u0641\u0646\u0627\u0648\u0631\u06cc \u0627\u0637\u0644\u0627\u0639\u0627\u062a )", "link": "http://ce.sharif.edu/courses/88-89/1/ce467-1", "teacher": "seyed ebrahim abtahi(\u0633\u06cc\u062f \u0627\u0628\u0631\u0627\u0647\u06cc\u0645 \u0627\u0628\u0637\u062d\u06cc)"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/courses/88-89/1/ce474-2", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40484", "courseName": "ObjectOriented Systems Design", "link": "http://ce.sharif.edu/courses/88-89/1/ce484-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40626", "courseName": "Wireless Communications", "link": "http://ce.sharif.edu/courses/88-89/1/ce626-1", "teacher": "Afshin Hemmatyar"}
+{"courseID": "40695", "courseName": "Stochastic Processes", "link": "http://ce.sharif.edu/courses/88-89/1/ce695-1", "teacher": "Prof. Hamid R. Rabiee"}
+{"courseID": "40717", "courseName": "Machine Learning", "link": "http://ce.sharif.edu/courses/88-89/1/ce717-1", "teacher": "Dr. Hamid Beigy"}
+{"courseID": "40724", "courseName": "Software Development Methodologies", "link": "http://ce.sharif.edu/courses/88-89/1/ce724-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40727", "courseName": "Low Power Design", "link": "http://ce.sharif.edu/courses/88-89/1/ce727-1", "teacher": "Alireza Ejlali"}
+{"courseID": "40753", "courseName": "Testability (\u0622\u0632\u0645\u0648\u0646 \u067e\u0630\u06cc\u0631\u06cc)", "link": "http://ce.sharif.edu/courses/88-89/1/ce753-1", "teacher": "Shaahin Hessabi"}
+{"courseID": "40757", "courseName": "SoC Design", "link": "http://ce.sharif.edu/courses/88-89/1/ce757-1", "teacher": "Shaahin Hessabi"}
+{"courseID": "40765", "courseName": "Advanced Algorithms (\u0627\u0644\u06af\u0648\u0631\u06cc\u062a\u0645 \u0647\u0627\u06cc \u067e\u06cc\u0634\u0631\u0641\u062a\u0647)", "link": "http://ce.sharif.edu/courses/88-89/1/ce765-1", "teacher": "Mohammad Ghodsi (\u0645\u062d\u0645\u062f \u0642\u062f\u0633\u06cc)"}
+{"courseID": "40824", "courseName": " Computer System Performance Evaluation", "link": "http://ce.sharif.edu/courses/88-89/1/ce824-1", "teacher": "Prof. Ali Movaghar"}
+{"courseID": "40843", "courseName": "Advanced Topics in Computer Architecture: Advanced Storage Systems", "link": "http://ce.sharif.edu/courses/88-89/1/ce843-1", "teacher": "Hossein Asadi"}
+{"courseID": "40843", "courseName": "Electronic System Level (ESL) Design", "link": "http://ce.sharif.edu/courses/88-89/1/ce843-2", "teacher": "Maziar Goudarzi"}
+{"courseID": "40925", "courseName": "Advanced Topic in Software Engineering(Software Testing)", "link": "http://ce.sharif.edu/courses/88-89/1/ce925-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40102", "courseName": "Computer Hardware Laboratory", "link": "http://ce.sharif.edu/courses/88-89/2/ce102-1", "teacher": "Dr. Seyed Ghassem Miremadi"}
+{"courseID": "40126", "courseName": "Computer Structure & Language", "link": "http://ce.sharif.edu/courses/88-89/2/ce126-1", "teacher": "Hossein Asadi"}
+{"courseID": "40181", "courseName": "Probability and Statistics", "link": "http://ce.sharif.edu/courses/88-89/2/ce181-1", "teacher": "Hossein Ajorloo"}
+{"courseID": "40212", "courseName": "Digital Design", "link": "http://ce.sharif.edu/courses/88-89/2/ce212-1", "teacher": "TA : Abbas Mohammadi"}
+{"courseID": "40221", "courseName": " Technical Presentation ( \u0634\u06cc\u0648\u0647 \u0647\u0627\u06cc \u0627\u0631\u0627\u0626\u0647 \u0645\u0637\u0627\u0644\u0628 \u0639\u0644\u0645\u06cc \u0648 \u0641\u0646\u06cc  40221 )", "link": "http://ce.sharif.edu/courses/88-89/2/ce221-1", "teacher": "seyed ebrahim abtahi (\u0633\u06cc\u062f \u0627\u0628\u0631\u0627\u0647\u06cc\u0645 \u0627\u0628\u0637\u062d\u06cc)"}
+{"courseID": "40244", "courseName": "Advanced Programming", "link": "http://ce.sharif.edu/courses/88-89/2/ce244-2", "teacher": "Makan Sepehrifar"}
+{"courseID": "40254", "courseName": "Data Structures & Algorithms", "link": "http://ce.sharif.edu/courses/88-89/2/ce254-1", "teacher": "\u0639\u0644\u06cc \u0634\u0631\u06cc\u0641\u06cc \u0632\u0627\u0631\u0686\u06cc"}
+{"courseID": "40312", "courseName": "Digital Electronics", "link": "http://ce.sharif.edu/courses/88-89/2/ce312-1", "teacher": "M.T. Manzuri"}
+{"courseID": "40323", "courseName": "Computer Architecture", "link": "http://ce.sharif.edu/courses/88-89/2/ce323-1", "teacher": "Amir Hossein Jahangir"}
+{"courseID": "40323", "courseName": "Computer Architecture", "link": "http://ce.sharif.edu/courses/88-89/2/ce323-2", "teacher": "Hossein Asadi"}
+{"courseID": "CE342", "courseName": "Multimedia Systems", "link": "http://ce.sharif.edu/courses/88-89/2/ce342-1", "teacher": "Hamid R. Rabiee"}
+{"courseID": "40354", "courseName": "\u0637\u0631\u0627\u062d\u06cc \u0648 \u062a\u062d\u0644\u06cc\u0644 \u0627\u0644\u06af\u0648\u0631\u06cc\u062a\u0645\u200c\u0647\u0627 (Design and Analysis of Algorithms)", "link": "http://ce.sharif.edu/courses/88-89/2/ce354-1", "teacher": "\u0645\u062d\u0645\u062f \u0642\u062f\u0633\u06cc"}
+{"courseID": "40354", "courseName": "Design and Analysis of Algorithms", "link": "http://ce.sharif.edu/courses/88-89/2/ce354-2", "teacher": "Hamid Mahini"}
+{"courseID": "40404", "courseName": "Software Engineering Lab", "link": "http://ce.sharif.edu/courses/88-89/2/ce404-1", "teacher": "TA : Hossein Keramati"}
+{"courseID": "40415", "courseName": "Theory of Languages and Automata", "link": "http://ce.sharif.edu/courses/88-89/2/ce415-1", "teacher": "Ali Movaghar"}
+{"courseID": "416 C", "courseName": "mputer Network Lab.", "link": "http://ce.sharif.edu/courses/88-89/2/ce416-1", "teacher": "Anahita Firouzi"}
+{"courseID": "40418", "courseName": "System Analysis and Design (\u062a\u062d\u0644\u06cc\u0644 \u0648 \u0637\u0631\u0627\u062d\u06cc \u0633\u0627\u0645\u0627\u0646\u0647 \u0647\u0627\u06cc \u0627\u0637\u0644\u0627\u0639\u0627\u062a\u06cc 40418)", "link": "http://ce.sharif.edu/courses/88-89/2/ce418-2", "teacher": "Seyed Ebrahim Abtahi (\u0633\u06cc\u062f \u0627\u0628\u0631\u0627\u0647\u06cc\u0645 \u0627\u0628\u0637\u062d\u06cc)"}
+{"courseID": "40424", "courseName": "Operating Systems", "link": "http://ce.sharif.edu/courses/88-89/2/ce424-1", "teacher": "beigy@ce.sharif.edu <br>\t\t+ TA : Amir Rahmati"}
+{"courseID": "40428", "courseName": " Information Technology Project Manage(\u0645\u062f\u06cc\u0631\u06cc\u062a \u067e\u0631\u0648\u0698\u0647\u0627\u06cc \u0641\u0646\u0627\u0648\u0631\u06cc \u0627\u0637\u0644\u0627\u0639\u0627\u062a)", "link": "http://ce.sharif.edu/courses/88-89/2/ce428-1", "teacher": "seyed ebrahim abtah"}
+{"courseID": "40442", "courseName": "Data & Network Security", "link": "http://ce.sharif.edu/courses/88-89/2/ce442-1", "teacher": "Mohammad Sadeq Dousti"}
+{"courseID": "40448", "courseName": "Information Technology Strategic Management and Planning", "link": "http://ce.sharif.edu/courses/88-89/2/ce448-1", "teacher": "seyed ebrahim abtahi(\u0633\u06cc\u062f \u0627\u0628\u0631\u0627\u0647\u06cc\u0645 \u0627\u0628\u0637\u062d\u06cc)"}
+{"courseID": "40467", "courseName": "Information Technology (\u0641\u0646\u0627\u0648\u0631\u06cc \u0627\u0637\u0644\u0627\u0639\u0627\u062a )", "link": "http://ce.sharif.edu/courses/88-89/2/ce467-1", "teacher": "seyed ebrahim abtah"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/courses/88-89/2/ce474-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40484", "courseName": " ObjectOriented Systems Design", "link": "http://ce.sharif.edu/courses/88-89/2/ce484-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40665", "courseName": "Verification of Reactive Systems", "link": "http://ce.sharif.edu/courses/88-89/2/ce665-1", "teacher": "Ali Movaghar"}
+{"courseID": "40684", "courseName": "Program Development from Formal Specifications", "link": "http://ce.sharif.edu/courses/88-89/2/ce684-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "CE725", "courseName": "Statistical Pattern Recognition", "link": "http://ce.sharif.edu/courses/88-89/2/ce725-1", "teacher": "Hamid R. Rabiee"}
+{"courseID": "50735", "courseName": "Computational Geometry (\u0647\u0646\u062f\u0633\u0647\u200c\u06cc \u0645\u062d\u0627\u0633\u0628\u0627\u062a\u06cc)", "link": "http://ce.sharif.edu/courses/88-89/2/ce735-1", "teacher": "\u0645\u062d\u0645\u062f \u0642\u062f\u0633\u06cc"}
+{"courseID": "40747", "courseName": "Embedded System Design", "link": "http://ce.sharif.edu/courses/88-89/2/ce747-1"}
+{"courseID": "40763", "courseName": "Digital Signal Processing", "link": "http://ce.sharif.edu/courses/88-89/2/ce763-1", "teacher": "M.T. Manzuri"}
+{"courseID": "40787", "courseName": "Patterns in Software Engineering", "link": "http://ce.sharif.edu/courses/88-89/2/ce787-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40844", "courseName": "Advanced Topics on Computer Architecture II (Reconfigurable Computing)", "link": "http://ce.sharif.edu/courses/88-89/2/ce844-1", "teacher": "Hossein Asadi"}
+{"courseID": "40883", "courseName": "Data Communications", "link": "http://ce.sharif.edu/courses/88-89/2/ce883-1", "teacher": "Ali Mohammad Afshin hemmatyar"}
+{"courseID": "40956", "courseName": "Computational Intelligence", "link": "http://ce.sharif.edu/courses/88-89/2/ce956-1", "teacher": "Dr Hamid Beigy"}
+{"courseID": "40102", "courseName": "Hardware laboratory", "link": "http://ce.sharif.edu/courses/89-90/2/ce102-1", "teacher": "Dr. Seyed Ghassem Miremadi"}
+{"courseID": "40115", "courseName": "Discrete Structures", "link": "http://ce.sharif.edu/courses/89-90/2/ce115-2", "teacher": "Mohammad Ali Abam"}
+{"courseID": "40121", "courseName": "Electrical Circuits", "link": "http://ce.sharif.edu/courses/89-90/2/ce121-1", "teacher": "Mahdi Jalili"}
+{"courseID": "40153", "courseName": "Introduction to Programming (C/C++)", "link": "http://ce.sharif.edu/courses/89-90/2/ce153-3", "teacher": "Shervin Daneshpajouh"}
+{"courseID": "40153", "courseName": "Introduction to Programming", "link": "http://ce.sharif.edu/courses/89-90/2/ce153-4", "teacher": "Reza Entezari-Maleki"}
+{"courseID": "40212", "courseName": "Logic Circuits", "link": "http://ce.sharif.edu/courses/89-90/2/ce212-1", "teacher": "Dr. Amir Hossein Jahangir"}
+{"courseID": "40212", "courseName": "Logic Design", "link": "http://ce.sharif.edu/courses/89-90/2/ce212-2", "teacher": "Afshin Hemmatyar"}
+{"courseID": "40215", "courseName": "Numerical Analysis", "link": "http://ce.sharif.edu/courses/89-90/2/ce215-1", "teacher": "Mohammad Gharib"}
+{"courseID": "40221", "courseName": "Technical Presentation", "link": "http://ce.sharif.edu/courses/89-90/2/ce221-1", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40221", "courseName": "Scientific & Technical Presentation", "link": "http://ce.sharif.edu/courses/89-90/2/ce221-2", "teacher": "Shohreh Kasaei"}
+{"courseID": "40222", "courseName": "Advanced Topics IT (Undergrad)  HCI", "link": "http://ce.sharif.edu/courses/89-90/2/ce222-2", "teacher": "Mania Orand"}
+{"courseID": "40232", "courseName": "Electronic Circuits", "link": "http://ce.sharif.edu/courses/89-90/2/ce232-1", "teacher": "manzuri"}
+{"courseID": "40244", "courseName": "Advanced Programming (Java)", "link": "http://ce.sharif.edu/courses/89-90/2/ce244-2", "teacher": "Sadegh Aliakbary"}
+{"courseID": "40254", "courseName": "Data Structures", "link": "http://ce.sharif.edu/courses/89-90/2/ce254-1", "teacher": "Mohammad Ali Abam"}
+{"courseID": "40312", "courseName": "Digital Electronics", "link": "http://ce.sharif.edu/courses/89-90/2/ce312-1", "teacher": "manzuri"}
+{"courseID": "40324", "courseName": "Modern Information Retrieval", "link": "http://ce.sharif.edu/courses/89-90/2/ce324-1", "teacher": "Mr. Mahmoud Neshati"}
+{"courseID": "40342", "courseName": "Multimedia Systems", "link": "http://ce.sharif.edu/courses/89-90/2/ce342-1", "teacher": "Mahdi Amiri"}
+{"courseID": "40404", "courseName": "Software Engineering Lab", "link": "http://ce.sharif.edu/courses/89-90/2/ce404-1"}
+{"courseID": "40404", "courseName": "Software Engineering Lab", "link": "http://ce.sharif.edu/courses/89-90/2/ce404-2"}
+{"courseID": "40415", "courseName": "Theory of Automata and Languages", "link": "http://ce.sharif.edu/courses/89-90/2/ce415-1", "teacher": "Mohammad Izadi"}
+{"courseID": "40115", "courseName": "Discrete structures", "link": "http://ce.sharif.edu/courses/91-92/2/ce115-1", "teacher": "Dr. Mohammad Izadi"}
+{"courseID": "40115", "courseName": "Discrete Structures", "link": "http://ce.sharif.edu/courses/91-92/2/ce115-2", "teacher": "Hamid Zarrabi-Zadeh"}
+{"courseID": "40124", "courseName": "Fundamentals of Electricel and Electronical Circuits", "link": "http://ce.sharif.edu/courses/91-92/2/ce124-1", "teacher": "Ali Mohammad Afshin Hemmatyar"}
+{"courseID": "40115", "courseName": "Discrete Structures", "link": "http://ce.sharif.edu/courses/90-91/2/ce115-1", "teacher": "Dr. Mohammad Izadi"}
+{"courseID": "40115", "courseName": "Discrete Structures", "link": "http://ce.sharif.edu/courses/90-91/2/ce115-2", "teacher": "Hamid Zarrabi-Zadeh"}
+{"courseID": "40121", "courseName": "Electrical Circuits", "link": "http://ce.sharif.edu/courses/90-91/2/ce121-1", "teacher": "Mahdi Jalili"}
+{"courseID": "40418", "courseName": "Systems Analysis and Design", "link": "http://ce.sharif.edu/courses/89-90/2/ce418-2", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40424", "courseName": "Operating Systems", "link": "http://ce.sharif.edu/courses/89-90/2/ce424-1", "teacher": "Dr. Hamid Beigy"}
+{"courseID": "40448", "courseName": "Information Technology Strategic Management & Planning", "link": "http://ce.sharif.edu/courses/89-90/2/ce448-1", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40463", "courseName": "Electronic Measurement & Computer Control", "link": "http://ce.sharif.edu/courses/89-90/2/ce463-1", "teacher": "Afshin Hemmatyar"}
+{"courseID": "40474", "courseName": "software engineering", "link": "http://ce.sharif.edu/courses/89-90/2/ce474-1", "teacher": "Dr. Mashayekh"}
+{"courseID": "40484", "courseName": " ObjectOriented Systems Design", "link": "http://ce.sharif.edu/courses/89-90/2/ce484-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40534", "courseName": "Advanced Operating Systems", "link": "http://ce.sharif.edu/courses/89-90/2/ce534-1", "teacher": "Rasool Jalili"}
+{"courseID": "40684", "courseName": "Program Development from Formal Specification", "link": "http://ce.sharif.edu/courses/89-90/2/ce684-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "CE725", "courseName": "Statistical Pattern Recognition", "link": "http://ce.sharif.edu/courses/89-90/2/ce725-1", "teacher": "Hamid R. Rabiee"}
+{"courseID": "40734", "courseName": "Database Security", "link": "http://ce.sharif.edu/courses/89-90/2/ce734-1", "teacher": "Rasool Jalili"}
+{"courseID": "40735", "courseName": "Computational Geometry", "link": "http://ce.sharif.edu/courses/89-90/2/ce735-1", "teacher": "Mohammad Ali Abam"}
+{"courseID": "40763", "courseName": "Digital Signal Processing", "link": "http://ce.sharif.edu/courses/89-90/2/ce763-1", "teacher": "manzuri"}
+{"courseID": "40787", "courseName": "Patterns in Software Engineering", "link": "http://ce.sharif.edu/courses/89-90/2/ce787-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40827", "courseName": "Neural Nets and Fuzzy Systems", "link": "http://ce.sharif.edu/courses/89-90/2/ce827-1", "teacher": "Mahdi Jalili"}
+{"courseID": "CE873", "courseName": "Multimedia Networks", "link": "http://ce.sharif.edu/courses/89-90/2/ce873-1", "teacher": "Hamid R. Rabiee"}
+{"courseID": "40153", "courseName": "Fundamental Of Programming", "link": "http://ce.sharif.edu/courses/91-92/2/ce153-2", "teacher": "Omid Jafarinezhad"}
+{"courseID": "40153", "courseName": "Fundamental Of Programming", "link": "http://ce.sharif.edu/courses/91-92/2/ce153-3", "teacher": "Reza Taherkhani"}
+{"courseID": "40153", "courseName": "Fundamentals of Programming", "link": "http://ce.sharif.edu/courses/91-92/2/ce153-4", "teacher": "Hamid Zarrabi-Zadeh"}
+{"courseID": "40181", "courseName": "Probability & Statistics", "link": "http://ce.sharif.edu/courses/91-92/2/ce181-1", "teacher": "Hossein Ajorloo"}
+{"courseID": "40211", "courseName": "English for Computer Engineering", "link": "http://ce.sharif.edu/courses/91-92/2/ce211-1", "teacher": "Moslem Habibi"}
+{"courseID": "40211", "courseName": " English for Computer Engineering", "link": "http://ce.sharif.edu/courses/91-92/2/ce211-2", "teacher": "Mohammad Hossein Ahmadi"}
+{"courseID": "40212", "courseName": "Digital Design", "link": "http://ce.sharif.edu/courses/91-92/2/ce212-2", "teacher": "Dr. Ejlali"}
+{"courseID": "40215", "courseName": "Numerical Methods", "link": "http://ce.sharif.edu/courses/91-92/2/ce215-1", "teacher": "Mohammad Gharib"}
+{"courseID": "40216", "courseName": "Numerical Methods", "link": "http://ce.sharif.edu/courses/91-92/2/ce216-1", "teacher": "Mohammad Gharib"}
+{"courseID": "40221", "courseName": "Technical Presentation", "link": "http://ce.sharif.edu/courses/91-92/2/ce221-1", "teacher": "Seyed Ebrahim abtahi"}
+{"courseID": "40221", "courseName": " Technical and Scientific Presentation", "link": "http://ce.sharif.edu/courses/91-92/2/ce221-2", "teacher": "Hadi Veisi"}
+{"courseID": "40227", "courseName": "HumanComputer Interaction", "link": "http://ce.sharif.edu/courses/91-92/2/ce227-1", "teacher": "Dr. Alireza Ajdari"}
+{"courseID": "40124", "courseName": "Fundamentals of Electrical and Electronic Circuits", "link": "http://ce.sharif.edu/courses/90-91/2/ce124-1", "teacher": "Ali Mohammad Afshin Hemmatyar"}
+{"courseID": "40151", "courseName": "Fundamental of Programing", "link": "http://ce.sharif.edu/courses/90-91/2/ce151-1", "teacher": "Mohammad Ghaem Tajgardoon"}
+{"courseID": "40151", "courseName": "Fundamentals of Programming (Pascal)", "link": "http://ce.sharif.edu/courses/90-91/2/ce151-3", "teacher": "Sadegh Dorri Nogoorani"}
+{"courseID": "40153", "courseName": "Fundemental of Programming", "link": "http://ce.sharif.edu/courses/90-91/2/ce153-1", "teacher": "Hamed Rasifard"}
+{"courseID": "40153", "courseName": "Fundamentals of Programming", "link": "http://ce.sharif.edu/courses/90-91/2/ce153-3", "teacher": "Arash Tavakkol"}
+{"courseID": "40181", "courseName": "Engineering Probability and Statistics", "link": "http://ce.sharif.edu/courses/90-91/2/ce181-1", "teacher": "Hamid R. Rabiee &amp; Mehrdad Farajtabar"}
+{"courseID": "40212", "courseName": "Logic Design", "link": "http://ce.sharif.edu/courses/90-91/2/ce212-1", "teacher": "Shaahin Hessabi"}
+{"courseID": "40212", "courseName": "Digital Design", "link": "http://ce.sharif.edu/courses/90-91/2/ce212-2", "teacher": "Dr. Ejlali"}
+{"courseID": "40215", "courseName": "Numerical methods", "link": "http://ce.sharif.edu/courses/90-91/2/ce215-1", "teacher": "Mohammad Gharib"}
+{"courseID": "40216", "courseName": "Numerical methods", "link": "http://ce.sharif.edu/courses/90-91/2/ce216-1", "teacher": "Mohammad Gharib"}
+{"courseID": "40221", "courseName": "Technical and Scientific Presentation", "link": "http://ce.sharif.edu/courses/90-91/2/ce221-3", "teacher": "Hadi Veisi"}
+{"courseID": "40227", "courseName": "Human Computer Interaction (Special Topics in Information Technology)", "link": "http://ce.sharif.edu/courses/90-91/2/ce227-1", "teacher": "Dr. Alireza Ajdari"}
+{"courseID": "40232", "courseName": "Electronic Circuits", "link": "http://ce.sharif.edu/courses/90-91/2/ce232-1", "teacher": "Mohammad Sadegh Talebi"}
+{"courseID": "40242", "courseName": "Signals and Systems", "link": "http://ce.sharif.edu/courses/90-91/2/ce242-3", "teacher": "Ali Soltani-Farani"}
+{"courseID": "40244", "courseName": "Advanced Programming in Java", "link": "http://ce.sharif.edu/courses/90-91/2/ce244-1", "teacher": "Sadegh Aliakbary"}
+{"courseID": "40254", "courseName": "Data Structures and Fundamentals of Algorithms", "link": "http://ce.sharif.edu/courses/90-91/2/ce254-1", "teacher": "Shervin Daneshpajouh"}
+{"courseID": "40108", "courseName": "Computer Workshop", "link": "http://ce.sharif.edu/courses/90-91/1/ce108-1", "teacher": "Rasool Jalili"}
+{"courseID": "40115", "courseName": "Discrete Structures", "link": "http://ce.sharif.edu/courses/90-91/1/ce115-1", "teacher": "Mohammad Ali Abam"}
+{"courseID": "40121", "courseName": "Electrical Circuits", "link": "http://ce.sharif.edu/courses/90-91/1/ce121-1", "teacher": "Mahdi Jalili"}
+{"courseID": "40108", "courseName": "Computer Workshop", "link": "http://ce.sharif.edu/courses/89-90/1/ce108-1", "teacher": "Jalili + Hadavi + ..."}
+{"courseID": "40115", "courseName": "Discrete Structures", "link": "http://ce.sharif.edu/courses/89-90/1/ce115-1", "teacher": "Ali Movaghar"}
+{"courseID": "40153", "courseName": "Introduction to Programming", "link": "http://ce.sharif.edu/courses/89-90/1/ce153-3", "teacher": "Arash Tavakkol"}
+{"courseID": "40153", "courseName": "Introduction to Programming", "link": "http://ce.sharif.edu/courses/89-90/1/ce153-7", "teacher": "Reza Entezari-Maleki"}
+{"courseID": "40181", "courseName": "Probability and Statistics", "link": "http://ce.sharif.edu/courses/89-90/1/ce181-1", "teacher": "Hossein Ajorloo"}
+{"courseID": "40212", "courseName": "Digital Design", "link": "http://ce.sharif.edu/courses/89-90/1/ce212-1", "teacher": "Mohammad Salehi"}
+{"courseID": "40215", "courseName": "Numerical Calculations", "link": "http://ce.sharif.edu/courses/89-90/1/ce215-1", "teacher": "TA : Sadjad Fouladi"}
+{"courseID": "40883", "courseName": "Data communications", "link": "http://ce.sharif.edu/courses/89-90/2/ce883-1", "teacher": "Afshin Hemmatyar"}
+{"courseID": "40924", "courseName": "Software Engineering 2", "link": "http://ce.sharif.edu/courses/89-90/2/ce924-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40956", "courseName": "Computational Intelligence", "link": "http://ce.sharif.edu/courses/89-90/2/ce956-1"}
+{"courseID": "40242", "courseName": "Signals and Systems", "link": "http://ce.sharif.edu/courses/91-92/2/ce242-1", "teacher": "Ali Soltani Farani"}
+{"courseID": "40244", "courseName": "Advanced Programming", "link": "http://ce.sharif.edu/courses/91-92/2/ce244-1", "teacher": "\u0622\u0631\u0634 \u062a\u0648\u06a9\u0644 (Arash Tavakkol)"}
+{"courseID": "40244", "courseName": "Advanced Programming", "link": "http://ce.sharif.edu/courses/91-92/2/ce244-2", "teacher": "Mahdi Safarnejad Boroujeni"}
+{"courseID": "40254", "courseName": "Data structures and algorithms", "link": "http://ce.sharif.edu/courses/91-92/2/ce254-1", "teacher": "Mohammad Ali Abam"}
+{"courseID": "40254", "courseName": "Data structures and algorithms", "link": "http://ce.sharif.edu/courses/91-92/2/ce254-2", "teacher": "MohammadAmin Fazli"}
+{"courseID": "40312", "courseName": "Digital Electronics", "link": "http://ce.sharif.edu/courses/91-92/2/ce312-1", "teacher": "manzuri"}
+{"courseID": "40342", "courseName": "Multimedia System", "link": "http://ce.sharif.edu/courses/91-92/2/ce342-1", "teacher": "Mahdi Amiri &amp; Hamid Reza Rabiee"}
+{"courseID": "40354", "courseName": "Design and Analysis of Algorithms", "link": "http://ce.sharif.edu/courses/91-92/2/ce354-1", "teacher": "Mohammad Ghodsi"}
+{"courseID": "40384", "courseName": "Database", "link": "http://ce.sharif.edu/courses/91-92/2/ce384-1", "teacher": "Morteza Amini"}
+{"courseID": "40384", "courseName": "Database", "link": "http://ce.sharif.edu/courses/91-92/2/ce384-2", "teacher": "Dr. Sadegh Nobari"}
+{"courseID": "40404", "courseName": "SE1 Lab Group 1 & 2", "link": "http://ce.sharif.edu/courses/91-92/2/ce404-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40404", "courseName": "Software Engineering Lab", "link": "http://ce.sharif.edu/courses/91-92/2/ce404-3", "teacher": "Hassan Mirian"}
+{"courseID": "40415", "courseName": "Theory of Languages and Automata", "link": "http://ce.sharif.edu/courses/91-92/2/ce415-1", "teacher": "Ali Movaghar"}
+{"courseID": "40417", "courseName": "Artificial Intelligence", "link": "http://ce.sharif.edu/courses/91-92/2/ce417-1", "teacher": "Soleymani"}
+{"courseID": "40418", "courseName": "Systems Analysis and Design", "link": "http://ce.sharif.edu/courses/91-92/2/ce418-1", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40418", "courseName": "Systems Analysis and Design", "link": "http://ce.sharif.edu/courses/91-92/2/ce418-2", "teacher": "Abbas Heydarnoori"}
+{"courseID": "40419", "courseName": "Web Programming", "link": "http://ce.sharif.edu/courses/91-92/2/ce419-1", "teacher": "Mohammad Salehe"}
+{"courseID": "40254", "courseName": "Introduction to Data Structures and Algorithms", "link": "http://ce.sharif.edu/courses/90-91/2/ce254-2", "teacher": "Mohammad Ali Abam"}
+{"courseID": "40307", "courseName": "Digital Electronics Lab.", "link": "http://ce.sharif.edu/courses/90-91/2/ce307-1", "teacher": "Ali Mohammad Afshin Hemmatyar"}
+{"courseID": "40312", "courseName": "Digital Electronics", "link": "http://ce.sharif.edu/courses/90-91/2/ce312-1", "teacher": "manzuri"}
+{"courseID": "40323", "courseName": "Computer Architecture", "link": "http://ce.sharif.edu/courses/90-91/2/ce323-1", "teacher": "Dr. Jahangir"}
+{"courseID": "40324", "courseName": "Modern Information Retrieval", "link": "http://ce.sharif.edu/courses/90-91/2/ce324-1", "teacher": "Marjan Ghazvininejad"}
+{"courseID": "40324", "courseName": "Modern Information Retrieval", "link": "http://ce.sharif.edu/courses/90-91/2/ce324-2", "teacher": "Marjan Ghazvininejad"}
+{"courseID": "40342", "courseName": "Multimedia Systems", "link": "http://ce.sharif.edu/courses/90-91/2/ce342-1", "teacher": "Hamid R. Rabiee &amp; Mahdi Amiri"}
+{"courseID": "40353", "courseName": "VLSI Design", "link": "http://ce.sharif.edu/courses/90-91/2/ce353-1", "teacher": "Mohammad Arjomand"}
+{"courseID": "40354", "courseName": "Design & Analysis of Algorithms (\u0637\u0631\u0627\u062d\u06cc \u0648 \u062a\u062d\u0644\u06cc\u0644 \u0627\u0644\u06af\u0648\u0631\u06cc\u062a\u0645\u200c\u0647\u0627)", "link": "http://ce.sharif.edu/courses/90-91/2/ce354-1", "teacher": "\u0645\u062d\u0645\u062f \u0642\u062f\u0633\u06cc"}
+{"courseID": "40404", "courseName": "Software Engineering Lab(Group 1)", "link": "http://ce.sharif.edu/courses/90-91/2/ce404-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40404", "courseName": "Software Engineering Lab(Group 2)", "link": "http://ce.sharif.edu/courses/90-91/2/ce404-2", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40404", "courseName": "Software Engineering Lab(Group summer)", "link": "http://ce.sharif.edu/courses/90-91/2/ce404-3", "teacher": "TA : Alireza Sedaghati"}
+{"courseID": "40415", "courseName": "Theory of Languages and Automata", "link": "http://ce.sharif.edu/courses/90-91/2/ce415-1", "teacher": "Ali Movaghar"}
+{"courseID": "40151", "courseName": "Fundamentals of Programming (Pascal)", "link": "http://ce.sharif.edu/courses/90-91/1/ce151-4", "teacher": "Mohammad Ghaem Tajgardoon"}
+{"courseID": "40153", "courseName": "Fundamentals of Programming (Python/C)", "link": "http://ce.sharif.edu/courses/90-91/1/ce153-1", "teacher": "Hamid Zarrabi-Zadeh"}
+{"courseID": "40153", "courseName": "Fundamentals of Programming (Group 5)", "link": "http://ce.sharif.edu/courses/90-91/1/ce153-5", "teacher": "Reza Entezari-Maleki"}
+{"courseID": "40153", "courseName": "Fundamentals of Programming (Group 6)", "link": "http://ce.sharif.edu/courses/90-91/1/ce153-6", "teacher": "Reza Entezari-Maleki"}
+{"courseID": "40153", "courseName": "Fundamentals of Computer Programming (C/C++) (Group 7)", "link": "http://ce.sharif.edu/courses/90-91/1/ce153-7", "teacher": "Shervin Daneshpajouh"}
+{"courseID": "40153", "courseName": "Fundamentals of Programming (Group 8)", "link": "http://ce.sharif.edu/courses/90-91/1/ce153-8", "teacher": "Hamed Rasifard"}
+{"courseID": "40153", "courseName": "Fundamentals of Programming (Group 9)", "link": "http://ce.sharif.edu/courses/90-91/1/ce153-9", "teacher": "Arash Tavakkol"}
+{"courseID": "40181", "courseName": "Engineering Probability and Statistics", "link": "http://ce.sharif.edu/courses/90-91/1/ce181-1", "teacher": "Hamid R. Rabiee &amp; Mehrdad Farajtabar"}
+{"courseID": "40212", "courseName": "Logic Design", "link": "http://ce.sharif.edu/courses/90-91/1/ce212-1", "teacher": "Ali Mohammad Afshin Hemmatyar"}
+{"courseID": "40215", "courseName": "Numerical Methods", "link": "http://ce.sharif.edu/courses/90-91/1/ce215-1", "teacher": "Mohammed Gharib"}
+{"courseID": "40221", "courseName": "Technical and Scientific Presentation", "link": "http://ce.sharif.edu/courses/90-91/1/ce221-1", "teacher": "Hadi Veisi"}
+{"courseID": "40242", "courseName": "Signals & Systems", "link": "http://ce.sharif.edu/courses/90-91/1/ce242-1", "teacher": "Hamid Reza Rabiee"}
+{"courseID": "40242", "courseName": "Signals and Systems", "link": "http://ce.sharif.edu/courses/90-91/1/ce242-2", "teacher": "Hadi Veisi"}
+{"courseID": "40244", "courseName": "Advanced Programming in Java", "link": "http://ce.sharif.edu/courses/90-91/1/ce244-1", "teacher": "Sadegh Aliakbary"}
+{"courseID": "40254", "courseName": "Data Structures and Fundamentals of Algorithms (\u062f\u0627\u062f\u0647\u200c\u0633\u0627\u062e\u062a\u0627\u0631\u0647\u0627 \u0648 \u0645\u0628\u0627\u0646\u06cc \u0627\u0644\u06af\u0648\u0631\u06cc\u062a\u0645\u200c\u0647\u0627)", "link": "http://ce.sharif.edu/courses/90-91/1/ce254-1", "teacher": "\u0645\u062d\u0645\u062f \u0642\u062f\u0633\u0649"}
+{"courseID": "40312", "courseName": "Digital Electronics", "link": "http://ce.sharif.edu/courses/90-91/1/ce312-1", "teacher": "manzuri"}
+{"courseID": "40242", "courseName": "Signals and Systems", "link": "http://ce.sharif.edu/courses/89-90/1/ce242-2", "teacher": "Hamid Reza Rabiee"}
+{"courseID": "40244", "courseName": "Advanced Programming", "link": "http://ce.sharif.edu/courses/89-90/1/ce244-1", "teacher": "Sadegh Aliakbary"}
+{"courseID": "40244", "courseName": "advanced programming", "link": "http://ce.sharif.edu/courses/89-90/1/ce244-2", "teacher": "Abolhassan Shamsaie"}
+{"courseID": "40254", "courseName": "Data Structures and Fundamentals of Algorithms (\u062f\u0627\u062f\u0647\u200c\u0633\u0627\u062e\u062a\u0627\u0631\u0647\u0627 \u0648 \u0645\u0628\u0627\u0646\u06cc \u0627\u0644\u06af\u0648\u0631\u06cc\u062a\u0645\u200c\u0647\u0627)", "link": "http://ce.sharif.edu/courses/89-90/1/ce254-1", "teacher": "Mohammad Ghodsi"}
+{"courseID": "40254", "courseName": "Data Structures and Algorithms", "link": "http://ce.sharif.edu/courses/89-90/1/ce254-2", "teacher": "Dr. Mansour Jamzad"}
+{"courseID": "40312", "courseName": "Digital Electronics", "link": "http://ce.sharif.edu/courses/89-90/1/ce312-1", "teacher": "Manzuri"}
+{"courseID": "40347", "courseName": "Information Technology Ethics (\u0622\u062f\u0627\u0628 \u0641\u0646\u0627\u0648\u0631\u06cc \u0627\u0637\u0644\u0627\u0639\u0627\u062a )", "link": "http://ce.sharif.edu/courses/89-90/1/ce347-1", "teacher": "seyed ebrahim abtahi"}
+{"courseID": "40350", "courseName": "web test", "link": "http://ce.sharif.edu/courses/89-90/1/ce350-1"}
+{"courseID": "40354", "courseName": "Design and Analysis of Algorithm", "link": "http://ce.sharif.edu/courses/89-90/1/ce354-1", "teacher": "Hamid Mahini"}
+{"courseID": "40364", "courseName": "Programming Languages: Design and Implementation", "link": "http://ce.sharif.edu/courses/89-90/1/ce364-1", "teacher": "Dr. Mohammad Izadi"}
+{"courseID": "40384", "courseName": "Database Systems", "link": "http://ce.sharif.edu/courses/89-90/1/ce384-1", "teacher": "Seyyed Mohammad Taghi Roohani Rankoohi"}
+{"courseID": "40414", "courseName": "Compiler", "link": "http://ce.sharif.edu/courses/89-90/1/ce414-1", "teacher": "TA : Mahdy Zolghadr"}
+{"courseID": "40424", "courseName": "Operating Systems", "link": "http://ce.sharif.edu/courses/89-90/1/ce424-1", "teacher": "Rasool Jalili"}
+{"courseID": "40428", "courseName": " Information Technology Project Manage(\u0645\u062f\u06cc\u0631\u06cc\u062a \u067e\u0631\u0648\u0698\u0647\u0627\u06cc \u0641\u0646\u0627\u0648\u0631\u06cc \u0627\u0637\u0644\u0627\u0639\u0627\u062a)", "link": "http://ce.sharif.edu/courses/89-90/1/ce428-1", "teacher": "seyed ebrahim abtah"}
+{"courseID": "40442", "courseName": "Data & Network Security", "link": "http://ce.sharif.edu/courses/89-90/1/ce442-1", "teacher": "Dr Morteza Amini"}
+{"courseID": "40424", "courseName": "Operating systems", "link": "http://ce.sharif.edu/courses/91-92/2/ce424-1", "teacher": "beigy"}
+{"courseID": "40448", "courseName": "  Information Technology Strategic Management & Planning", "link": "http://ce.sharif.edu/courses/91-92/2/ce448-1", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40463", "courseName": "Computer Measurement and Control", "link": "http://ce.sharif.edu/courses/91-92/2/ce463-1", "teacher": "Ali Mohammad Afshin Hemmatyar"}
+{"courseID": "40467", "courseName": "Fundamental of Information Technology", "link": "http://ce.sharif.edu/courses/91-92/2/ce467-1", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/courses/91-92/2/ce474-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40478", "courseName": "Application Engineering", "link": "http://ce.sharif.edu/courses/91-92/2/ce478-1", "teacher": "Shahrouz Moaven"}
+{"courseID": "40484", "courseName": " ObjectOriented Systems Design", "link": "http://ce.sharif.edu/courses/91-92/2/ce484-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40634", "courseName": "DiscreteEvent Systems' Simulation", "link": "http://ce.sharif.edu/courses/91-92/2/ce634-1", "teacher": "Dr. Sadegh Nobari"}
+{"courseID": "40647", "courseName": "Parallel Processing (\u067e\u0631\u062f\u0627\u0632\u0634 \u0645\u0648\u0627\u0632\u06cc)", "link": "http://ce.sharif.edu/courses/91-92/2/ce647-1", "teacher": "Mohammad Ghodsi"}
+{"courseID": "40684", "courseName": "Program development from Formal Specifications", "link": "http://ce.sharif.edu/courses/91-92/2/ce648-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40665", "courseName": "Verification of Reactive Systems", "link": "http://ce.sharif.edu/courses/91-92/2/ce665-1", "teacher": "Ali Movaghar"}
+{"courseID": "40685", "courseName": "Randomized algorithms", "link": "http://ce.sharif.edu/courses/91-92/2/ce685-1", "teacher": "Mohammad Ali Abam"}
+{"courseID": "40694", "courseName": "Semantic Web", "link": "http://ce.sharif.edu/courses/91-92/2/ce694-1", "teacher": "Morteza Amini"}
+{"courseID": "40417", "courseName": "Artificial Intelligence", "link": "http://ce.sharif.edu/courses/90-91/2/ce417-1", "teacher": "Soleymani"}
+{"courseID": "40418", "courseName": "Systems Analysis and Design", "link": "http://ce.sharif.edu/courses/90-91/2/ce418-2", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40419", "courseName": "Web Programming", "link": "http://ce.sharif.edu/courses/90-91/2/ce419-1", "teacher": "Dr. Ramtin Khosravi"}
+{"courseID": "40424", "courseName": "Operating Systems", "link": "http://ce.sharif.edu/courses/90-91/2/ce424-1"}
+{"courseID": "40443", "courseName": "computer networks", "link": "http://ce.sharif.edu/courses/90-91/2/ce443-1", "teacher": "Zeinab Movahedi"}
+{"courseID": "40448", "courseName": " Information Technology Strategic Management & Planning", "link": "http://ce.sharif.edu/courses/90-91/2/ce448-1", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40463", "courseName": "Computer Measurement and Control", "link": "http://ce.sharif.edu/courses/90-91/2/ce463-1", "teacher": "Ali Mohammad Afshin Hemmatyar"}
+{"courseID": "40467", "courseName": "Fundamental of Information Technology", "link": "http://ce.sharif.edu/courses/90-91/2/ce467-1", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/courses/90-91/2/ce474-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40484", "courseName": " ObjectOriented Systems Design", "link": "http://ce.sharif.edu/courses/90-91/2/ce484-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40665", "courseName": " Verification of Reactive Systems", "link": "http://ce.sharif.edu/courses/90-91/2/ce665-1", "teacher": "Ali Movaghar"}
+{"courseID": "40684", "courseName": "Program Development from Formal Specification", "link": "http://ce.sharif.edu/courses/90-91/2/ce684-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40685", "courseName": "Randomized Algorithms", "link": "http://ce.sharif.edu/courses/90-91/2/ce685-1", "teacher": "Mohammad Ali Abam"}
+{"courseID": "40343", "courseName": "Data Transmission", "link": "http://ce.sharif.edu/courses/90-91/1/ce343-1", "teacher": "Ali Mohammad Afshin Hemmatyar"}
+{"courseID": "40347", "courseName": "Information Technology Ethics", "link": "http://ce.sharif.edu/courses/90-91/1/ce347-1", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40354", "courseName": "Design and Analysis of Algorithms", "link": "http://ce.sharif.edu/courses/90-91/1/ce354-1", "teacher": "\u0639\u0644\u06cc \u0634\u0631\u06cc\u0641\u06cc \u0632\u0627\u0631\u0686\u06cc"}
+{"courseID": "40364", "courseName": "Principles of Programming Languages: Design and Implementation", "link": "http://ce.sharif.edu/courses/90-91/1/ce364-1", "teacher": "Mohammad Izadi"}
+{"courseID": "40411", "courseName": "Linear Control Systems", "link": "http://ce.sharif.edu/courses/90-91/1/ce411-1", "teacher": "Mahdi Jalili"}
+{"courseID": "40412", "courseName": "Advance Digital Design", "link": "http://ce.sharif.edu/courses/90-91/1/ce412-1", "teacher": "Dr. Ejlali"}
+{"courseID": "40424", "courseName": "Operating Systems", "link": "http://ce.sharif.edu/courses/90-91/1/ce424-1", "teacher": "Rasool Jalili"}
+{"courseID": "40428", "courseName": "Information Technology Project Management", "link": "http://ce.sharif.edu/courses/90-91/1/ce428-1", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40441", "courseName": "Data&  Network Security", "link": "http://ce.sharif.edu/courses/90-91/1/ce441-1", "teacher": "Morteza Amini"}
+{"courseID": "40467", "courseName": "Information Technology", "link": "http://ce.sharif.edu/courses/90-91/1/ce467-1", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/courses/90-91/1/ce474-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/courses/90-91/1/ce474-2", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40483", "courseName": "Hardware Description Languages", "link": "http://ce.sharif.edu/courses/90-91/1/ce483-1", "teacher": "Mohammad Arjomand"}
+{"courseID": "40484", "courseName": " ObjectOriented Systems Design", "link": "http://ce.sharif.edu/courses/90-91/1/ce484-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40533", "courseName": "Advanced Operating Systems", "link": "http://ce.sharif.edu/courses/90-91/1/ce533-1", "teacher": "Rasool Jalili"}
+{"courseID": "40626", "courseName": "Wireless Communications", "link": "http://ce.sharif.edu/courses/90-91/1/ce626-1", "teacher": "Ali Mohammad Afshin Hemmatyar"}
+{"courseID": "40453", "courseName": "RealTime Systems", "link": "http://ce.sharif.edu/courses/89-90/1/ce453-1", "teacher": "Mohsen Bashiri"}
+{"courseID": "40467", "courseName": "Information Technology (\u0641\u0646\u0627\u0648\u0631\u06cc \u0627\u0637\u0644\u0627\u0639\u0627\u062a )", "link": "http://ce.sharif.edu/courses/89-90/1/ce467-1", "teacher": "seyed ebrahim abtah"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/courses/89-90/1/ce474-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40484", "courseName": "ObjectOriented Systems Design", "link": "http://ce.sharif.edu/courses/89-90/1/ce484-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40534", "courseName": "Advanced Operating Systems", "link": "http://ce.sharif.edu/courses/89-90/1/ce534-1", "teacher": "Rasool Jalili"}
+{"courseID": "40626", "courseName": "Wireless Communications", "link": "http://ce.sharif.edu/courses/89-90/1/ce626-1", "teacher": "Afshin Hemmatyar"}
+{"courseID": "40634", "courseName": "DiscreteEvent Systems' Simulation", "link": "http://ce.sharif.edu/courses/89-90/1/ce634-1", "teacher": "Dr.Habibi"}
+{"courseID": "40647", "courseName": "Parallel Processing (\u067e\u0631\u062f\u0627\u0632\u0634 \u0645\u0648\u0627\u0632\u06cc)", "link": "http://ce.sharif.edu/courses/89-90/1/ce647-1", "teacher": "Mohammad Ghodsi"}
+{"courseID": "40695", "courseName": "Stochastic Processes", "link": "http://ce.sharif.edu/courses/89-90/1/ce695-1", "teacher": "Hamid Reza Rabiee"}
+{"courseID": "40717", "courseName": "Machine Learning", "link": "http://ce.sharif.edu/courses/89-90/1/ce717-1", "teacher": "Dr. Hamid Beigy"}
+{"courseID": "40724", "courseName": "Software Development Methodologies", "link": "http://ce.sharif.edu/courses/89-90/1/ce724-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40745", "courseName": "Formal Specification and Verification of Programmes", "link": "http://ce.sharif.edu/courses/89-90/1/ce745-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40763", "courseName": "DSP", "link": "http://ce.sharif.edu/courses/89-90/1/ce763-1"}
+{"courseID": "40793", "courseName": "Advanced Digital Signal Processing", "link": "http://ce.sharif.edu/courses/89-90/1/ce793-1", "teacher": "manzuri"}
+{"courseID": "40824", "courseName": "Performance Evaluation of Computer Systems", "link": "http://ce.sharif.edu/courses/89-90/1/ce824-1", "teacher": "Ali Movaghar"}
+{"courseID": "40106", "courseName": "Electrical Circuits Lab.", "link": "http://ce.sharif.edu/courses/91-92/1/ce106-1", "teacher": "A.M. Afshin Hemmatyar"}
+{"courseID": "40725", "courseName": "Statistical Pattern Recognition", "link": "http://ce.sharif.edu/courses/91-92/2/ce725-1", "teacher": "Hamid R. Rabiee"}
+{"courseID": "40725", "courseName": "Statistical Pattern Recognition", "link": "http://ce.sharif.edu/courses/91-92/2/ce725-2", "teacher": "Soleymani"}
+{"courseID": "40734", "courseName": "DataBase Security", "link": "http://ce.sharif.edu/courses/91-92/2/ce734-1", "teacher": "Rasool Jalili"}
+{"courseID": "40777", "courseName": "Computational Intelligence", "link": "http://ce.sharif.edu/courses/91-92/2/ce777-1", "teacher": "beigy"}
+{"courseID": "40787", "courseName": "Patterns in Software Engineering", "link": "http://ce.sharif.edu/courses/91-92/2/ce787-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40793", "courseName": "Advanced DSP", "link": "http://ce.sharif.edu/courses/91-92/2/ce793-1", "teacher": "manzuri"}
+{"courseID": "40834", "courseName": "Approximation Algorithms", "link": "http://ce.sharif.edu/courses/91-92/2/ce834-1", "teacher": "Hamid Zarrabi-Zadeh"}
+{"courseID": "40873", "courseName": "Multimedia Networks", "link": "http://ce.sharif.edu/courses/91-92/2/ce873-1", "teacher": "Hamid R. Rabiee"}
+{"courseID": "40874", "courseName": "Secure Software Development", "link": "http://ce.sharif.edu/courses/91-92/2/ce874-1", "teacher": "Rasool Jalili"}
+{"courseID": "40883", "courseName": "Data Communications", "link": "http://ce.sharif.edu/courses/91-92/2/ce883-1", "teacher": "Ali Mohammad Afshin Hemmatyar"}
+{"courseID": "40925", "courseName": "Requirements Engineering", "link": "http://ce.sharif.edu/courses/91-92/2/ce925-1", "teacher": "Abbas Heydarnoori"}
+{"courseID": "ccc", "courseName": "", "link": "http://ce.sharif.edu/courses/91-92/2/ce999-1"}
+{"courseID": "40694", "courseName": "Semantic Web", "link": "http://ce.sharif.edu/courses/90-91/2/ce694-1", "teacher": "Morteza Amini"}
+{"courseID": "40725", "courseName": "Statistical Pattern Recognition", "link": "http://ce.sharif.edu/courses/90-91/2/ce725-1", "teacher": "Hamid R. Rabiee"}
+{"courseID": "40734", "courseName": "Database Security", "link": "http://ce.sharif.edu/courses/90-91/2/ce734-1", "teacher": "Rasool Jalili"}
+{"courseID": "40777", "courseName": "Computational Intelligence", "link": "http://ce.sharif.edu/courses/90-91/2/ce777-1", "teacher": "Hamid Beigy"}
+{"courseID": "4777 ", "courseName": "r", "link": "http://ce.sharif.edu/courses/90-91/2/ce777-9"}
+{"courseID": "40787", "courseName": " Patterns in Software Engineering", "link": "http://ce.sharif.edu/courses/90-91/2/ce787-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40793", "courseName": "Advanced DSP", "link": "http://ce.sharif.edu/courses/90-91/2/ce793-1"}
+{"courseID": "40834", "courseName": "Approximation Algorithms", "link": "http://ce.sharif.edu/courses/90-91/2/ce834-1", "teacher": "Hamid Zarrabi-Zadeh"}
+{"courseID": "40835", "courseName": "Algorithmic Game Theory", "link": "http://ce.sharif.edu/courses/90-91/2/ce835-1", "teacher": "Hamid Mahini"}
+{"courseID": "40873", "courseName": "Multimedia Networks", "link": "http://ce.sharif.edu/courses/90-91/2/ce873-1", "teacher": "Hamid R. Rabiee"}
+{"courseID": "40874", "courseName": "Secure Sofwrae Development", "link": "http://ce.sharif.edu/courses/90-91/2/ce874-1", "teacher": "Rasool Jalili"}
+{"courseID": "40883", "courseName": "Data Communications", "link": "http://ce.sharif.edu/courses/90-91/2/ce883-1", "teacher": "Ali Mohammad Afshin Hemmatyar"}
+{"courseID": "40639", "courseName": "Complex Dynamical Networks", "link": "http://ce.sharif.edu/courses/90-91/1/ce639-1", "teacher": "Mahdi Jalili"}
+{"courseID": "40647", "courseName": "Parallel Processing (\u067e\u0631\u062f\u0627\u0632\u0634 \u0645\u0648\u0627\u0632\u06cc)", "link": "http://ce.sharif.edu/courses/90-91/1/ce647-1", "teacher": "Mohammad Ghodsi"}
+{"courseID": "40656", "courseName": "Computer Network Management", "link": "http://ce.sharif.edu/courses/90-91/1/ce656-1", "teacher": "Behzad Akbari"}
+{"courseID": "40695", "courseName": "Stochastic Processes", "link": "http://ce.sharif.edu/courses/90-91/1/ce695-1", "teacher": "Hamid Reza Rabiee"}
+{"courseID": "40717", "courseName": "Machine Learning", "link": "http://ce.sharif.edu/courses/90-91/1/ce717-1", "teacher": "Hamid Beigy"}
+{"courseID": "40724", "courseName": "Software Development Methodologies", "link": "http://ce.sharif.edu/courses/90-91/1/ce724-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40727", "courseName": "Low Power Design", "link": "http://ce.sharif.edu/courses/90-91/1/ce727-1", "teacher": "Alireza Ejlali"}
+{"courseID": "40745", "courseName": "Formal Specification and Verification of Programmes", "link": "http://ce.sharif.edu/courses/90-91/1/ce745-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40763", "courseName": "Digital Signal Processing", "link": "http://ce.sharif.edu/courses/90-91/1/ce763-1", "teacher": "manzuri"}
+{"courseID": "40765", "courseName": "Advanced Algorithms", "link": "http://ce.sharif.edu/courses/90-91/1/ce765-1", "teacher": "Hamid Zarrabi-Zadeh"}
+{"courseID": "40775", "courseName": "Theory of Computational Complexity", "link": "http://ce.sharif.edu/courses/90-91/1/ce775-1", "teacher": "Mohammad Izadi"}
+{"courseID": "40797", "courseName": "Algorithms and Data Structures for Massive Data", "link": "http://ce.sharif.edu/courses/90-91/1/ce797-1", "teacher": "Mohammad Ali Abam"}
+{"courseID": "40828", "courseName": "Software Testing", "link": "http://ce.sharif.edu/courses/90-91/1/ce828-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40828", "courseName": "Software Testing", "link": "http://ce.sharif.edu/courses/89-90/1/ce828-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40873", "courseName": "Secure Software Development", "link": "http://ce.sharif.edu/courses/89-90/1/ce873-1", "teacher": "Rasool Jalili &amp; M.S. Dousti"}
+{"courseID": "40900", "courseName": "MS Seminar  Software", "link": "http://ce.sharif.edu/courses/89-90/1/ce900-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40957", "courseName": "Complex Dynamical Networks", "link": "http://ce.sharif.edu/courses/89-90/1/ce957-1", "teacher": "Mahdi Jalili"}
+{"courseID": "40108", "courseName": "Computer Workshop", "link": "http://ce.sharif.edu/courses/91-92/1/ce108-1"}
+{"courseID": "40115", "courseName": "Discrete Structures", "link": "http://ce.sharif.edu/courses/91-92/1/ce115-1", "teacher": "abam"}
+{"courseID": "40124", "courseName": "Fundamentals of Electrical and Electronic Circuits", "link": "http://ce.sharif.edu/courses/91-92/1/ce124-1", "teacher": "A.M. Afshin Hemmatyar"}
+{"courseID": "40151", "courseName": "Fundamental Of Programming", "link": "http://ce.sharif.edu/courses/91-92/1/ce153-10", "teacher": "Marzieh Malekimajd"}
+{"courseID": "40153", "courseName": "Fundamental Of Programming", "link": "http://ce.sharif.edu/courses/91-92/1/ce153-4", "teacher": "Reza Taherkhani"}
+{"courseID": "40153", "courseName": "Fundamental Of Programming", "link": "http://ce.sharif.edu/courses/91-92/1/ce153-5", "teacher": "Reza Taherkhani"}
+{"courseID": "40153", "courseName": "Fundamental Of Programming", "link": "http://ce.sharif.edu/courses/91-92/1/ce153-6", "teacher": "Mahdi Safarnejad Boroujeni"}
+{"courseID": "40153", "courseName": "Fundamental Of Programming", "link": "http://ce.sharif.edu/courses/91-92/1/ce153-7", "teacher": "Fatemeh Zamani"}
+{"courseID": "40153", "courseName": "Fundamental Of Programming", "link": "http://ce.sharif.edu/courses/91-92/1/ce153-8", "teacher": "Omid Jafarinezhad"}
+{"courseID": "40153", "courseName": "Fundamental Of Programming", "link": "http://ce.sharif.edu/courses/91-92/1/ce153-9", "teacher": "Omid Jafarinezhad"}
+{"courseID": "40212", "courseName": "Digital Design", "link": "http://ce.sharif.edu/courses/91-92/1/ce212-1", "teacher": "Mohammad Salehi"}
+{"courseID": "40215", "courseName": "Numerical Methods", "link": "http://ce.sharif.edu/courses/91-92/1/ce215-1", "teacher": "Mohammed Gharib"}
+{"courseID": "40216", "courseName": "Numerical Methods", "link": "http://ce.sharif.edu/courses/91-92/1/ce216-1", "teacher": "Mohammed Gharib"}
+{"courseID": "40221", "courseName": "Technical Presentation", "link": "http://ce.sharif.edu/courses/91-92/1/ce221-3", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40957", "courseName": "Neural Networks and Fuzzy Systems", "link": "http://ce.sharif.edu/courses/90-91/2/ce957-1", "teacher": "Mahdi Jalili"}
+{"courseID": "40223", "courseName": "Digital System Design", "link": "http://ce.sharif.edu/courses/91-92/1/ce223-1", "teacher": "TA : Hossein Izadi Rad"}
+{"courseID": "40242", "courseName": "Signals and Systems", "link": "http://ce.sharif.edu/courses/91-92/1/ce242-1", "teacher": "Manzuri"}
+{"courseID": "CE242", "courseName": "Signals & Systems", "link": "http://ce.sharif.edu/courses/91-92/1/ce242-2", "teacher": "Hamid R. Rabiee"}
+{"courseID": "40244", "courseName": "Advanced Programming in Java", "link": "http://ce.sharif.edu/courses/91-92/1/ce244-1", "teacher": "Sadegh Aliakbary"}
+{"courseID": "40244", "courseName": "Advanced Programming", "link": "http://ce.sharif.edu/courses/91-92/1/ce244-2", "teacher": "\u0622\u0631\u0634 \u062a\u0648\u06a9\u0644 (Arash Tavakkol)"}
+{"courseID": "40254", "courseName": "Data Structures and Fundamentals of Algorithms (\u062f\u0627\u062f\u0647\u200c\u0633\u0627\u062e\u062a\u0627\u0631\u0647\u0627 \u0648 \u0645\u0628\u0627\u0646\u06cc \u0627\u0644\u06af\u0648\u0631\u06cc\u062a\u0645\u200c\u0647\u0627)", "link": "http://ce.sharif.edu/courses/91-92/1/ce254-1", "teacher": "\u0645\u062d\u0645\u062f \u0642\u062f\u0633\u06cc"}
+{"courseID": "40307", "courseName": "Digital Electronics Lab.", "link": "http://ce.sharif.edu/courses/91-92/1/ce307-1", "teacher": "A.M. Afshin Hemmatyar"}
+{"courseID": "40763", "courseName": "Digital Signal Processing", "link": "http://ce.sharif.edu/courses/91-92/1/ce312-1", "teacher": "Manzuri"}
+{"courseID": "40324", "courseName": "Modern Information Retrieval", "link": "http://ce.sharif.edu/courses/91-92/1/ce324-1", "teacher": "Soleymani"}
+{"courseID": "40343", "courseName": "Data Transmission", "link": "http://ce.sharif.edu/courses/91-92/1/ce343-1", "teacher": "A.M. Afshin Hemmatyar"}
+{"courseID": "40347", "courseName": "Information Technology Ethics", "link": "http://ce.sharif.edu/courses/91-92/1/ce347-1", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40353", "courseName": "VLSI Design", "link": "http://ce.sharif.edu/courses/91-92/1/ce353-1", "teacher": "Shaahin Hessabi"}
+{"courseID": "40354", "courseName": "Design of Algorithms", "link": "http://ce.sharif.edu/courses/91-92/1/ce354-1", "teacher": "Hamid Zarrabi-Zadeh"}
+{"courseID": "40354", "courseName": "Design of Algorithms", "link": "http://ce.sharif.edu/courses/91-92/1/ce354-2", "teacher": "abam"}
+{"courseID": "40364", "courseName": "Programming Languages, Design and Implementation", "link": "http://ce.sharif.edu/courses/91-92/1/ce362-1", "teacher": "Mohammad Izadi"}
+{"courseID": "40404", "courseName": "Software Engineering Lab", "link": "http://ce.sharif.edu/courses/91-92/1/ce404-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40108", "courseName": "Computer Workshop", "link": "http://ce.sharif.edu/courses/92-93/1/ce108-1", "teacher": "Morteza Amini"}
+{"courseID": "40414", "courseName": "Compilers and Automata Theory", "link": "http://ce.sharif.edu/courses/91-92/1/ce414-2", "teacher": "Mohammad Izadi"}
+{"courseID": "40415", "courseName": "Theory of Languages and Automata", "link": "http://ce.sharif.edu/courses/91-92/1/ce415-1", "teacher": "Ali Movaghar"}
+{"courseID": "40418", "courseName": "Systems Analysis and Design", "link": "http://ce.sharif.edu/courses/91-92/1/ce418-1", "teacher": "Abbas Heydarnoori"}
+{"courseID": "40424", "courseName": "Operating Systems", "link": "http://ce.sharif.edu/courses/91-92/1/ce424-1", "teacher": "Rasool Jalili"}
+{"courseID": "40428", "courseName": "Information Technology Project Management", "link": "http://ce.sharif.edu/courses/91-92/1/ce428-1", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40428", "courseName": "Information Technology Project Management", "link": "http://ce.sharif.edu/courses/91-92/1/ce428-2", "teacher": "Abbas Heydarnoori"}
+{"courseID": "40442", "courseName": "Data & Network Security", "link": "http://ce.sharif.edu/courses/91-92/1/ce442-1", "teacher": "Morteza Amini"}
+{"courseID": "40443", "courseName": "Computer Networks", "link": "http://ce.sharif.edu/courses/91-92/1/ce443-1", "teacher": "Mostafa Salehi"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/courses/91-92/1/ce474-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/courses/91-92/1/ce474-2", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40478", "courseName": "Application Engineering", "link": "http://ce.sharif.edu/courses/91-92/1/ce478-1", "teacher": "shahrouz moaven (\u0634\u0647\u0631\u0648\u0632 \u0645\u0639\u0627\u0648\u0646)"}
+{"courseID": "40484", "courseName": "ObjectOriented Systems Design", "link": "http://ce.sharif.edu/courses/91-92/1/ce484-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40533", "courseName": "Advanced Operating Systems", "link": "http://ce.sharif.edu/courses/91-92/1/ce533-1", "teacher": "Rasool Jalili"}
+{"courseID": "40115", "courseName": "Discrete Structures", "link": "http://ce.sharif.edu/courses/92-93/1/ce115-1", "teacher": "Dr. Mohammad Izadi"}
+{"courseID": "40124", "courseName": "Fundamentals of Electricel and Electronical Circuits", "link": "http://ce.sharif.edu/courses/92-93/1/ce124-1", "teacher": "Mahdi Jalili"}
+{"courseID": "40153", "courseName": "0 Fundamental Of Programming", "link": "http://ce.sharif.edu/courses/92-93/1/ce143-1", "teacher": "Reza Taherkhani"}
+{"courseID": "40153", "courseName": "&2 Fundamentals of Programming", "link": "http://ce.sharif.edu/courses/92-93/1/ce153-1", "teacher": "Reza Entezari-Maleki"}
+{"courseID": "40153", "courseName": "2 Fundamentals of Programming", "link": "http://ce.sharif.edu/courses/92-93/1/ce153-12", "teacher": "Binazir Biglari"}
+{"courseID": "40153", "courseName": "3 Fundamentals of Programming", "link": "http://ce.sharif.edu/courses/92-93/1/ce153-13", "teacher": "Binazir Biglari"}
+{"courseID": "40153", "courseName": " Fundementals of Programming", "link": "http://ce.sharif.edu/courses/92-93/1/ce153-4"}
+{"courseID": "40153", "courseName": " Fundementals of Programming", "link": "http://ce.sharif.edu/courses/92-93/1/ce153-5"}
+{"courseID": "40153", "courseName": " Fundamentals of Programming", "link": "http://ce.sharif.edu/courses/92-93/1/ce153-6", "teacher": "Omid Jafarinezhad"}
+{"courseID": "40153", "courseName": " Fundamentals of Programming", "link": "http://ce.sharif.edu/courses/92-93/1/ce153-7", "teacher": "Omid Jafarinezhad"}
+{"courseID": "40153", "courseName": "&9 Fundamentals of Programming", "link": "http://ce.sharif.edu/courses/92-93/1/ce153-8", "teacher": "Reza Entezari-Maleki"}
+{"courseID": "40153", "courseName": "5&16 \u0645\u0628\u0627\u0646\u06cc \u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06cc / \u067e\u0627\u06cc\u062a\u0648\u0646", "link": "http://ce.sharif.edu/courses/92-93/1/ce153-9", "teacher": "\u062d\u0633\u0646 \u0646\u06cc\u06a9 \u0622\u0626\u06cc\u0646"}
+{"courseID": "40181", "courseName": "Engineering Probability and Statistics", "link": "http://ce.sharif.edu/courses/92-93/1/ce181-1", "teacher": "Hossein Sameti"}
+{"courseID": "40181", "courseName": "Probability & Statistics", "link": "http://ce.sharif.edu/courses/92-93/1/ce181-2", "teacher": "Hossein Ajorloo"}
+{"courseID": "40203", "courseName": "Digital System Design Lab.", "link": "http://ce.sharif.edu/courses/92-93/1/ce203-1", "teacher": "Maziar Goudarzi"}
+{"courseID": "40211", "courseName": "English for Computer Engineering", "link": "http://ce.sharif.edu/courses/92-93/1/ce211-1", "teacher": "Moslem Habibi"}
+{"courseID": "40211", "courseName": " English for Computing", "link": "http://ce.sharif.edu/courses/92-93/1/ce211-3", "teacher": "Ani Megerdoumian"}
+{"courseID": "40115", "courseName": "Discrete Structures", "link": "http://ce.sharif.edu/courses/92-93/2/ce115-1", "teacher": "Mohammad Izadi"}
+{"courseID": "40108", "courseName": "Computer Workshop", "link": "http://ce.sharif.edu/courses/93-94/1/ce108-1", "teacher": "Morteza Amini"}
+{"courseID": "40115", "courseName": "Discrete Structures", "link": "http://ce.sharif.edu/courses/93-94/1/ce115-1", "teacher": "Mohammad Ali Abam"}
+{"courseID": "40121", "courseName": "Electrical Circuits", "link": "http://ce.sharif.edu/courses/93-94/1/ce121-1", "teacher": "Hadi Talebi"}
+{"courseID": "40153", "courseName": "401531&2 Fundamentals of Programming", "link": "http://ce.sharif.edu/courses/93-94/1/ce153-1", "teacher": "Reza Entezari-Maleki"}
+{"courseID": "40153", "courseName": "Fundamentals of Programming (C)  Group 10,11", "link": "http://ce.sharif.edu/courses/93-94/1/ce153-10", "teacher": "Omid Gheibi"}
+{"courseID": "40153", "courseName": "2&13 Fundamentals of Programming (Python)", "link": "http://ce.sharif.edu/courses/93-94/1/ce153-12", "teacher": "Binazir Biglari"}
+{"courseID": "40153", "courseName": "Fundamental Of Programming(Group 7)", "link": "http://ce.sharif.edu/courses/93-94/1/ce153-7", "teacher": "Reza Taherkhani"}
+{"courseID": "40626", "courseName": "Wireless Communications", "link": "http://ce.sharif.edu/courses/91-92/1/ce626-1", "teacher": "A.M.Afshin Hemmatyar"}
+{"courseID": "40656", "courseName": "Network Management", "link": "http://ce.sharif.edu/courses/91-92/1/ce656-1"}
+{"courseID": "40693", "courseName": "Advanced Computer Network", "link": "http://ce.sharif.edu/courses/91-92/1/ce693-2", "teacher": "Mizanian"}
+{"courseID": "CE695", "courseName": "Stochastic Processes", "link": "http://ce.sharif.edu/courses/91-92/1/ce695-1", "teacher": "Hamid R. Rabiee"}
+{"courseID": "40712", "courseName": "Digital video Processing", "link": "http://ce.sharif.edu/courses/91-92/1/ce712-1", "teacher": "Mohammed Ghanbari"}
+{"courseID": "40714", "courseName": "Data Mining", "link": "http://ce.sharif.edu/courses/91-92/1/ce714-1", "teacher": "TA : Neshati"}
+{"courseID": "40717", "courseName": "Machine Learning", "link": "http://ce.sharif.edu/courses/91-92/1/ce717-1", "teacher": "TA : Poorya Zare Moodi"}
+{"courseID": "40717", "courseName": "Machine Learning", "link": "http://ce.sharif.edu/courses/91-92/1/ce717-2", "teacher": "Soleymani"}
+{"courseID": "40724", "courseName": "Software Development Methodologies", "link": "http://ce.sharif.edu/courses/91-92/1/ce724-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40735", "courseName": "Computational Geometry", "link": "http://ce.sharif.edu/courses/91-92/1/ce735-1", "teacher": "Hamid Zarrabi-Zadeh"}
+{"courseID": "40745", "courseName": "Formal Specification and Verification of Programmes", "link": "http://ce.sharif.edu/courses/91-92/1/ce745-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40753", "courseName": "Testability", "link": "http://ce.sharif.edu/courses/91-92/1/ce753-1", "teacher": "Shaahin Hessabi"}
+{"courseID": "40765", "courseName": "Advanced Algorithms", "link": "http://ce.sharif.edu/courses/91-92/1/ce765-1", "teacher": "Mohammad Ghodsi"}
+{"courseID": "40775", "courseName": "Complexity Theory", "link": "http://ce.sharif.edu/courses/91-92/1/ce775-1", "teacher": "Mohammad Izadi"}
+{"courseID": "40797", "courseName": "Massive Data Algorithmics", "link": "http://ce.sharif.edu/courses/91-92/1/ce787-1", "teacher": "abam"}
+{"courseID": "40795", "courseName": "Formal Methods for Information Security", "link": "http://ce.sharif.edu/courses/91-92/1/ce795-1", "teacher": "Morteza Amini"}
+{"courseID": "40824", "courseName": "Computer System Performance Evaluation", "link": "http://ce.sharif.edu/courses/91-92/1/ce824-1", "teacher": "Ali Movaghar"}
+{"courseID": "40828", "courseName": "Software Testing", "link": "http://ce.sharif.edu/courses/91-92/1/ce828-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40212", "courseName": "Digital Design", "link": "http://ce.sharif.edu/courses/92-93/1/ce212-1", "teacher": "Bayat Sarmadi"}
+{"courseID": "40215", "courseName": "Numerical Methods (Software)", "link": "http://ce.sharif.edu/courses/92-93/1/ce215-1", "teacher": "Mohammad Gharib"}
+{"courseID": "40216", "courseName": "Numerical Methods (Hardware & IT)", "link": "http://ce.sharif.edu/courses/92-93/1/ce216-1", "teacher": "Mohammad Gharib"}
+{"courseID": "40221", "courseName": "Technical Presentation", "link": "http://ce.sharif.edu/courses/92-93/1/ce221-1", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40221", "courseName": "402212&3", "link": "http://ce.sharif.edu/courses/92-93/1/ce221-2"}
+{"courseID": "40223", "courseName": "Digital System Design", "link": "http://ce.sharif.edu/courses/92-93/1/ce223-1", "teacher": "Maziar Goudarzi"}
+{"courseID": "40226", "courseName": "Multicore Programming (\u0628\u0631\u0646\u0627\u0645\u0647\u200c\u0633\u0627\u0632\u06cc \u067e\u0631\u062f\u0627\u0632\u0646\u062f\u0647\u200c\u0647\u0627\u06cc \u0686\u0646\u062f \u0647\u0633\u062a\u0647\u200c\u0627\u06cc)", "link": "http://ce.sharif.edu/courses/92-93/1/ce226-1", "teacher": "Hamid Sarbazi-Azad, Arash Tavakkol"}
+{"courseID": "40242", "courseName": "Signals & Systems", "link": "http://ce.sharif.edu/courses/92-93/1/ce242-1", "teacher": "Hamid R. Rabiee"}
+{"courseID": "40244", "courseName": " Advanced Programming in Java", "link": "http://ce.sharif.edu/courses/92-93/1/ce244-1", "teacher": "Peyman Dodangeh"}
+{"courseID": "40244", "courseName": " Advanced Programming", "link": "http://ce.sharif.edu/courses/92-93/1/ce244-2", "teacher": "Omid Jafarinezhad"}
+{"courseID": "40254", "courseName": "Data Structures and Foundations of Algorithms (\u062f\u0627\u062f\u0647 \u0633\u0627\u062e\u062a\u0627\u0631\u0647\u0627 \u0648 \u0645\u0628\u0627\u0646\u06cc \u0627\u0644\u06af\u0648\u0631\u06cc\u062a\u0645\u200c\u0647\u0627)", "link": "http://ce.sharif.edu/courses/92-93/1/ce254-1", "teacher": "Mohammad Ghodsi"}
+{"courseID": "40115", "courseName": "Discrete Structures", "link": "http://ce.sharif.edu/courses/92-93/2/ce115-2", "teacher": "Hamid Zarrabi-Zadeh"}
+{"courseID": "40124", "courseName": "Fundamentals of Electricel and Electronical Circuits", "link": "http://ce.sharif.edu/courses/92-93/2/ce124-1", "teacher": "Hadi Talebi"}
+{"courseID": "40153", "courseName": "2Fundamental Of Programming", "link": "http://ce.sharif.edu/courses/92-93/2/ce153-2", "teacher": "Omid Jafarinezhad"}
+{"courseID": "40153", "courseName": "3 Fundamental Of Programming", "link": "http://ce.sharif.edu/courses/92-93/2/ce153-3"}
+{"courseID": "40153", "courseName": "401534 Fundamentals of Programming (C)", "link": "http://ce.sharif.edu/courses/92-93/2/ce153-4", "teacher": "Omid Gheibi"}
+{"courseID": "40153", "courseName": "(401535)Fundamentals of Programming(pyhton)", "link": "http://ce.sharif.edu/courses/92-93/2/ce153-5", "teacher": "\u062d\u0633\u0646 \u0646\u06cc\u06a9\u200c\u0622\u06cc\u06cc\u0646"}
+{"courseID": "40153", "courseName": "401537 Fundamentals of Programming (Python)", "link": "http://ce.sharif.edu/courses/92-93/2/ce153-7", "teacher": "Binazir Biglari"}
+{"courseID": "40181", "courseName": "Engineering Probability and Statistics", "link": "http://ce.sharif.edu/courses/92-93/2/ce181-1", "teacher": "Mahdi Jafari"}
+{"courseID": "40211", "courseName": "English for computing", "link": "http://ce.sharif.edu/courses/92-93/2/ce211-1", "teacher": "Ani Megerdoumian"}
+{"courseID": "40211", "courseName": "English for Computing", "link": "http://ce.sharif.edu/courses/92-93/2/ce211-2", "teacher": "Mahmoud Talebi"}
+{"courseID": "40212", "courseName": "Logic Design", "link": "http://ce.sharif.edu/courses/92-93/2/ce212-1", "teacher": "Siavash Bayat-Sarmadi"}
+{"courseID": "40215", "courseName": "Numerical Analysis", "link": "http://ce.sharif.edu/courses/92-93/2/ce215-1", "teacher": "Dr. Hamid Sarbazi-Azad"}
+{"courseID": "40221", "courseName": "Technical and Scientific Presentation", "link": "http://ce.sharif.edu/courses/92-93/2/ce221-1", "teacher": "seyed ebrahim abtahi"}
+{"courseID": "40221", "courseName": " Scientific and Technical Presentation", "link": "http://ce.sharif.edu/courses/92-93/2/ce221-2", "teacher": "Shahrouz Moaven"}
+{"courseID": "40221", "courseName": "Technical and Scientific Presentation", "link": "http://ce.sharif.edu/courses/92-93/2/ce221-3", "teacher": "Mohammad Ghaem Tajgardoon"}
+{"courseID": "40223", "courseName": "Digital System Design", "link": "http://ce.sharif.edu/courses/92-93/2/ce223-1", "teacher": "Alireza Ejlali"}
+{"courseID": "40227", "courseName": "Human Computer Interaction", "link": "http://ce.sharif.edu/courses/92-93/2/ce227-1", "teacher": "Ali Asghar Nazari Shirehjini"}
+{"courseID": "40242", "courseName": "Signals and Systems", "link": "http://ce.sharif.edu/courses/92-93/2/ce242-1", "teacher": "Hossein Sameti"}
+{"courseID": "40153", "courseName": "Fundamental Of Programming(Group 8)", "link": "http://ce.sharif.edu/courses/93-94/1/ce153-8", "teacher": "Reza Taherkhani"}
+{"courseID": "40181", "courseName": "Engineering Probability & Statistics", "link": "http://ce.sharif.edu/courses/93-94/1/ce181-1", "teacher": "Mahdi Jafari"}
+{"courseID": "40181", "courseName": "Engineering Probability & Statistics", "link": "http://ce.sharif.edu/courses/93-94/1/ce181-2", "teacher": "Hamid R. Rabiee &amp; S. Abbas Hosseini"}
+{"courseID": "40121", "courseName": "Logic Design", "link": "http://ce.sharif.edu/courses/93-94/1/ce212-1", "teacher": "Siavash Bayat-Sarmadi"}
+{"courseID": "40215", "courseName": " Numerical methods (Software)", "link": "http://ce.sharif.edu/courses/93-94/1/ce215-1", "teacher": "Mohammad Gharib"}
+{"courseID": "40216", "courseName": "Numerical methods (Hardware and IT)", "link": "http://ce.sharif.edu/courses/93-94/1/ce216-1", "teacher": "Mohammad Gharib"}
+{"courseID": "40221", "courseName": "Technical and Scientific Presentation", "link": "http://ce.sharif.edu/courses/93-94/1/ce221-1", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40222", "courseName": "Agile Software Development", "link": "http://ce.sharif.edu/courses/93-94/1/ce222-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40223", "courseName": "Digital System Design", "link": "http://ce.sharif.edu/courses/93-94/1/ce223-1", "teacher": "Alireza Ejlali"}
+{"courseID": "40226", "courseName": "Multicore Computing", "link": "http://ce.sharif.edu/courses/93-94/1/ce226-1", "teacher": "Hamid SarbaziAzad, Arash Tavakkol<br>\t\t+ TA : Pantea Zoroastrian \t<br>"}
+{"courseID": "40242", "courseName": "Signals and Systems", "link": "http://ce.sharif.edu/courses/93-94/1/ce242-1", "teacher": "manzuri"}
+{"courseID": "40244", "courseName": "Advanced Programming Java", "link": "http://ce.sharif.edu/courses/93-94/1/ce244-1", "teacher": "Peyman Dodangeh"}
+{"courseID": "40254", "courseName": "Data Structures and Algorithms (\u062f\u0627\u062f\u0647\u200c\u0633\u0627\u062e\u062a\u0627\u0631\u0647\u0627 \u0648 \u0627\u0644\u06af\u0648\u0631\u06cc\u062a\u0645\u200c\u0647\u0627)", "link": "http://ce.sharif.edu/courses/93-94/1/ce254-1", "teacher": "Prof. Mohammad Ghodsi"}
+{"courseID": "40324", "courseName": "Modern Information Retrieval", "link": "http://ce.sharif.edu/courses/93-94/1/ce324-1", "teacher": "M. Soleymani"}
+{"courseID": "40327", "courseName": "Mobile Programming", "link": "http://ce.sharif.edu/courses/93-94/1/ce327-2", "teacher": "Omid Jafarinezhad"}
+{"courseID": "40343", "courseName": "Data Transmission", "link": "http://ce.sharif.edu/courses/93-94/1/ce343-1", "teacher": "Ali Mohammad Afshin Hemmatyar"}
+{"courseID": "40900", "courseName": "MS Seminar  Software", "link": "http://ce.sharif.edu/courses/91-92/1/ce900-1", "teacher": "Ali Movaghar"}
+{"courseID": "40926", "courseName": "Software Evolution", "link": "http://ce.sharif.edu/courses/91-92/1/ce926-1", "teacher": "Abbas Heydarnoori"}
+{"courseID": "you", "courseName": "", "link": "http://ce.sharif.edu/courses/91-92/1/ce999-9"}
+{"courseID": "40254", "courseName": "Data Structures and Algorithms", "link": "http://ce.sharif.edu/courses/92-93/1/ce254-2", "teacher": "M. Jamzad"}
+{"courseID": "40324", "courseName": "Modern Information Retrieval", "link": "http://ce.sharif.edu/courses/92-93/1/ce324-1", "teacher": "M. Soleymani"}
+{"courseID": "327 F", "courseName": "ndamentals Of 3D Computer Vision", "link": "http://ce.sharif.edu/courses/92-93/1/ce327-1", "teacher": "Shohreh Kasaei"}
+{"courseID": "40343", "courseName": "Data Transmission", "link": "http://ce.sharif.edu/courses/92-93/1/ce343-1", "teacher": "Ali Mohammad Afshin Hemmatyar"}
+{"courseID": "40347", "courseName": "Information Technology Ethics", "link": "http://ce.sharif.edu/courses/92-93/1/ce347-1", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40354", "courseName": "Design of Algorithms", "link": "http://ce.sharif.edu/courses/92-93/1/ce354-1", "teacher": "Mohammad Ali Abam"}
+{"courseID": "40364", "courseName": "Programming Languages: Design and Implementation", "link": "http://ce.sharif.edu/courses/92-93/1/ce364-1", "teacher": "Dr. Mohammad Izadi"}
+{"courseID": "40384", "courseName": "Database Design", "link": "http://ce.sharif.edu/courses/92-93/1/ce384-1", "teacher": "Morteza Amini"}
+{"courseID": "40404", "courseName": " Software Engineering Lab", "link": "http://ce.sharif.edu/courses/92-93/1/ce404-1", "teacher": "Hassan Mirian"}
+{"courseID": "40412", "courseName": "Advanced Logic Design", "link": "http://ce.sharif.edu/courses/92-93/1/ce412-1", "teacher": "Alireza Ejlali"}
+{"courseID": "40415", "courseName": " Theory of Languages and Automata", "link": "http://ce.sharif.edu/courses/92-93/1/ce415-1", "teacher": "Ali Movaghar"}
+{"courseID": "40418", "courseName": "Systems Analysis and Design", "link": "http://ce.sharif.edu/courses/92-93/1/ce418-1", "teacher": "Abbas Heydarnoori"}
+{"courseID": "40419", "courseName": "Web Programming", "link": "http://ce.sharif.edu/courses/92-93/1/ce419-1", "teacher": "Hamid Zarrabi-Zadeh"}
+{"courseID": "40424", "courseName": "Operating Systems", "link": "http://ce.sharif.edu/courses/92-93/1/ce424-1", "teacher": "Rasool Jalili"}
+{"courseID": "40438", "courseName": "Electronic Commerce", "link": "http://ce.sharif.edu/courses/92-93/1/ce438-1", "teacher": "Ali A. Nazari Shirehjini"}
+{"courseID": "40442", "courseName": "Data & Network Security", "link": "http://ce.sharif.edu/courses/92-93/1/ce442-1", "teacher": "Sadegh Dorri Nogoorani"}
+{"courseID": "40242", "courseName": "Signals & Systems", "link": "http://ce.sharif.edu/courses/92-93/2/ce242-2", "teacher": "Hadi Talebi"}
+{"courseID": "40244", "courseName": "1 Advanced Programming in Java", "link": "http://ce.sharif.edu/courses/92-93/2/ce244-1", "teacher": "Peyman Dodangeh"}
+{"courseID": "40244", "courseName": "Advanced Programming", "link": "http://ce.sharif.edu/courses/92-93/2/ce244-2", "teacher": "Omid Jafarinezhad"}
+{"courseID": "40254", "courseName": "Data structures and algorithms", "link": "http://ce.sharif.edu/courses/92-93/2/ce254-1", "teacher": "Mohammad Ali Abam"}
+{"courseID": "40254", "courseName": "Data structures and algorithms", "link": "http://ce.sharif.edu/courses/92-93/2/ce254-2", "teacher": "Masood Seddighin"}
+{"courseID": "40323", "courseName": "Computer Architecture", "link": "http://ce.sharif.edu/courses/92-93/2/ce323-1", "teacher": "Hamid Sarbazi-Azad"}
+{"courseID": "40342", "courseName": "Multimedia Systems", "link": "http://ce.sharif.edu/courses/92-93/2/ce342-1", "teacher": "Mahdi Amiri"}
+{"courseID": "40354", "courseName": "Design and Analysis of Algorithms", "link": "http://ce.sharif.edu/courses/92-93/2/ce354-1", "teacher": "Mohammad Ghodsi"}
+{"courseID": "40384", "courseName": "Database Design", "link": "http://ce.sharif.edu/courses/92-93/2/ce384-1", "teacher": "Mohammad Taghi Rohani Rankoohi"}
+{"courseID": "40404", "courseName": "Software Engineering Lab", "link": "http://ce.sharif.edu/courses/92-93/2/ce404-2", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40404", "courseName": "Software Engineering Lab", "link": "http://ce.sharif.edu/courses/92-93/2/ce404-3", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40415", "courseName": "Theory of Languages and Automata", "link": "http://ce.sharif.edu/courses/92-93/2/ce415-1", "teacher": "Ali Movaghar"}
+{"courseID": "40417", "courseName": "Artificial Intelligence", "link": "http://ce.sharif.edu/courses/92-93/2/ce417-2", "teacher": "M. Soleymani"}
+{"courseID": "40418", "courseName": "Systems Analysis and Design", "link": "http://ce.sharif.edu/courses/92-93/2/ce418-1", "teacher": "seyed ebrahim abtahi"}
+{"courseID": "40354", "courseName": "Design of Algorithms", "link": "http://ce.sharif.edu/courses/93-94/1/ce354-1", "teacher": "Abam, Zarrabi-Zadeh"}
+{"courseID": "40364", "courseName": "Programming Languages: Design and Implementation", "link": "http://ce.sharif.edu/courses/93-94/1/ce364-1", "teacher": "Mohammad Izadi"}
+{"courseID": "40384", "courseName": "Database 1", "link": "http://ce.sharif.edu/courses/93-94/1/ce384-1", "teacher": "Seyed-Mohammad-Taghi Rohani-Rankoohi"}
+{"courseID": "40404", "courseName": "Software Engineering Lab", "link": "http://ce.sharif.edu/courses/93-94/1/ce404-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40415", "courseName": " Theory of Languages and Automata", "link": "http://ce.sharif.edu/courses/93-94/1/ce415-1", "teacher": "Ali Movaghar"}
+{"courseID": "40428", "courseName": "Information Technology Project Management", "link": "http://ce.sharif.edu/courses/93-94/1/ce424-1", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40424", "courseName": "Operating Systems", "link": "http://ce.sharif.edu/courses/93-94/1/ce424-3", "teacher": "Rasool Jalili"}
+{"courseID": "40439", "courseName": "\u062a\u0639\u0627\u0645\u0644 \u0627\u0646\u0633\u0627\u0646 \u0628\u0627 \u0631\u0627\u06cc\u0627\u0646\u0647", "link": "http://ce.sharif.edu/courses/93-94/1/ce439-1", "teacher": "Dr.-Ing. Ali Asghar Nazari Shirehjini"}
+{"courseID": "40442", "courseName": "Data & Network Security", "link": "http://ce.sharif.edu/courses/93-94/1/ce442-1", "teacher": "Morteza Amini"}
+{"courseID": "40467", "courseName": " Fundamentals of Information Technology", "link": "http://ce.sharif.edu/courses/93-94/1/ce467-1", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/courses/93-94/1/ce474-1", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40478", "courseName": "APPLICATION ENGINEERING", "link": "http://ce.sharif.edu/courses/93-94/1/ce478-1", "teacher": "shahrouz moaven"}
+{"courseID": "40626", "courseName": "Wireless Communication", "link": "http://ce.sharif.edu/courses/93-94/1/ce626-1", "teacher": "Ali Mohammad Afshin Hemmatyar"}
+{"courseID": "40634", "courseName": "Computer Simulation", "link": "http://ce.sharif.edu/courses/93-94/1/ce634-1", "teacher": "Reza Entezari-Maleki"}
+{"courseID": "40676", "courseName": "Information theory and coding", "link": "http://ce.sharif.edu/courses/93-94/1/ce676-1"}
+{"courseID": "40443", "courseName": "Computer Networks", "link": "http://ce.sharif.edu/courses/92-93/1/ce443-1", "teacher": "Course webpage at:"}
+{"courseID": "40443", "courseName": "Computer Networks", "link": "http://ce.sharif.edu/courses/92-93/1/ce443-2", "teacher": "Hossein Ajorloo"}
+{"courseID": "40467", "courseName": "Fundamentals of Information Technology", "link": "http://ce.sharif.edu/courses/92-93/1/ce467-1", "teacher": "Seyed Ebrahim Abtahi"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/courses/92-93/1/ce474-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40478", "courseName": "Application Engineering", "link": "http://ce.sharif.edu/courses/92-93/1/ce478-1", "teacher": "shahrouz moaven"}
+{"courseID": "40484", "courseName": "ObjectOriented Systems Design", "link": "http://ce.sharif.edu/courses/92-93/1/ce484-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40626", "courseName": "Wireless Communication", "link": "http://ce.sharif.edu/courses/92-93/1/ce626-1", "teacher": "Ali Mohammad Afshin Hemmatyar"}
+{"courseID": "40656", "courseName": "Computer Network Management", "link": "http://ce.sharif.edu/courses/92-93/1/ce656-1", "teacher": "mizanian"}
+{"courseID": "40661", "courseName": "Theory of Distributed Systems", "link": "http://ce.sharif.edu/courses/92-93/1/ce661-1", "teacher": "Dr. Mohammad Izadi"}
+{"courseID": "40685", "courseName": "Randomized algorithms", "link": "http://ce.sharif.edu/courses/92-93/1/ce685-1", "teacher": "Mohammad Ali Abam"}
+{"courseID": "40693", "courseName": "Advanced Computer Networks", "link": "http://ce.sharif.edu/courses/92-93/1/ce693-1", "teacher": "Hossein Ajorloo"}
+{"courseID": "40694", "courseName": "Semantic Web", "link": "http://ce.sharif.edu/courses/92-93/1/ce694-1", "teacher": "Morteza Amini"}
+{"courseID": "40695", "courseName": "Stochastic Processes", "link": "http://ce.sharif.edu/courses/92-93/1/ce695-1", "teacher": "Hamid R. Rabiee"}
+{"courseID": "712 D", "courseName": "gital Video Processing", "link": "http://ce.sharif.edu/courses/92-93/1/ce712-1", "teacher": "Shohreh Kasaei"}
+{"courseID": "40424", "courseName": "Operating Systems", "link": "http://ce.sharif.edu/courses/92-93/2/ce424-1", "teacher": "Hamid Beigy"}
+{"courseID": "40428", "courseName": "Information Technology Project Management", "link": "http://ce.sharif.edu/courses/92-93/2/ce428-1", "teacher": "Abbas Heydarnoori"}
+{"courseID": "40438", "courseName": "\u062a\u062c\u0627\u0631\u062a \u0627\u0644\u06a9\u062a\u0631\u0648\u0646\u064a\u06a9\u064a", "link": "http://ce.sharif.edu/courses/92-93/2/ce438-1", "teacher": "Ali Asghar Nazari Shirehjini"}
+{"courseID": "40442", "courseName": "Data & Network Security", "link": "http://ce.sharif.edu/courses/92-93/2/ce442-1", "teacher": "Morteza Amini"}
+{"courseID": "40443", "courseName": "Computer Networks", "link": "http://ce.sharif.edu/courses/92-93/2/ce443-1"}
+{"courseID": "40443", "courseName": "Computer Networks", "link": "http://ce.sharif.edu/courses/92-93/2/ce443-2", "teacher": "Hossein Ajorloo"}
+{"courseID": "40447", "courseName": "Computer Graphics", "link": "http://ce.sharif.edu/courses/92-93/2/ce447-1", "teacher": "Mansour Jamzad"}
+{"courseID": "40448", "courseName": "Information Technology Strategic Management & Planning", "link": "http://ce.sharif.edu/courses/92-93/2/ce448-1", "teacher": "seyed ebrahim abtahi"}
+{"courseID": "40455", "courseName": "Theory of Computation", "link": "http://ce.sharif.edu/courses/92-93/2/ce455-1", "teacher": "Mohammad Izadi"}
+{"courseID": "40463", "courseName": "Computer Measurement and Control", "link": "http://ce.sharif.edu/courses/92-93/2/ce463-1", "teacher": "Ali Mohammad Afshin Hemmatyar"}
+{"courseID": "40467", "courseName": "Fundamentals of Information Technology", "link": "http://ce.sharif.edu/courses/92-93/2/ce467-1", "teacher": "Ali Asghar Nazari Shirehjini"}
+{"courseID": "40474", "courseName": "Software Engineering", "link": "http://ce.sharif.edu/courses/92-93/2/ce474-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40484", "courseName": "ObjectOriented Systems Design", "link": "http://ce.sharif.edu/courses/92-93/2/ce484-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40533", "courseName": "Advanced Operating Systems", "link": "http://ce.sharif.edu/courses/92-93/2/ce533-1", "teacher": "Rasool Jalili"}
+{"courseID": "40634", "courseName": "DiscreteEvent System Simulation", "link": "http://ce.sharif.edu/courses/92-93/2/ce634-1", "teacher": "\u0645\u062d\u0645\u062f \u062d\u0633\u06cc\u0646 \u0632\u0646\u06af\u0648\u06cc\u06cc (Mohammad Hossein Zangooei)"}
+{"courseID": "40634", "courseName": "DiscreteEvent System Simulation", "link": "http://ce.sharif.edu/courses/92-93/2/ce634-2", "teacher": "TA : Azin Ghazimatin"}
+{"courseID": "40647", "courseName": "Parallel Processing", "link": "http://ce.sharif.edu/courses/92-93/2/ce647-1", "teacher": "Mohammad Ghodsi"}
+{"courseID": "40657", "courseName": "modeling and analysis of computer networks", "link": "http://ce.sharif.edu/courses/92-93/2/ce657-1"}
+{"courseID": "40685", "courseName": "Randomized algorithms", "link": "http://ce.sharif.edu/courses/93-94/1/ce685-1", "teacher": "Mohammad Ali Abam"}
+{"courseID": "40694", "courseName": "Semantic Web", "link": "http://ce.sharif.edu/courses/93-94/1/ce694-1", "teacher": "Morteza Amini"}
+{"courseID": "40695", "courseName": "Stochastic Processes", "link": "http://ce.sharif.edu/courses/93-94/1/ce695-1", "teacher": "Hamid R. Rabiee"}
+{"courseID": "40711", "courseName": "Fundamentals of Bioinformatics", "link": "http://ce.sharif.edu/courses/93-94/1/ce711-1", "teacher": "Seyed Abolfazl Motahari"}
+{"courseID": "40714", "courseName": "Data Mining", "link": "http://ce.sharif.edu/courses/93-94/1/ce714-1", "teacher": "TA : Baraani"}
+{"courseID": "40717", "courseName": "Machine Learning", "link": "http://ce.sharif.edu/courses/93-94/1/ce717-1", "teacher": "beigy"}
+{"courseID": "40717", "courseName": "Machine Learning", "link": "http://ce.sharif.edu/courses/93-94/1/ce717-2", "teacher": "M. Soleymani"}
+{"courseID": "40724", "courseName": "Software Development Methodologies", "link": "http://ce.sharif.edu/courses/93-94/1/ce724-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40727", "courseName": "Low Power Design", "link": "http://ce.sharif.edu/courses/93-94/1/ce727-1", "teacher": "Alireza Ejlali"}
+{"courseID": "40734", "courseName": "DataBase Security", "link": "http://ce.sharif.edu/courses/93-94/1/ce734-1", "teacher": "Rasool Jalili"}
+{"courseID": "40735", "courseName": "Computational Geometry", "link": "http://ce.sharif.edu/courses/93-94/1/ce735-1", "teacher": "Hamid Zarrabi-Zadeh"}
+{"courseID": "40745", "courseName": "Formal Specification and Verification of Programs", "link": "http://ce.sharif.edu/courses/93-94/1/ce745-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40763", "courseName": "Digital Signal Processing", "link": "http://ce.sharif.edu/courses/93-94/1/ce763-1", "teacher": "Hossein Sameti"}
+{"courseID": "40763", "courseName": "Digital Signal Processing", "link": "http://ce.sharif.edu/courses/93-94/1/ce763-2", "teacher": "manzuri"}
+{"courseID": "40824", "courseName": "Computer System Performance Evaluation", "link": "http://ce.sharif.edu/courses/93-94/1/ce824-1", "teacher": "Ali Movaghar"}
+{"courseID": "40714", "courseName": "Data Mining", "link": "http://ce.sharif.edu/courses/92-93/1/ce714-1", "teacher": "Dr. Beigy"}
+{"courseID": "40717", "courseName": "Machine Learning", "link": "http://ce.sharif.edu/courses/92-93/1/ce717-1", "teacher": "Hamid Beigy"}
+{"courseID": "40717", "courseName": "Machine Learning", "link": "http://ce.sharif.edu/courses/92-93/1/ce717-2", "teacher": "M. Soleymani"}
+{"courseID": "40724", "courseName": "Software Development Methodologies", "link": "http://ce.sharif.edu/courses/92-93/1/ce724-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40727", "courseName": "Low Power Design", "link": "http://ce.sharif.edu/courses/92-93/1/ce727-1", "teacher": "Alireza Ejlali"}
+{"courseID": "40734", "courseName": "Database Security", "link": "http://ce.sharif.edu/courses/92-93/1/ce734-1", "teacher": "Rasool Jalili"}
+{"courseID": "40735", "courseName": "Computational Geometry", "link": "http://ce.sharif.edu/courses/92-93/1/ce735-1", "teacher": "Hamid Zarrabi-Zadeh"}
+{"courseID": "40741", "courseName": "Green Computing", "link": "http://ce.sharif.edu/courses/92-93/1/ce741-1", "teacher": "Maziar Goudarzi"}
+{"courseID": "40745", "courseName": "Formal Specification and Verification of Programs", "link": "http://ce.sharif.edu/courses/92-93/1/ce745-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40763", "courseName": "Digital Signal Processing", "link": "http://ce.sharif.edu/courses/92-93/1/ce763-1", "teacher": "Hossein Sameti"}
+{"courseID": "40765", "courseName": "Advanced Algorithms (\u0627\u0644\u06af\u0648\u0631\u06cc\u062a\u0645 \u0647\u0627\u06cc \u067e\u06cc\u0634\u0631\u0641\u062a\u0647)", "link": "http://ce.sharif.edu/courses/92-93/1/ce765-1", "teacher": "ghodsi"}
+{"courseID": "40817", "courseName": "Advanced Network Security", "link": "http://ce.sharif.edu/courses/92-93/1/ce817-1", "teacher": "Course webpage at:"}
+{"courseID": "40824", "courseName": "Computer System Performance Evaluation", "link": "http://ce.sharif.edu/courses/92-93/1/ce824-1", "teacher": "Ali Movaghar"}
+{"courseID": "40874", "courseName": "Wireless Networking", "link": "http://ce.sharif.edu/courses/92-93/1/ce874-1", "teacher": "Ali Mohammad Afshin Hemmatyar"}
+{"courseID": "40661", "courseName": "Theory of Distributed Systems", "link": "http://ce.sharif.edu/courses/92-93/2/ce661-1", "teacher": "Mohammad Izadi"}
+{"courseID": "40665", "courseName": "Verification of Reactive Systems", "link": "http://ce.sharif.edu/courses/92-93/2/ce665-1", "teacher": "Ali Movaghar"}
+{"courseID": "40684", "courseName": "Program Development from Formal Specifications", "link": "http://ce.sharif.edu/courses/92-93/2/ce684-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40687", "courseName": "Machine Vision", "link": "http://ce.sharif.edu/courses/92-93/2/ce687-1", "teacher": "Mansour Jamzad"}
+{"courseID": "40693", "courseName": "Advanced Computer Networks", "link": "http://ce.sharif.edu/courses/92-93/2/ce693-1", "teacher": "Hossein Ajorloo"}
+{"courseID": "40725", "courseName": "Statistical Pattern Recognition", "link": "http://ce.sharif.edu/courses/92-93/2/ce725-1", "teacher": "Hamid Beigy"}
+{"courseID": "40725", "courseName": "Statistical Pattern Recognition", "link": "http://ce.sharif.edu/courses/92-93/2/ce725-2", "teacher": "Hamid R. Rabiee"}
+{"courseID": "40834", "courseName": "Approximation Algorithms", "link": "http://ce.sharif.edu/courses/92-93/2/ce726-1", "teacher": "Mohammad Ali Abam"}
+{"courseID": "40747", "courseName": "Embedded Systems Design", "link": "http://ce.sharif.edu/courses/92-93/2/ce747-1", "teacher": "Alireza Ejlali"}
+{"courseID": "40775", "courseName": "Theory of Computational Complexity", "link": "http://ce.sharif.edu/courses/92-93/2/ce775-1", "teacher": "Mohammad Izadi"}
+{"courseID": "40787", "courseName": "Patterns in Software Engineering", "link": "http://ce.sharif.edu/courses/92-93/2/ce787-1", "teacher": "Dr. Raman Ramsin"}
+{"courseID": "40795", "courseName": "Advanced Computational Geometry", "link": "http://ce.sharif.edu/courses/92-93/2/ce795-1", "teacher": "Hamid Zarrabi-Zadeh"}
+{"courseID": "40817", "courseName": "Advanced Network Security", "link": "http://ce.sharif.edu/courses/92-93/2/ce817-1"}
+{"courseID": "40843", "courseName": "Hardware Security and Trust", "link": "http://ce.sharif.edu/courses/92-93/2/ce843-1", "teacher": "Siavash Bayat-Sarmadi"}
+{"courseID": "40873", "courseName": "Formal Methods for Information Security", "link": "http://ce.sharif.edu/courses/92-93/2/ce873-1", "teacher": "Morteza Amini"}
+{"courseID": "40873", "courseName": "Wireless Networking", "link": "http://ce.sharif.edu/courses/92-93/2/ce873-2", "teacher": "Ali Mohammad Afshin Hemmatyar"}
+{"courseID": "40874", "courseName": "Secure Software Develo[ment", "link": "http://ce.sharif.edu/courses/92-93/2/ce874-1", "teacher": "Rasool Jalili &amp; Ahmad Boorghany"}
+{"courseID": "40883", "courseName": "Data Communications", "link": "http://ce.sharif.edu/courses/92-93/2/ce883-1", "teacher": "Ali Mohammad Afshin Hemmatyar"}
+{"courseID": "40828", "courseName": "Software Testing", "link": "http://ce.sharif.edu/courses/93-94/1/ce828-1", "teacher": "Seyed-Hassan Mirian-Hosseinabadi"}
+{"courseID": "40835", "courseName": "Algorithmic Game  Theory", "link": "http://ce.sharif.edu/courses/93-94/1/ce835-1", "teacher": "Mohammad Izadi"}
+{"courseID": "40843", "courseName": "Hardware Security and Trust", "link": "http://ce.sharif.edu/courses/93-94/1/ce843-1", "teacher": "Siavash Bayat-Sarmadi"}
+{"courseID": "40873", "courseName": "Ambient Intelligence", "link": "http://ce.sharif.edu/courses/93-94/1/ce873-1", "teacher": "Dr.-Ing. Ali Asghar Nazari Shirehjini"}
+{"courseID": "40925", "courseName": "Decentralized Database Systemes", "link": "http://ce.sharif.edu/courses/93-94/1/ce925-1", "teacher": "Seyed-Mohammad-Taghi Rohani-Rankoohi"}
+{"courseID": "40999", "courseName": " te", "link": "http://ce.sharif.edu/courses/93-94/1/ce999-12"}
+{"courseID": "40900", "courseName": "MS Seminar", "link": "http://ce.sharif.edu/courses/92-93/1/ce900-1", "teacher": "Ali Movaghar"}
+{"courseID": "40926", "courseName": "Software Evolution", "link": "http://ce.sharif.edu/courses/92-93/1/ce926-1", "teacher": "Abbas Heydarnoori"}
+{"courseID": "40933", "courseName": "Digital image processing", "link": "http://ce.sharif.edu/courses/92-93/1/ce933-1", "teacher": "Jamzad"}
+{"courseID": "40957", "courseName": "Neural Networks and Fuzzy Systems", "link": "http://ce.sharif.edu/courses/92-93/1/ce957-1", "teacher": "Mahdi Jalili"}
+{"courseID": "40925", "courseName": "Requirements Engineering", "link": "http://ce.sharif.edu/courses/92-93/2/ce925-1", "teacher": "Abbas Heydarnoori"}
+{"courseID": "40938", "courseName": "Database Design 2", "link": "http://ce.sharif.edu/courses/92-93/2/ce938-1", "teacher": "Mohammad Taghi Rohani Rankoohi"}
+{"courseID": "40957", "courseName": "Probabilistic Graphical Models (Special Topics in AI)", "link": "http://ce.sharif.edu/courses/92-93/2/ce957-1", "teacher": "M. Soleymani"}
+{"courseID": "40967", "courseName": "Speech Processing", "link": "http://ce.sharif.edu/courses/92-93/2/ce967-1", "teacher": "Hossein Sameti"}
+{"courseID": "40999", "courseName": " test", "link": "http://ce.sharif.edu/courses/92-93/2/ce999-8"}
