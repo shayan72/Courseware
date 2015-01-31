@@ -19,7 +19,7 @@
                             Date
                         </th>
                         <th width="25%">
-                            Topic
+                            Subject
                         </th>
                         <th width="45%">
                             Description
@@ -27,76 +27,22 @@
                     </tr>
                     </thead>
                     <tbody>
+                    {% for calendar_item in calendar_items %}
                     <tr>
                         <td>
-                            0
+                            {{ forloop.counter }}
                         </td>
                         <td>
-                            01/04/2012
+                            {{ calendar_item.date }}
                         </td>
                         <td>
-                            First Topic
+                            {{ calendar_item.subject }}
                         </td>
                         <td>
-                            Default
+                            {{ calendar_item.body }}
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            1
-                        </td>
-                        <td>
-                            01/04/2012
-                        </td>
-                        <td>
-                            Second Topic
-                        </td>
-                        <td>
-                            Pending
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            2
-                        </td>
-                        <td>
-                            01/04/2012
-                        </td>
-                        <td>
-                            Third Topic
-                        </td>
-                        <td>
-                            Default
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            3
-                        </td>
-                        <td>
-                            01/04/2012
-                        </td>
-                        <td>
-                            Fourth Topic
-                        </td>
-                        <td>
-                            Pending
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            4
-                        </td>
-                        <td>
-                            01/04/2012
-                        </td>
-                        <td>
-                            Fifth Topic
-                        </td>
-                        <td>
-                            Default
-                        </td>
-                    </tr>
+                    {% endfor %}
                     </tbody>
                 </table>
             </div>

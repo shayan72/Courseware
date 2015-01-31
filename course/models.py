@@ -86,12 +86,13 @@ class Announcement(models.Model):
     body = models.TextField()
     created_at = models.DateTimeField()
 
+#Calendar item
 class Calendar(models.Model):
     course_instance = models.ForeignKey(CourseInstance)
     subject = models.CharField(max_length=200)
     body = models.TextField()
     date = models.DateField()
-    created_at = models.DateTimeField()
+    created_at = models.DateTimeField( auto_now_add=True, blank=True)
 
 class TextBook(models.Model):
     name = models.CharField(max_length=1000)

@@ -1,9 +1,11 @@
 import json
+# from course.models import Course
+# from course.models import CourseInstance
+
 with open('./allCourses.json','r') as courses:
     for line in courses:
         item=json.loads(line)
-        #print item['link']
-        try:        
+        try:
             teacher_assistants=item['teacher_assistants']
         except:
             pass 
@@ -26,5 +28,4 @@ with open('./allCourses.json','r') as courses:
         try:
             link=item['link']
         except:
-            pass       
-        
+            pass

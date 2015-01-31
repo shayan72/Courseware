@@ -47,16 +47,17 @@ def course_syllabus(request, course_year_1, course_year_2, term, course_num, cou
 
 def course_calendar(request, course_year_1, course_year_2, term, course_num, course_group):
     course_instance = get_course_instance(course_year_1, course_year_2, term, course_num, course_group)
-    calendar = Calendar.objects.filter(course_instance=course_instance)
+    calendar_items = Calendar.objects.filter(course_instance=course_instance)
 
-    context = {'course_instance': course_instance, 'calendar': calendar}
+    context = {'course_instance': course_instance, 'calendar_items': calendar_items}
 
     return render(request, 'course/course_calendar.html', context)
 
 
 def course_assignments(request, course_year_1, course_year_2, term, course_num, course_group):
+
     course_instance = get_course_instance(course_year_1, course_year_2, term, course_num, course_group)
-    assignments = Assignment.objects.filter(course_instance=course_instance)
+    assignments = Assignment.objects.filter(course_instance=course_instance).order_by('date')
 
     context = {'course_instance': course_instance, 'assignments': assignments}
 

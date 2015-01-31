@@ -1,4 +1,4 @@
-[{"courseID": "40115", "courseName": "Discrete Mathematics", "link": "http://ce.sharif.edu/courses/84-85/2/ce115", "teacher": "Alireza Zarei"},
+{"courseID": "40115", "courseName": "Discrete Mathematics", "link": "http://ce.sharif.edu/courses/84-85/2/ce115", "teacher": "Alireza Zarei"},
 {"courseID": "40126", "courseName": "Computer Structure and Language", "link": "http://ce.sharif.edu/courses/84-85/2/ce126", "teacher": "Dr. H. Sarbazi Azad"},
 {"courseID": "40153", "courseName": "Introduction to Programming", "link": "http://ce.sharif.edu/courses/84-85/2/ce153", "teacher": "TA : Masoud Tajfard"},
 {"courseID": "40203", "courseName": "Digital Systems Design Lab", "link": "http://ce.sharif.edu/courses/84-85/2/ce203", "teacher": "Arash Tavakkol"},
@@ -1048,4 +1048,4 @@
 {"courseID": "40938", "courseName": "Database Design 2", "link": "http://ce.sharif.edu/courses/92-93/2/ce938-1", "teacher": "Mohammad Taghi Rohani Rankoohi"},
 {"courseID": "40957", "courseName": "Probabilistic Graphical Models (Special Topics in AI)", "link": "http://ce.sharif.edu/courses/92-93/2/ce957-1", "teacher": "M. Soleymani"},
 {"courseID": "40967", "courseName": "Speech Processing", "link": "http://ce.sharif.edu/courses/92-93/2/ce967-1", "teacher": "Hossein Sameti"},
-{"courseID": "40999", "courseName": " test", "link": "http://ce.sharif.edu/courses/92-93/2/ce999-8"}]
+{"courseID": "40999", "courseName": " test", "link": "http://ce.sharif.edu/courses/92-93/2/ce999-8"},
