@@ -65,7 +65,9 @@
                                 <a href="#" class="list-group-item active" id="yellowHeader">Menu</a>
 
                                 <div class="list-group-item">
-
+                                    <li>
+                                        <a href="{% url 'manage_course_page' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}">Home</a>
+                                    </li>
                                     <li>
                                         <a href="{% url 'manage_course_syllabus' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}">Syllabus</a>
                                     </li>

@@ -203,12 +203,17 @@
                     <div class="col-md-12">
 
                         {% if topic %}
-                        <div class="row clearfix" id="existingPost">
-                            <div class="col-md-12 column">
-                                <div class="row clearfix">
-                                    {% for post in posts %}
-                                        {#                                                each main post#}
-                                        <div class="col-md-12 column">
+                            <h4>Title: {{ topic.title }}
+                            {% if topic.locked == True %}
+                                ( locked )
+                            {% endif %}
+                            </h4>
+                            <div class="row clearfix" id="existingPost">
+                                <div class="col-md-12 column">
+                                    <div class="row clearfix">
+                                        {% for post in posts %}
+                                            {#                                                each main post#}
+                                            <div class="col-md-12 column">
                                                     <span class="label label-default">
                                                         {% if post.anonymous == True %}
                                                             anonymous
@@ -217,20 +222,20 @@
                                                         {% endif %}
                                                     </span>
 
-                                            <p>
-                                                {% autoescape off %}
-                                                    {{ post.body }}
-                                                {% endautoescape %}
-                                            </p>
+                                                <p>
+                                                    {% autoescape off %}
+                                                        {{ post.body }}
+                                                    {% endautoescape %}
+                                                </p>
 
 
-                                            {#                                                    each comment to that post#}
-                                            {% for comment in post.get_post_comments %}
-                                                <div class="row clearfix">
-                                                    <div class="col-md-1 column">
+                                                {#                                                    each comment to that post#}
+                                                {% for comment in post.get_post_comments %}
+                                                    <div class="row clearfix">
+                                                        <div class="col-md-1 column">
 
-                                                    </div>
-                                                    <div class="col-md-11">
+                                                        </div>
+                                                        <div class="col-md-11">
                                                             <span class="label label-default">
                                                                 {% if comment.anonymous == True %}
                                                                     anonymous
@@ -239,33 +244,115 @@
                                                                 {% endif %}
                                                             </span>
 
-                                                        <p>
-                                                            {% autoescape off %}
-                                                                {{ comment.body }}
-                                                            {% endautoescape %}
-                                                        </p>
+                                                            <p>
+                                                                {% autoescape off %}
+                                                                    {{ comment.body }}
+                                                                {% endautoescape %}
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            {% endfor %}
+                                                {% endfor %}
 
+                                                {% if topic.locked == False %}
+                                                    {#                                                    commnet on that post#}
+                                                    <div class="row clearfix">
+                                                        <div class="col-md-1 column">
+                                                        </div>
+                                                        <div class="col-md-11 column">
 
-                                            {#                                                    commnet on that post#}
+                                                            <form action="{% url 'course_forum_add_post' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}"
+                                                                  method="post" class="form-horizontal" role="form">
+                                                                {% csrf_token %}
+                                                                <input type="hidden" name="topic"
+                                                                       value="{{ topic.id }}"/>
+                                                                <input type="hidden" name="parent_post"
+                                                                       value="{{ post.id }}"/>
+
+                                                                <div class="form-group">
+
+                                                                    <div class="col-sm-12">
+                                                                        <a onclick="changeToReplyMode(this)"
+                                                                           id="replyInput"> + Comment to this post </a>
+
+                                                                        <div style="display: none;" id="editorDiv">
+
+                                                                            <div class="row clearfix">
+
+                                                                                <div class="col-md-2 column">
+                                                                                    <label>Anonymous</label>
+                                                                                </div>
+
+                                                                                <div class="col-md-10 column">
+
+                                                                                    <div class="form-group">
+
+                                                                                        <div class="col-sm-12">
+                                                                                            {{ form.anonymous }}
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            {{ form.body }}
+
+                                                                            <button type="submit"
+                                                                                    class="btn btn-info">Post
+                                                                            </button>
+                                                                            <script>
+                                                                                function changeToReplyMode(x) {
+                                                                                    x.style.display = "none";
+                                                                                    $(x).siblings().css({"display": "block"});
+                                                                                }
+                                                                                ;
+                                                                            </script>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+                                                    </div>
+                                                {% endif %}
+                                            </div>
+                                        {% endfor %}
+
+                                        {% if topic.locked == False %}
+                                            {#                                                reply to the post#}
                                             <div class="row clearfix">
                                                 <div class="col-md-1 column">
                                                 </div>
                                                 <div class="col-md-11 column">
 
+                                                    {% if form.errors %}
+                                                        {% for field in form %}
+                                                            {% for error in field.errors %}
+                                                                <div class="alert alert-error">
+                                                                    <strong>{{ error|escape }}</strong>
+                                                                </div>
+                                                            {% endfor %}
+                                                        {% endfor %}
+                                                        {% for error in form.non_field_errors %}
+                                                            <div class="alert alert-error">
+                                                                <strong>{{ error|escape }}</strong>
+                                                            </div>
+                                                        {% endfor %}
+                                                    {% endif %}
+
                                                     <form action="{% url 'course_forum_add_post' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}"
                                                           method="post" class="form-horizontal" role="form">
                                                         {% csrf_token %}
                                                         <input type="hidden" name="topic" value="{{ topic.id }}"/>
-                                                        <input type="hidden" name="parent_post" value="{{ post.id }}"/>
 
                                                         <div class="form-group">
 
                                                             <div class="col-sm-12">
-                                                                <a onclick="changeToReplyMode(this)"
-                                                                   id="replyInput"> + Comment to this post </a>
+
+                                                                <input type="text" class="form-control"
+                                                                       placeholder="Reply to this topic"
+                                                                       onclick="changeToReplyMode(this)"
+                                                                       style="margin-left: -50px"
+                                                                       id="replyInput"/>
 
                                                                 <div style="display: none;" id="editorDiv">
 
@@ -287,9 +374,7 @@
                                                                     </div>
 
                                                                     {{ form.body }}
-
-                                                                    <button type="submit"
-                                                                            class="btn btn-info">Post
+                                                                    <button type="submit" class="btn btn-info">Post
                                                                     </button>
                                                                     <script>
                                                                         function changeToReplyMode(x) {
@@ -306,89 +391,11 @@
 
                                                 </div>
                                             </div>
+                                        {% endif %}
 
-
-                                        </div>
-                                    {% endfor %}
-
-                                    {#                                                reply to the post#}
-                                    <div class="row clearfix">
-                                        <div class="col-md-1 column">
-                                        </div>
-                                        <div class="col-md-11 column">
-
-                                            {% if form.errors %}
-                                                {% for field in form %}
-                                                    {% for error in field.errors %}
-                                                        <div class="alert alert-error">
-                                                            <strong>{{ error|escape }}</strong>
-                                                        </div>
-                                                    {% endfor %}
-                                                {% endfor %}
-                                                {% for error in form.non_field_errors %}
-                                                    <div class="alert alert-error">
-                                                        <strong>{{ error|escape }}</strong>
-                                                    </div>
-                                                {% endfor %}
-                                            {% endif %}
-
-                                            <form action="{% url 'course_forum_add_post' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}"
-                                                  method="post" class="form-horizontal" role="form">
-                                                {% csrf_token %}
-                                                <input type="hidden" name="topic" value="{{ topic.id }}"/>
-
-                                                <div class="form-group">
-
-                                                    <div class="col-sm-12">
-
-                                                        <input type="text" class="form-control"
-                                                               placeholder="Reply to this topic"
-                                                               onclick="changeToReplyMode(this)"
-                                                               style="margin-left: -50px"
-                                                               id="replyInput"/>
-
-                                                        <div style="display: none;" id="editorDiv">
-
-                                                            <div class="row clearfix">
-
-                                                                <div class="col-md-2 column">
-                                                                    <label>Anonymous</label>
-                                                                </div>
-
-                                                                <div class="col-md-10 column">
-
-                                                                    <div class="form-group">
-
-                                                                        <div class="col-sm-12">
-                                                                            {{ form.anonymous }}
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            {{ form.body }}
-                                                            <button type="submit" class="btn btn-info">Post
-                                                            </button>
-                                                            <script>
-                                                                function changeToReplyMode(x) {
-                                                                    x.style.display = "none";
-                                                                    $(x).siblings().css({"display": "block"});
-                                                                }
-                                                                ;
-                                                            </script>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </form>
-
-                                        </div>
                                     </div>
-
-
                                 </div>
                             </div>
-                        </div>
                         {% endif %}
 
 

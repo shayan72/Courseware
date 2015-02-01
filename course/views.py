@@ -139,20 +139,21 @@ def course_forum(request, course_year_1, course_year_2, term, course_num, course
 def course_forum_add_post(request, course_year_1, course_year_2, term, course_num, course_group):
 
     if ( request.method == 'POST' ):
-        post_form = PostForm(request.POST)
-        if ( post_form.is_valid() ):
-            body = post_form.cleaned_data['body']
-            anonymous = post_form.cleaned_data['anonymous']
-            created_by = Account.objects.get(user=request.user)
-            topic = Topic.objects.get(id=request.POST.get('topic')) #TODO: check if we are in topic
-            parent = None
-            if( request.POST.__contains__('parent_post') ):
-                parent = Post.objects.get(id=request.POST.get('parent_post'))
-            post = Post( topic=topic, created_by=created_by, body=body, anonymous=anonymous, parent=parent )
-            post.save()
+        topic = Topic.objects.get(id=request.POST.get('topic')) #TODO: check if we are in topic
+        if( topic.locked == False ):
+            post_form = PostForm(request.POST)
+            if ( post_form.is_valid() ):
+                body = post_form.cleaned_data['body']
+                anonymous = post_form.cleaned_data['anonymous']
+                created_by = Account.objects.get(user=request.user)
+                parent = None
+                if( request.POST.__contains__('parent_post') ):
+                    parent = Post.objects.get(id=request.POST.get('parent_post'))
+                post = Post( topic=topic, created_by=created_by, body=body, anonymous=anonymous, parent=parent )
+                post.save()
 
-        else:
-            print "not valid :("
+            else:
+                print "not valid :("
 
     response = redirect('course_forum', course_year_1, course_year_2, term, course_num, course_group)
     response['Location'] += '?topic=' + request.POST.get('topic')

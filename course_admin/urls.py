@@ -22,6 +22,11 @@ urlpatterns = patterns('',
                                             url(r'^forum$', views.manage_course_forum, name='manage_course_forum'),
 
                                             url( r'ajax_add_grades', views.add_course_grades, name = 'ajax_add_grades' ),
+                                            url( r'forum/topic/lock', views.ajax_forum_topic_lock, name = 'ajax_forum_topic_lock' ),
+                                            url( r'forum/topic/unlock', views.ajax_forum_topic_unlock, name = 'ajax_forum_topic_unlock' ),
+                                            url( r'forum/topic/remove', views.ajax_forum_topic_remove, name = 'ajax_forum_topic_remove' ),
+                                            url( r'forum/topic/remove', views.ajax_forum_topic_remove, name = 'ajax_forum_topic_remove' ),
+                                            url( r'forum/post/remove', views.ajax_forum_post_remove, name = 'ajax_forum_post_remove' ),
                            ))
                        ),
 )

@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.core.urlresolvers import reverse
 
 from course.models import CourseInstance
 from course.models import Syllabus
@@ -8,6 +9,7 @@ from course.models import Grade
 from course.models import GradeItem
 from course.models import Resource
 from course.models import Topic
+from course.models import Post
 from account.models import Student
 
 from course_admin.forms import CalendarForm
@@ -97,15 +99,25 @@ def manage_course_resources(request, course_year_1, course_year_2, term, course_
 
 def manage_course_forum(request, course_year_1, course_year_2, term, course_num, course_group):
     course_instance = get_course_instance(course_year_1, course_year_2, term, course_num, course_group)
+    topics = Topic.objects.filter(course_instance=course_instance)
 
-    context = {'course_instance': course_instance}
+    context = {'course_instance': course_instance, 'topics': topics}
+
+    if ( request.GET.get('topic') is not None ):
+        topic = Topic.objects.get(id=request.GET.get('topic'))
+        posts = Post.objects.filter(topic=topic).filter(parent__isnull=True)
+
+        if ( topic == None ):
+            raise Http404("Topic does not exist")
+
+        context['topic'] = topic
+        context['posts'] = posts
 
     return render(request, 'course_admin/manage_course_forum.html', context)
 
 
 @ajax
 def add_course_grades(request, course_year_1, course_year_2, term, course_num, course_group):
-
     # make new Grade Item
 
     dic = request.POST.dict()
@@ -129,8 +141,7 @@ def add_course_grades(request, course_year_1, course_year_2, term, course_num, c
         student_number = item[0]
         grade = item[1]
 
-        if (
-                        student_number == None or student_number == "ID" or student_number == "grade_item_type" or student_number == "grade_item_title" ):
+        if ( student_number == None or student_number == "ID" or student_number == "grade_item_type" or student_number == "grade_item_title" ):
             continue
 
         student_number = int(student_number)
@@ -144,4 +155,27 @@ def add_course_grades(request, course_year_1, course_year_2, term, course_num, c
             grade_object = Grade(grade_item=grade_item, student_number=student_number, grade=grade)
             grade_object.save()
 
-    return "shayan"
+    return "Add Successfully"
+
+@ajax
+def ajax_forum_topic_lock(request, course_year_1, course_year_2, term, course_num, course_group):
+    topic = Topic.objects.get(id=request.POST.get('topic_id'))
+    topic.locked = True
+    topic.save()
+
+@ajax
+def ajax_forum_topic_unlock(request, course_year_1, course_year_2, term, course_num, course_group):
+    topic = Topic.objects.get(id=request.POST.get('topic_id'))
+    topic.locked = False
+    topic.save()
+
+@ajax
+def ajax_forum_topic_remove(request, course_year_1, course_year_2, term, course_num, course_group):
+    Topic.objects.filter(id=request.POST.get('topic_id')).delete()
+
+@ajax
+def ajax_forum_post_remove(request, course_year_1, course_year_2, term, course_num, course_group):
+    print request.POST.get('post_id')
+    post = Post.objects.get(id=request.POST.get('post_id'))
+    Post.objects.filter(parent=post).delete()
+    post.delete()

@@ -5,296 +5,322 @@
     <link href="{% static 'css/forum.css' %}" rel="stylesheet">
 {% endblock %}
 
+{% block 'js_header' %}
+    <script type="text/javascript" src="{% static 'django_ajax/js/jquery.ajax.min.js' %}"></script>
+{% endblock %}
+
 {% block 'body_block' %}
+
     <div class="col-md-10 column">
         <div class="row clearfix">
             <div class="col-md-3 column" id="posts">
                 <div class="panel-group" id="panel-936204">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <label>New Post</label>
-
-                            <div>
-                                <button class="btn btn-default" type="button" onclick="showNewPostDiv();">Create
-                                </button>
-                            </div>
-                            <script>
-                                function showNewPostDiv() {
-                                    replySubmit();
-                                    document.getElementById("post").style.display = "block";
-                                    document.getElementById("existingPost").style.display = "none"
-
-                                }
-                            </script>
+                            <label>Topic List</label>
 
                         </div>
                     </div>
 
                     <div class="list-group">
                         <div class="list-group-item">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <a data-toggle="collapse" data-parent="#panel-936204"
-                                       href="#panel-element-111">HWs</a>
-                                </div>
-                                <div id="panel-element-111" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <a>HWPost #1</a>
+
+                            {#                                        New Style begin#}
+
+                            {% for topic in topics %}
+                                <div>
+                                    <div>
+                                        <a href="?topic={{ topic.pk }}">
+                                            {{ topic.title }}
+                                        </a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <a data-toggle="collapse" data-parent="#panel-936204"
-                                       href="#panel-element-222">Quiz</a>
-                                </div>
-                                <div id="panel-element-222" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <a>QuizPost #1</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <a data-toggle="collapse" data-parent="#panel-936204" href="#panel-element-333">Polls</a>
-                                </div>
-                                <div id="panel-element-333" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <a>PollsPost #1</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <a data-toggle="collapse" data-parent="#panel-936204" href="#panel-element-444">Projects</a>
-                                </div>
-                                <div id="panel-element-444" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <a>ProjectPost #1</a>
-                                    </div>
-                                </div>
-                            </div>
+                            {% endfor %}
+                            {#                                        New Style End#}
+
+                            {#                                        Old Style begin#}
+
+                            {#                                        <div class="panel panel-default">#}
+                            {#                                            <div class="panel-heading">#}
+                            {#                                                <a data-toggle="collapse" data-parent="#panel-936204"#}
+                            {#                                                   href="#panel-element-222">Quiz</a>#}
+                            {#                                            </div>#}
+                            {#                                            <div id="panel-element-222" class="panel-collapse collapse">#}
+                            {#                                                <div class="panel-body">#}
+                            {#                                                    <a>QuizPost #1</a>#}
+                            {#                                                </div>#}
+                            {#                                            </div>#}
+                            {#                                        </div>#}
+                            {#                                        <div class="panel panel-default">#}
+                            {#                                            <div class="panel-heading">#}
+                            {#                                                <a data-toggle="collapse" data-parent="#panel-936204"#}
+                            {#                                                   href="#panel-element-333">Polls</a>#}
+                            {#                                            </div>#}
+                            {#                                            <div id="panel-element-333" class="panel-collapse collapse">#}
+                            {#                                                <div class="panel-body">#}
+                            {#                                                    <a>PollsPost #1</a>#}
+                            {#                                                </div>#}
+                            {#                                            </div>#}
+                            {#                                        </div>#}
+                            {#                                        <div class="panel panel-default">#}
+                            {#                                            <div class="panel-heading">#}
+                            {#                                                <a data-toggle="collapse" data-parent="#panel-936204"#}
+                            {#                                                   href="#panel-element-444">Projects</a>#}
+                            {#                                            </div>#}
+                            {#                                            <div id="panel-element-444" class="panel-collapse collapse">#}
+                            {#                                                <div class="panel-body">#}
+                            {#                                                    <a>ProjectPost #1</a>#}
+                            {#                                                </div>#}
+                            {#                                            </div>#}
+                            {#                                        </div>#}
+
+                            {#                                        Old Style End#}
+
                         </div>
                     </div>
+
+
                 </div>
             </div>
 
             <div class="col-md-9 column">
                 <div class="row clearfix" id="post" style="display:none;">
                     <div class="col-md-12">
-                        <div class="row clearfix">
-                            <div class="col-md-2">
+                        {#                        <div class="row clearfix" id="typeOfPost">#}
+                        {#                            <div class="col-md-2">#}
+                        {#                                <label>Type </label>#}
+                        {#                            </div>#}
+                        {#                            <div class="col-md-10">#}
+                        {#                                <div class="btn-group btn-group-xs">#}
+                        {#                                    <button class="btn btn-default" type="button">HW</button>#}
+                        {#                                    <button class="btn btn-default" type="button"> Quiz</button>#}
+                        {#                                    <button class="btn btn-default" type="button"> Polls</button>#}
+                        {#                                    <button class="btn btn-default" type="button">Project</button>#}
+                        {#                                </div>#}
+                        {##}
+                        {#                            </div>#}
+                        {#                        </div>#}
+                        {#                        <br>#}
 
-                            </div>
-                            <div class="col-md-10 column">
-                                <div>
-                                    <form role="form">
-                                        <label class="radio-inline">
-                                            <input type="radio" name="anonymous">Option 1
-                                        </label>
-                                        <label class="radio-inline">
-                                            <input type="radio" name="anonymous">Option 2
-                                        </label>
+                        <form action="{% url 'course_forum_add_topic' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}"
+                              method="post" class="form-horizontal" role="form" id="topic_form">
+                            {% csrf_token %}
 
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row clearfix" id="typeOfPost">
-                            <div class="col-md-2">
-                                <label>Type </label>
-                            </div>
-                            <div class="col-md-10">
-                                <div class="btn-group btn-group-xs">
-                                    <button class="btn btn-default" type="button">HW</button>
-                                    <button class="btn btn-default" type="button"> Quiz</button>
-                                    <button class="btn btn-default" type="button"> Polls</button>
-                                    <button class="btn btn-default" type="button">Project</button>
+                            <div class="row clearfix">
+
+                                <div class="col-md-2 column">
+                                    <label>Topic</label>
                                 </div>
 
-                            </div>
-                        </div>
+                                <div class="col-md-10 column">
 
-
-                        <br>
-
-                        <div class="row clearfix">
-
-                            <div class="col-md-2 column">
-                                <label>Topic</label>
-                            </div>
-
-                            <div class="col-md-10 column">
-
-                                <form class="form-horizontal" role="form" id="topic">
                                     <div class="form-group">
 
                                         <div class="col-sm-12">
-                                            <input type="email" class="form-control" id="inp"/>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-
-                        <div class="row clearfix">
-                            <div class="col-md-2 column">
-                                <label>Details</label>
-
-                            </div>
-
-
-                            <div class="col-md-10 column">
-                                <form method="post" action="somepage">
-                                    <textarea name="makan"></textarea>
-                                </form>
-                            </div>
-                        </div>
-
-                        <div class="row clearfix" id="postButton">
-                            <div class="col-md-2">
-
-                            </div>
-                            <div class="col-md-10">
-                                <button type="button" class="btn btn-info" onclick="hideNewPostDiv();">Post</button>
-                                <Script>
-                                    function hideNewPostDiv() {
-                                        document.getElementById("existingPost").style.display = "block";
-                                        document.getElementById("post").style.display = "none";
-                                    }
-                                </Script>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-md-12">
-
-
-                        <div class="row clearfix" id="existingPost">
-                            <div class="col-md-12 column">
-                                <div class="row clearfix">
-                                    <div class="col-md-11 column">
-                                        <span class="label label-default">Name of Student</span>
-
-                                        <p>
-                                            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac
-                                            cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
-                                            amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
-                                            dui.
-                                        </p>
-
-                                        <div class="row clearfix">
-                                            <div class="col-md-1 column">
-
-                                            </div>
-                                            <div class="col-md-11">
-                                                <span class="label label-default">Name of Student</span>
-
-                                                <p>porta gravida at eget metus. Fusce dapibus, tellus ac cursus
-                                                    commodo</p>
-                                            </div>
-
-                                        </div>
-                                        <div class="row clearfix">
-                                            <div class="col-md-1 column">
-                                            </div>
-                                            <div class="col-md-11 column">
-
-                                                <form class="form-horizontal" role="form" id="topic">
-                                                    <div class="form-group">
-
-                                                        <div class="col-sm-12">
-                                                            <input type="email" class="form-control"
-                                                                   placeholder="Reply to this post"
-                                                                   onclick="changeToReplyMode(this)" id="replyInput"/>
-
-                                                            <div style="display: none;" id="editorDiv">
-                                                                <form method="post" action="somepage">
-                                                                    <textarea></textarea>
-                                                                </form>
-                                                                <button type="button" class="btn btn-info"
-                                                                        onclick="replySubmit(this)">Post
-                                                                </button>
-                                                                <script>
-                                                                    function changeToReplyMode(x) {
-                                                                        x.style.display = "none";
-                                                                        $(x).siblings().css({"display": "block"});
-                                                                    }
-                                                                    ;
-                                                                </script>
-                                                                <script>
-                                                                    function replySubmit() {
-                                                                        document.getElementById('replyInput').style.display = 'block';
-                                                                        document.getElementById("editorDiv").style.display = 'none';
-
-
-                                                                    }
-                                                                    ;
-                                                                </script>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1">
-
-                                        <div class="row clearfix">
-                                            <div class="col-md-12 column">
-                                                <div class="btn-group-sm">
-                                                    <button data-toggle="dropdown"
-                                                            class="btn btn-default dropdown-toggle"><span
-                                                            class="caret"></span></button>
-                                                    <ul class="dropdown-menu">
-                                                        <li id="lock">
-                                                            <a href="#" onclick="LockAndUnlock();">Lock</a>
-                                                        </li>
-                                                        <li id="unlock" class="disabled">
-                                                            <a href="#" onclick="LockAndUnlock();">Unlock</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" onclick="hidePostDiv()">Remove</a>
-                                                            <script>
-                                                                function hidePostDiv() {
-                                                                    document.getElementById("existingPost").style.display = "none";
-                                                                }
-                                                            </script>
-                                                        </li>
-                                                        <script>
-                                                            function LockAndUnlock() {
-
-                                                                "block" == getCurrentStyle(document.getElementById("replyInput"), "display") ? (document.getElementById("replyInput").style.display = "none" , document.getElementById("lock").className = "disabled" , document.getElementById("unlock").className = "enabled") : (document.getElementById("replyInput").style.display = "block", document.getElementById("unlock").className = "disabled" , document.getElementById("lock").className = "enabled");
-
-                                                            }
-
-
-                                                            function getCurrentStyle(ele, prop) {
-
-                                                                var currStyle;
-                                                                if (!window.getComputedStyle) {
-                                                                    currStyle = ele.currentStyle[prop];
-                                                                } else {
-                                                                    currStyle = window.getComputedStyle(ele).getPropertyValue(prop);
-                                                                }
-
-                                                                return currStyle;
-                                                            }
-
-
-                                                        </script>
-
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                            {{ topic_form.title }}
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+
+                            <div class="row clearfix">
+
+                                <div class="col-md-2 column">
+                                    <label>Anonymous</label>
+                                </div>
+
+                                <div class="col-md-10 column">
+
+                                    <div class="form-group">
+
+                                        <div class="col-sm-12">
+                                            {{ topic_form.anonymous }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row clearfix">
+                                <div class="col-md-2 column">
+                                    <label>Details</label>
+
+                                </div>
+
+
+                                <div class="col-md-10 column">
+                                    {{ topic_form.body }}
+                                </div>
+                            </div>
+
+                            <div class="row clearfix" id="postButton">
+                                <div class="col-md-2">
+
+                                </div>
+                                <div class="col-md-10">
+                                    <button type="button" class="btn btn-info" onclick="hideNewPostDiv();">
+                                        Post
+                                    </button>
+                                    <Script>
+                                        function hideNewPostDiv() {
+                                            document.getElementById("existingPost").style.display = "block";
+                                            document.getElementById("post").style.display = "none";
+                                            $('#topic_form').submit()
+                                        }
+                                    </Script>
+
+                                </div>
+                            </div>
+                        </form>
                     </div>
+                </div>
+                <div class="row clearfix">
+                    {% if topic %}
+                        <h4>Title: {{ topic.title }}
+                            {% if topic.locked == True %}
+                                ( locked )
+                            {% endif %}
+                        </h4>
+                        <div class="col-md-11">
+                            <div class="row clearfix" id="existingPost">
+                                <div class="col-md-12 column">
+                                    <div class="row clearfix">
+                                        {% for post in posts %}
+                                            {#                                                each main post#}
+                                            <div class="col-md-12 column">
+                                                    <span class="label label-default">
+                                                        {% if post.anonymous == True %}
+                                                            anonymous
+                                                        {% else %}
+                                                            {{ post.created_by }}
+                                                        {% endif %}
+                                                    </span>
+
+                                                <div><a href="#" onclick="RemovePost({{ post.id }})"> delete </a></div>
+                                                <p>
+                                                    {% autoescape off %}
+                                                        {{ post.body }}
+                                                    {% endautoescape %}
+                                                </p>
+
+
+                                                {#                                                    each comment to that post#}
+                                                {% for comment in post.get_post_comments %}
+                                                    <div class="row clearfix">
+                                                        <div class="col-md-1 column">
+
+                                                        </div>
+                                                        <div class="col-md-11">
+                                                            <span class="label label-default">
+                                                                {% if comment.anonymous == True %}
+                                                                    anonymous
+                                                                {% else %}
+                                                                    {{ comment.created_by }}
+                                                                {% endif %}
+
+                                                            </span>
+
+                                                            <div><a href="#" onclick="RemovePost({{ comment.id }})">
+                                                                delete </a></div>
+
+                                                            <p>
+                                                                {% autoescape off %}
+                                                                    {{ comment.body }}
+                                                                {% endautoescape %}
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                {% endfor %}
+
+                                            </div>
+                                        {% endfor %}
+                                        <script>
+                                            function RemovePost(id) {
+                                                ajaxPost("{% url 'ajax_forum_post_remove' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}",
+                                                        {'post_id': id}, function (content) {
+                                                            //onSuccess
+                                                            location.reload()
+                                                        })
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-1">
+
+                            <div class="row clearfix">
+                                <div class="col-md-12 column">
+                                    <div class="btn-group-sm">
+                                        <button data-toggle="dropdown"
+                                                class="btn btn-default dropdown-toggle"><span
+                                                class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                            <li id="lock"
+                                                    {% if topic.locked == True %}
+                                                class="disabled"
+                                                    {% endif %}
+                                                    >
+                                                <a href="#" onclick="Lock()">Lock</a>
+                                            </li>
+                                            <li id="unlock"
+                                                    {% if topic.locked == False %}
+                                                class="disabled"
+                                                    {% endif %}
+                                                    >
+                                                <a href="#" onclick="UnLock()">Unlock</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="removeTopic()">Remove</a>
+                                                <script>
+                                                    function removeTopic() {
+                                                        ajaxPost("{% url 'ajax_forum_topic_remove' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}",
+                                                                {'topic_id': '{{ topic.id }}'}, function (content) {
+                                                                    //onSuccess
+                                                                    window.location = window.location.href.split("?")[0];
+                                                                })
+                                                    }
+                                                </script>
+                                            </li>
+                                            <script>
+                                                function Lock() {
+                                                    ajaxPost("{% url 'ajax_forum_topic_lock' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}",
+                                                            {'topic_id': '{{ topic.id }}'}, function (content) {
+                                                                //onSuccess
+                                                                location.reload()
+                                                            })
+                                                }
+
+                                                function UnLock() {
+                                                    ajaxPost("{% url 'ajax_forum_topic_unlock' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}",
+                                                            {'topic_id': '{{ topic.id }}'}, function (content) {
+                                                                //onSuccess
+                                                                location.reload()
+                                                            })
+                                                }
+
+
+                                                function getCurrentStyle(ele, prop) {
+
+                                                    var currStyle;
+                                                    if (!window.getComputedStyle) {
+                                                        currStyle = ele.currentStyle[prop];
+                                                    } else {
+                                                        currStyle = window.getComputedStyle(ele).getPropertyValue(prop);
+                                                    }
+
+                                                    return currStyle;
+                                                }
+
+
+                                            </script>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
