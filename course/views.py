@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import Http404
 
 from course.models import CourseInstance
@@ -21,10 +21,11 @@ from django.template import RequestContext
 from ajaxuploader.views import AjaxFileUploader
 
 def courses(request, course_year_1 = 93, course_year_2 = 94, term = 'FA' ):
-    course_instance_list = CourseInstance.objects.filter(term__year=93).filter(term__semester='FA')
+    course_instance_list = CourseInstance.objects.filter(term__year=course_year_1).filter(term__semester=term)
     terms = Term.objects.all()
+    current_term = Term.objects.filter(year=course_year_1).filter(semester=term).get()
 
-    context = {'course_instance_list': course_instance_list, 'terms': terms }
+    context = {'course_instance_list': course_instance_list, 'terms': terms, 'current_term': current_term }
 
     return render(request, 'course/courses.html', context )
 
@@ -111,10 +112,8 @@ def course_resources(request, course_year_1, course_year_2, term, course_num, co
 
 def course_forum(request, course_year_1, course_year_2, term, course_num, course_group):
     if ( request.method == 'POST' ):
-        print "pooooooost"
         post_form = PostForm(request.POST)
         if ( post_form.is_valid() ):
-            print "valiiiiiid"
             post_form.save()
         else:
             print "not valid :("
@@ -137,6 +136,33 @@ def course_forum(request, course_year_1, course_year_2, term, course_num, course
         context['posts'] = posts
 
     return render(request, 'course/course_forum.html', context)
+
+def course_forum_add_topic(request, course_year_1, course_year_2, term, course_num, course_group):
+    # if ( request.method == 'POST' ):
+    #     post_form = PostForm(request.POST)
+    #     if ( post_form.is_valid() ):
+    #         post_form.save()
+    #     else:
+    #         print "not valid :("
+    # else:
+    #     post_form = PostForm()
+    #
+    # course_instance = get_course_instance(course_year_1, course_year_2, term, course_num, course_group)
+    # topics = Topic.objects.filter(course_instance=course_instance)
+    #
+    # context = {'course_instance': course_instance, 'topics': topics, 'form': post_form}
+    #
+    # if ( request.GET.get('topic') != None ):
+    #     topic = Topic.objects.get(id=request.GET.get('topic'))
+    #     posts = Post.objects.filter(topic=topic).filter(parent__isnull=True)
+    #
+    #     if ( topic == None ):
+    #         raise Http404("Topic does not exist")
+    #
+    #     context['topic'] = topic
+    #     context['posts'] = posts
+    print 'eyval'
+    return redirect('course_forum', course_year_1, course_year_2, term, course_num, course_group)
 
 
 def get_course_instance(course_year_1, course_year_2, term, course_num, course_group):

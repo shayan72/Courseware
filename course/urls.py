@@ -18,6 +18,9 @@ urlpatterns = patterns('',
                                             url( r'^videolectures$', views.course_videolectures, name='course_videolectures' ),
                                             url( r'^resources$', views.course_resources, name='course_resources' ),
                                             url( r'^forum$', views.course_forum, name='course_forum' ),
+
+                                            url( r'^forum/add/topic$', views.course_forum_add_topic, name='course_forum_add_topic' ),
+
                                                                                                        ))
                                         ),
                                                                                                                 ))

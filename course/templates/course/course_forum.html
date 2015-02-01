@@ -129,55 +129,58 @@
 
                         <br>
 
-                        <div class="row clearfix">
+                        <form action="{% url 'course_forum_add_topic' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}"
+                              method="post" class="form-horizontal" role="form" id="topic_form">
+                            {% csrf_token %}
 
-                            <div class="col-md-2 column">
-                                <label>Topic</label>
-                            </div>
+                            <div class="row clearfix">
 
-                            <div class="col-md-10 column">
+                                <div class="col-md-2 column">
+                                    <label>Topic</label>
+                                </div>
 
-                                <form class="form-horizontal" role="form" id="topic">
+                                <div class="col-md-10 column">
+
                                     <div class="form-group">
 
                                         <div class="col-sm-12">
-                                            <input type="email" class="form-control" id="inp"/>
+                                            <input type="text" name="topic" class="form-control" id="inp"/>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                        </div>
-
-                        <div class="row clearfix">
-                            <div class="col-md-2 column">
-                                <label>Details</label>
-
+                                </div>
                             </div>
 
+                            <div class="row clearfix">
+                                <div class="col-md-2 column">
+                                    <label>Details</label>
 
-                            <div class="col-md-10 column">
-                                <form method="post" action="somepage">
-                                    <textarea name="makan"></textarea>
-                                </form>
-                            </div>
-                        </div>
+                                </div>
 
-                        <div class="row clearfix" id="postButton">
-                            <div class="col-md-2">
 
+                                <div class="col-md-10 column">
+                                    <textarea name="topic_post"></textarea>
+                                </div>
                             </div>
-                            <div class="col-md-10">
-                                <button type="button" class="btn btn-info" onclick="hideNewPostDiv();">
-                                    Post
-                                </button>
-                                <Script>
-                                    function hideNewPostDiv() {
-                                        document.getElementById("existingPost").style.display = "block";
-                                        document.getElementById("post").style.display = "none";
-                                    }
-                                </Script>
+
+                            <div class="row clearfix" id="postButton">
+                                <div class="col-md-2">
+
+                                </div>
+                                <div class="col-md-10">
+                                    <button type="button" class="btn btn-info" onclick="hideNewPostDiv();">
+                                        Post
+                                    </button>
+                                    <Script>
+                                        function hideNewPostDiv() {
+                                            document.getElementById("existingPost").style.display = "block";
+                                            document.getElementById("post").style.display = "none";
+                                            $('#topic_form').submit()
+                                        }
+                                    </Script>
+
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
                 <div class="row clearfix">

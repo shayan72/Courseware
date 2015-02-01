@@ -78,11 +78,10 @@
                                         </div>
                                         <div class="col-md-11">
                                             <p style="margin-left: -3em;"> {{ assignment.description }} </p>
-
-                                            <p><a href="{{ assignment.link }}" target="_blank"> Download
-                                                HW#{{ forloop.counter }} </a></p>
+                                            <a href="{{ assignment.link }}" target="_blank" style="margin-left:-40px;"> Download
+                                                HW#{{ forloop.counter }} </a>
                                         </div>
-                                        <div id="file-uploader">
+                                        <div id="file-uploader" style="margin-left:40px;margin-top:70px;">
                                             <noscript>
                                                 <p>Please enable JavaScript to use file uploader.</p>
                                             </noscript>

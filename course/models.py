@@ -165,7 +165,6 @@ class Topic(models.Model):
     course_instance = models.ForeignKey(CourseInstance)
     created_by = models.ForeignKey('account.Account')
     title = models.CharField( max_length=200 )
-    body = models.TextField()
     view_num = models.IntegerField( default=0 )
     locked = models.BooleanField( default=False )
     anonymous = models.BooleanField( default=False )
