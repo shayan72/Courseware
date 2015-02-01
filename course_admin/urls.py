@@ -20,6 +20,8 @@ urlpatterns = patterns('',
                                             url(r'^resources$', views.manage_course_resources,
                                                 name='manage_course_resources'),
                                             url(r'^forum$', views.manage_course_forum, name='manage_course_forum'),
+
+                                            url( r'ajax_add_grades', views.add_course_grades, name = 'ajax_add_grades' ),
                            ))
                        ),
 )

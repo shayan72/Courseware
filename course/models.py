@@ -80,6 +80,10 @@ class RoomReservation(models.Model):
     finish_time = models.TimeField()
     is_ta = models.BooleanField(default=False)
 
+    def get_day(self):
+        d = dict(self.DAY_CHOICES)
+        return d[self.day]
+
 class Announcement(models.Model):
     created_by = models.ForeignKey('account.Account')
     course_instance = models.ForeignKey(CourseInstance)
@@ -123,16 +127,34 @@ class UploadedAssignment(models.Model):
 
 
 class GradeItem(models.Model):
+
+    EXAM = 'EX'
+    ASSIGNMENT = 'AS'
+    PROJECT = 'PR'
+    FINAL = 'FI'
+    OTHER = 'OT'
+
+    GRADE_TYPE_CHOICES = (
+        ( EXAM, 'Exam' ),
+        ( ASSIGNMENT, 'Assignment' ),
+        ( PROJECT, 'Project' ),
+        ( FINAL, 'Final' ),
+        ( OTHER, 'OT' ),
+    )
+
     course_instance = models.ForeignKey(CourseInstance)
     title = models.CharField( max_length=200 )
     assignment = models.ForeignKey(Assignment, null=True, blank=True )
-    # quiz
+    grade_type = models.CharField(max_length=2, choices=GRADE_TYPE_CHOICES, default=OTHER)
     max_grade = models.PositiveIntegerField()
-    coefficient = models.PositiveIntegerField()
+    coefficient = models.PositiveIntegerField( null = True, blank = True )
 
 class Grade(models.Model):
-    student = models.ForeignKey('account.Student')
-    grade = models.PositiveIntegerField()
+    grade_item = models.ForeignKey(GradeItem, null = True, blank = True ) #Delete null = True and blank = True
+    student = models.ForeignKey('account.Student', null=True, blank=True)
+    student_name = models.CharField(max_length=200, null=True, blank=True)
+    student_number = models.PositiveIntegerField(null=True, blank=True)
+    grade = models.PositiveIntegerField( null = True, blank = True )
 
 class Resource(models.Model):
     name = models.CharField(max_length=1000)

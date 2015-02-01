@@ -5,290 +5,227 @@
     <link href="{% static 'css/calendar.css' %}" rel="stylesheet">
     <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/table.css' %}" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="{% static 'dist/handsontable.full.css' %}">
+{% endblock %}
+
+{% block 'js_header' %}
+    <script src="{% static 'dist/handsontable.full.js' %}"></script>
 {% endblock %}
 
 {% block 'body_block' %}
+    <div class="row clearfix">
+        <div class="col-md-12">
+            <div class="row clearfix">
+                <div class="col-md-3 column">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active">HWs</a>
 
-    <div class="col-md-10 column">
-        <div class="row clearfix">
-            <div class="col-md-12">
-                <div class="row clearfix">
-                    <div class="col-md-3 column">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item active">HWs</a>
+                        <div class="list-group-item">
+                            <div class="panel-group" id="panel-1">
 
-                            <div class="list-group-item">
-                                <div class="panel-group" id="panel-4">
+                                {% for grade_item in grade_items_HW %}
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
-                                            <a class="panel-title" data-toggle="collapse" data-parent="#panel-4"
-                                               href="#panel-element-6">HW #1</a>
-                                        </div>
-                                        <div id="panel-element-6" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                <table class="ExcelTable2007">
-                                                    <tr>
-                                                        <th>StdID</th>
-                                                        <th>Grade</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <a class="panel-title" data-toggle="collapse" data-parent="#panel-4"
-                                               href="#panel-element-7">HW #2</a>
-                                        </div>
-                                        <div id="panel-element-7" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                <table class="ExcelTable2007">
-                                                    <tr>
-                                                        <th>StdID</th>
-                                                        <th>Grade</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 column">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item active">Projects</a>
-
-                            <div class="list-group-item">
-                                <div class="panel-group" id="panel-1">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <a class="panel-title" data-toggle="collapse" data-parent="#panel-1"
-                                               href="#panel-element-1">Project #1</a>
+                                            <a class="panel-title" data-toggle="collapse"
+                                               data-parent="#panel-1" href="#panel-element-1">{{ grade_item.title }}</a>
                                         </div>
                                         <div id="panel-element-1" class="panel-collapse collapse">
                                             <div class="panel-body">
-                                                <table class="ExcelTable2007">
-                                                    <tr>
-                                                        <th>StdID</th>
-                                                        <th>Grade</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                </table>
+
+                                                <div id="HWentry">
+                                                </div>
+
+
+                                                <script>
+
+                                                    var data = [
+                                                        ["ID", "Gr"],
+                                                        {% for grade in grade_item.grade_set.all %}
+                                                            ["{{ grade.student_number }}", "{{ grade.grade }}"],
+                                                        {% endfor %}
+                                                    ];
+
+                                                    var container = document.getElementById('HWentry');
+                                                    var entry = new Handsontable(container,
+                                                            {
+                                                                data: data,
+                                                                minSpareRows: 1,
+                                                                colHeaders: true,
+                                                                colWidths: [70, 30],
+                                                                contextMenu: true
+                                                            });
+                                                </script>
+
                                             </div>
                                         </div>
                                     </div>
+                                {% empty %}
+                                    No Homework yet
+                                {% endfor %}
 
-
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <a class="panel-title" data-toggle="collapse" data-parent="#panel-1"
-                                               href="#panel-element-2">Project #2</a>
-                                        </div>
-                                        <div id="panel-element-2" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                <table class="ExcelTable2007">
-                                                    <tr>
-                                                        <th>StdID</th>
-                                                        <th>Grade</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-3 column">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item active">Exams</a>
-
-                            <div class="list-group-item">
-                                <div class="panel-group" id="panel-2">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <a class="panel-title" data-toggle="collapse" data-parent="#panel-2"
-                                               href="#panel-element-3">Quiz #1</a>
-                                        </div>
-                                        <div id="panel-element-3" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                <table class="ExcelTable2007">
-                                                    <tr>
-                                                        <th>StdID</th>
-                                                        <th>Grade</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <a class="panel-title" data-toggle="collapse" data-parent="#panel-2"
-                                               href="#panel-element-4">Midterm</a>
-                                        </div>
-                                        <div id="panel-element-4" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                <table class="ExcelTable2007">
-                                                    <tr>
-                                                        <th>StdID</th>
-                                                        <th>Grade</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 column">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item active">Final Grade</a>
-
-                            <div class="list-group-item">
-                                <div class="panel-group" id="panel-3">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <a class="panel-title" data-toggle="collapse" data-parent="#panel-3"
-                                               href="#panel-element-5">Final</a>
-                                        </div>
-                                        <div id="panel-element-5" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                <table class="ExcelTable2007">
-                                                    <tr>
-                                                        <th>StdID</th>
-                                                        <th>Grade</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>90101234</td>
-                                                        <td>60</td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-3 column">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active">Projects</a>
+
+                        <div class="list-group-item">
+                            <div class="panel-group" id="panel-2">
+
+                                {% for grade_item in grade_items_PR %}
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <a class="panel-title" data-toggle="collapse"
+                                               data-parent="#panel-2" href="#panel-element-2">{{ grade_item.title }}</a>
+                                        </div>
+                                        <div id="panel-element-2" class="panel-collapse collapse">
+                                            <div class="panel-body">
+
+                                                <div id="Projectentry">
+                                                </div>
+
+
+                                                <script>
+
+                                                    var data = [
+                                                        ["ID", "Gr"],
+                                                        {% for grade in grade_item.grade_set.all %}
+                                                            ["{{ grade.student_number }}", "{{ grade.grade }}"],
+                                                        {% endfor %}
+                                                    ];
+
+                                                    var container = document.getElementById('Projectentry');
+                                                    var entry = new Handsontable(container,
+                                                            {
+                                                                data: data,
+                                                                minSpareRows: 1,
+                                                                colHeaders: true,
+                                                                colWidths: [70, 30],
+                                                                contextMenu: true
+                                                            });
+                                                </script>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% empty %}
+                                    No Projects yet
+                                {% endfor %}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 column">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active">Exams</a>
+
+                        <div class="list-group-item">
+                            <div class="panel-group" id="panel-3">
+
+                                {% for grade_item in grade_items_EX %}
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <a class="panel-title" data-toggle="collapse"
+                                               data-parent="#panel-3"
+                                               href="#panel-element-3"> {{ grade_item.title }}</a>
+                                        </div>
+                                        <div id="panel-element-3" class="panel-collapse collapse">
+                                            <div class="panel-body">
+
+                                                <div id="Quizentry">
+                                                </div>
+
+
+                                                <script>
+
+                                                    var data = [
+                                                        ["ID", "Gr"],
+                                                        {% for grade in grade_item.grade_set.all %}
+                                                            ["{{ grade.student_number }}", "{{ grade.grade }}"],
+                                                        {% endfor %}
+                                                    ];
+
+                                                    var container = document.getElementById('Quizentry');
+                                                    var entry = new Handsontable(container,
+                                                            {
+                                                                data: data,
+                                                                minSpareRows: 1,
+                                                                colHeaders: true,
+                                                                colWidths: [70, 30],
+                                                                contextMenu: true
+                                                            });
+                                                </script>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% empty %}
+                                    No Exams yet
+                                {% endfor %}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 column">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active">Final Grade</a>
+
+                        <div class="list-group-item">
+                            <div class="panel-group" id="panel-4">
+                                {% for grade_item in grade_items_FI %}
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <a class="panel-title" data-toggle="collapse"
+                                               data-parent="#panel-4"
+                                               href="#panel-element-4"> {{ grade_item.title }} </a>
+                                        </div>
+                                        <div id="panel-element-4" class="panel-collapse collapse">
+                                            <div class="panel-body">
+
+                                                <div id="Finalentry">
+                                                </div>
+
+
+                                                <script>
+
+                                                    var data = [
+                                                        ["ID", "Gr"],
+                                                        {% for grade in grade_item.grade_set.all %}
+                                                            ["{{ grade.student_number }}", "{{ grade.grade }}"],
+                                                        {% endfor %}
+                                                    ];
+
+                                                    var container = document.getElementById('Finalentry');
+                                                    var entry = new Handsontable(container,
+                                                            {
+                                                                data: data,
+                                                                minSpareRows: 1,
+                                                                colHeaders: true,
+                                                                colWidths: [70, 30],
+                                                                contextMenu: true
+                                                            });
+                                                </script>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% empty %}
+                                    No Finals yet
+                                {% endfor %}
+
+                            </div>
+                        </div>
+                    </div>
+
+
             </div>
         </div>
     </div>
-
 {% endblock %}

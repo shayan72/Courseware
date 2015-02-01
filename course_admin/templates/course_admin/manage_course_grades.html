@@ -1,10 +1,314 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-Manage Course Grades
-</body>
-</html>
+{% extends 'course_admin/manage_base.html' %}
+{% load staticfiles %}
+
+{% block 'css_header' %}
+    <link href="{% static 'css/calendar.css' %}" rel="stylesheet">
+    <link href="{% static 'css/table.css' %}" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="{% static 'dist/handsontable.full.css' %}">
+{% endblock %}
+
+{% block 'js_header' %}
+    <script src="{% static 'dist/handsontable.full.js' %}"></script>
+    <script src="{% static 'js/GradeManaging.js' %}" type="text/javascript"></script>
+    <script type="text/javascript" src="{% static 'django_ajax/js/jquery.ajax.min.js' %}"></script>
+{% endblock %}
+
+{% block 'body_block' %}
+    <div class="col-md-10 column">
+        <div class="row clearfix">
+            <div class="col-md-12">
+                <div class="row clearfix">
+                    <div class="col-md-3 column">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">HWs</a>
+
+                            <div class="list-group-item">
+                                <div class="panel-group" id="panel-1">
+
+                                    {% for grade_item in grade_items_HW %}
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <a class="panel-title" data-toggle="collapse"
+                                               data-parent="#panel-1" href="#panel-element-1">{{ grade_item.title }}</a>
+                                        </div>
+                                        <div id="panel-element-1" class="panel-collapse collapse">
+                                            <div class="panel-body">
+
+                                                <div id="HWentry">
+                                                </div>
+
+
+                                                <script>
+
+                                                    var data = [
+                                                        ["ID", "Gr"],
+                                                        {% for grade in grade_item.grade_set.all %}
+                                                        ["{{ grade.student_number }}", "{{ grade.grade }}"],
+                                                        {% endfor %}
+                                                    ];
+
+                                                    var container = document.getElementById('HWentry');
+                                                    var entry = new Handsontable(container,
+                                                            {
+                                                                data: data,
+                                                                minSpareRows: 1,
+                                                                colHeaders: true,
+                                                                colWidths: [70, 30],
+                                                                contextMenu: true
+                                                            });
+                                                </script>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% empty %}
+                                    No Homework yet
+                                    {% endfor %}
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 column">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">Projects</a>
+
+                            <div class="list-group-item">
+                                <div class="panel-group" id="panel-2">
+
+                                    {% for grade_item in grade_items_PR %}
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <a class="panel-title" data-toggle="collapse"
+                                               data-parent="#panel-2" href="#panel-element-2">{{ grade_item.title }}</a>
+                                        </div>
+                                        <div id="panel-element-2" class="panel-collapse collapse">
+                                            <div class="panel-body">
+
+                                                <div id="Projectentry">
+                                                </div>
+
+
+                                                <script>
+
+                                                    var data = [
+                                                        ["ID", "Gr"],
+                                                        {% for grade in grade_item.grade_set.all %}
+                                                        ["{{ grade.student_number }}", "{{ grade.grade }}"],
+                                                        {% endfor %}
+                                                    ];
+
+                                                    var container = document.getElementById('Projectentry');
+                                                    var entry = new Handsontable(container,
+                                                            {
+                                                                data: data,
+                                                                minSpareRows: 1,
+                                                                colHeaders: true,
+                                                                colWidths: [70, 30],
+                                                                contextMenu: true
+                                                            });
+                                                </script>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% empty %}
+                                        No Projects yet
+                                    {% endfor %}
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3 column">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">Exams</a>
+
+                            <div class="list-group-item">
+                                <div class="panel-group" id="panel-3">
+
+                                    {% for grade_item in grade_items_EX %}
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <a class="panel-title" data-toggle="collapse"
+                                               data-parent="#panel-3" href="#panel-element-3"> {{ grade_item.title }}</a>
+                                        </div>
+                                        <div id="panel-element-3" class="panel-collapse collapse">
+                                            <div class="panel-body">
+
+                                                <div id="Quizentry">
+                                                </div>
+
+
+                                                <script>
+
+                                                    var data = [
+                                                        ["ID", "Gr"],
+                                                        {% for grade in grade_item.grade_set.all %}
+                                                        ["{{ grade.student_number }}", "{{ grade.grade }}"],
+                                                        {% endfor %}
+                                                    ];
+
+                                                    var container = document.getElementById('Quizentry');
+                                                    var entry = new Handsontable(container,
+                                                            {
+                                                                data: data,
+                                                                minSpareRows: 1,
+                                                                colHeaders: true,
+                                                                colWidths: [70, 30],
+                                                                contextMenu: true
+                                                            });
+                                                </script>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% empty %}
+                                        No Exams yet
+                                    {% endfor %}
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 column">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">Final Grade</a>
+
+                            <div class="list-group-item">
+                                <div class="panel-group" id="panel-4">
+                                    {% for grade_item in grade_items_FI %}
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <a class="panel-title" data-toggle="collapse"
+                                               data-parent="#panel-4" href="#panel-element-4"> {{ grade_item.title }} </a>
+                                        </div>
+                                        <div id="panel-element-4" class="panel-collapse collapse">
+                                            <div class="panel-body">
+
+                                                <div id="Finalentry">
+                                                </div>
+
+
+                                                <script>
+
+                                                    var data = [
+                                                        ["ID", "Gr"],
+                                                        {% for grade in grade_item.grade_set.all %}
+                                                        ["{{ grade.student_number }}", "{{ grade.grade }}"],
+                                                        {% endfor %}
+                                                    ];
+
+                                                    var container = document.getElementById('Finalentry');
+                                                    var entry = new Handsontable(container,
+                                                            {
+                                                                data: data,
+                                                                minSpareRows: 1,
+                                                                colHeaders: true,
+                                                                colWidths: [70, 30],
+                                                                contextMenu: true
+                                                            });
+                                                </script>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% empty %}
+                                        No Finals yet
+                                    {% endfor %}
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row clearfix">
+                    <div class="col-md-2">
+                        <button class="btn btn-default" onclick="showNewGradeDiv();">New Grade</button>
+                        <script>
+                            function showNewGradeDiv() {
+                                document.getElementById('newGradeDiv').style.display = "block";
+                            }
+                        </script>
+                    </div>
+
+                    <div class="col-md-10" id="newGradeDiv" style="display: none;">
+                        <div class="btn-group btn-group-xs">
+                            <div>
+                                title: <input type="text" id="grade_item_title">
+                            </div>
+
+                            <button class="btn btn-default" type="button" onclick="javascript:grade_item_type='AS'">HW</button>
+                            <button class="btn btn-default" type="button" onclick="javascript:grade_item_type='PR'">Project</button>
+                            <button class="btn btn-default" type="button" onclick="javascript:grade_item_type='EX'">Exam</button>
+                            <button class="btn btn-default" type="button" onclick="javascript:grade_item_type='FI'">Final</button>
+                            <button class="btn btn-default" type="button" onclick="javascript:grade_item_type='OT'">Other</button>
+
+
+                        </div>
+
+                        <div>
+                            <div id="newGradeEntry" style="margin-top: 1em;">
+                            </div>
+
+                            <script>
+                                var grade_item_title, grade_item_type;
+
+                                var data = [
+                                    ["ID", "Gr"]
+                                ];
+
+                                var container = document.getElementById('newGradeEntry');
+                                var entry = new Handsontable(container,
+                                        {
+                                            data: data,
+                                            minSpareRows: 1,
+                                            colHeaders: true,
+                                            colWidths: [70, 30],
+                                            contextMenu: true
+                                        });
+                            </script>
+
+
+                        </div>
+                        <div style="margin-top: 1em;">
+                            <button class="btn btn-default" onclick="hideNewGradeDiv()">Submit grades</button>
+                            <script>
+                                function hideNewGradeDiv() {
+                                    document.getElementById('newGradeDiv').style.display = "none";
+                                    grade_item_title = document.getElementById('grade_item_title').value;
+{#                                    alert( grade_item_title );#}
+{#                                    alert( grade_item_type );#}
+                                    var exampleContainer1 = document.getElementById('newGradeEntry');
+                                    {#                                    var ht = new Handsontable(exampleContainer1, options);#}
+                                    data.push(['grade_item_title', grade_item_title])
+                                    data.push(['grade_item_type', grade_item_type])
+                                    var json_grades = JSON.stringify(data)
+
+                                    ajaxPost('{% url 'ajax_add_grades' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}',
+                                            json_grades, function (content) {
+                                                //onSuccess
+                                                alert(content);
+                                            })
+
+
+                                    //now, to use setDataAtCell method, you can call method on the instance returned by the constructor (RECOMMENDED)
+
+
+                                }
+                            </script>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

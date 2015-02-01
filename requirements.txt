@@ -1,3 +1,5 @@
 Django==1.7.1
 Pillow==2.7.0
+ajaxuploader==0.3.8
+django-ajax==2.2.12
 wsgiref==0.1.2

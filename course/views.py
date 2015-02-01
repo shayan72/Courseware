@@ -6,6 +6,7 @@ from course.models import Syllabus
 from course.models import Calendar
 from course.models import Assignment
 from course.models import Grade
+from course.models import GradeItem
 from course.models import Resource
 from course.models import Topic
 from course.models import RoomReservation
@@ -13,6 +14,11 @@ from course.models import Post
 from course.models import Term
 
 from course.forms import PostForm
+
+from django.middleware.csrf import get_token
+from django.template import RequestContext
+
+from ajaxuploader.views import AjaxFileUploader
 
 def courses(request, course_year_1 = 93, course_year_2 = 94, term = 'FA' ):
     course_instance_list = CourseInstance.objects.filter(term__year=93).filter(term__semester='FA')
@@ -38,7 +44,12 @@ def course_page(request, course_year_1, course_year_2, term, course_num, course_
 
 def course_syllabus(request, course_year_1, course_year_2, term, course_num, course_group):
     course_instance = get_course_instance(course_year_1, course_year_2, term, course_num, course_group)
-    syllabus = get_object_or_404(Syllabus, course_instance=course_instance)
+    syllabus = Syllabus.objects.filter(course_instance=course_instance)
+
+    if( len(syllabus) == 1 ):
+        syllabus = syllabus.get()
+    else:
+        syllabus = None
 
     context = {'course_instance': course_instance, 'syllabus': syllabus}
 
@@ -57,18 +68,30 @@ def course_calendar(request, course_year_1, course_year_2, term, course_num, cou
 def course_assignments(request, course_year_1, course_year_2, term, course_num, course_group):
 
     course_instance = get_course_instance(course_year_1, course_year_2, term, course_num, course_group)
-    assignments = Assignment.objects.filter(course_instance=course_instance).order_by('date')
+    assignments = Assignment.objects.filter(course_instance=course_instance).order_by('-id')
 
-    context = {'course_instance': course_instance, 'assignments': assignments}
+    csrf_token = get_token(request)
+
+    context = {'course_instance': course_instance, 'assignments': assignments, 'csrf_token': csrf_token }
 
     return render(request, 'course/course_assignments.html', context)
 
 
-def course_grades(request, course_year_1, course_year_2, term, course_num, course_group):
-    course_instance = get_course_instance(course_year_1, course_year_2, term, course_num, course_group)
-    # grades = Grade.objects.filter(course_instance=course_instance)
+import_uploader = AjaxFileUploader()
 
-    context = {'course_instance': course_instance }
+
+def course_grades(request, course_year_1, course_year_2, term, course_num, course_group):
+
+    course_instance = get_course_instance(course_year_1, course_year_2, term, course_num, course_group)
+    grade_items_HW = GradeItem.objects.filter(course_instance=course_instance).filter(grade_type='AS')
+    grade_items_PR = GradeItem.objects.filter(course_instance=course_instance).filter(grade_type='PR')
+    grade_items_EX = GradeItem.objects.filter(course_instance=course_instance).filter(grade_type='EX')
+    grade_items_FI = GradeItem.objects.filter(course_instance=course_instance).filter(grade_type='FI')
+    grade_items_OT = GradeItem.objects.filter(course_instance=course_instance).filter(grade_type='OT')
+
+    context = {'course_instance': course_instance, 'grade_items_HW': grade_items_HW, 'grade_items_PR': grade_items_PR,
+               'grade_items_EX': grade_items_EX, 'grade_items_FI': grade_items_FI, 'grade_items_OT': grade_items_OT}
+
     return render(request, 'course/course_grades.html', context)
 
 

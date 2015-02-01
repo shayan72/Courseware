@@ -22,4 +22,5 @@ urlpatterns = patterns('',
                                         ),
                                                                                                                 ))
                        ),
+                       url(r'ajax-upload$', views.import_uploader, name="my_ajax_upload"),
 )

@@ -1,51 +1,113 @@
 {% extends 'course/course_page.html' %}
 
+{% block 'js_header' %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}ajaxuploader/js/fileuploader.js"></script>
+    <link href="{{ STATIC_URL }}ajaxuploader/css/fileuploader.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script>
+        $(function () {
+            var uploader = new qq.FileUploader({
+                action: "{% url 'my_ajax_upload' %}",
+                element: $('#file-uploader')[0],
+                multiple: true,
+                onComplete: function (id, fileName, responseJSON) {
+                    if (responseJSON.success) {
+                        alert("success!");
+                    } else {
+                        alert("upload failed!");
+                    }
+                },
+                onAllComplete: function (uploads) {
+                    // uploads is an array of maps
+                    // the maps look like this: {file: FileObject, response: JSONServerResponse}
+                    alert("All complete!");
+                },
+                params: {
+                    'csrf_token': '{{ csrf_token }}',
+                    'csrf_name': 'csrfmiddlewaretoken',
+                    'csrf_xname': 'X-CSRFToken',
+                },
+            });
+        });
+    </script>
+{% endblock %}
+
 {% block 'body_block' %}
     <div class="col-md-10 column">
         <div class="row clearfix">
             <div class="col-md-12 column">
-                <div class="list-group">
-                    <a href="#" class="list-group-item active">
-                        <div class="row clearfix">
-                            <div class="col-md-10">
-                                <label>HW#1</label>
-                            </div>
-                            <div class="col-md-2">
-                                <label id="deadline">DeadLine: 93/08/10</label>
-                            </div>
-                        </div>
+                {% if assignments|length == 0 %}
+                    <div class="list-group">
 
-                    </a>
-
-                    <div class="list-group-item">
-                        <div class="row clearfix">
-                            <div class="col-md-10">
-                                <div class="row clearfix">
-                                    <div class="col-md-1">
-                                        <label class="fa fa-angle-double-right"></label>
+                        <div class="list-group-item">
+                            <div class="row clearfix">
+                                <div class="col-md-10">
+                                    <div class="row clearfix">
+                                        <div class="col-md-1">
+                                            <label class="fa fa-angle-double-right"></label>
+                                        </div>
+                                        <div class="col-md-11">
+                                            <p style="margin-left: -3em;"> No Assignments uploaded yet </p>
+                                        </div>
                                     </div>
-                                    <div class="col-md-11">
-                                        <p style="margin-left: -3em;">Description of Assignment</p>
-                                    </div>
-
                                 </div>
-                                <div>
-                                    <ul style="list-style-type: none;">
-                                        <li>
-                                            <a href="#" class="fa fa-cloud-download fa-2x"></a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-
-                            </div>
-
-                            <div class="col-md-2 column">
-                                <a href="#" class="btn fa fa-cloud-upload fa-3x"></a>
                             </div>
                         </div>
                     </div>
-                </div>
+                {% endif %}
+
+                {% for assignment in assignments %}
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active">
+                            <div class="row clearfix">
+                                <div class="col-md-10">
+                                    <label>HW#{{ forloop.counter }}</label>
+                                </div>
+                                <div class="col-md-2">
+                                    <label id="deadline">DeadLine: {{ assignment.deadline|date:'SHORT_DATE_FORMAT' }}</label>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="list-group-item">
+                            <div class="row clearfix">
+                                <div class="col-md-10">
+                                    <div class="row clearfix">
+                                        <div class="col-md-1">
+                                            <label class="fa fa-angle-double-right"></label>
+                                        </div>
+                                        <div class="col-md-11">
+                                            <p style="margin-left: -3em;"> {{ assignment.description }} </p>
+
+                                            <p><a href="{{ assignment.link }}" target="_blank"> Download
+                                                HW#{{ forloop.counter }} </a></p>
+                                        </div>
+                                        <div id="file-uploader">
+                                            <noscript>
+                                                <p>Please enable JavaScript to use file uploader.</p>
+                                            </noscript>
+                                        </div>
+
+                                    </div>
+                                    <div>
+                                        <ul style="list-style-type: none;">
+                                            <li>
+                                                <a href="#" class="fa fa-cloud-download fa-2x"></a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-2 column">
+                                    <a href="#" class="btn fa fa-cloud-upload fa-3x"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
             </div>
         </div>
     </div>

@@ -28,9 +28,12 @@
   <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'img/apple-touch-icon-144-precomposed.png' %}">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'img/apple-touch-icon-114-precomposed.png' %}">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'img/apple-touch-icon-72-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="{% static 'img/apple-touch-icon-144-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="{% static 'img/apple-touch-icon-114-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="{% static 'img/apple-touch-icon-72-precomposed.png' %}">
     <link rel="apple-touch-icon-precomposed" href="{% static 'img/apple-touch-icon-57-precomposed.png' %}">
     <link rel="shortcut icon" href="{% static 'img/favicon.png' %}">
 
@@ -85,7 +88,8 @@
                                             Area</a>
                                     </li>
                                     <li>
-                                        <a href="{% url 'course_videolectures' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}">Lecture Notes</a>
+                                        <a href="{% url 'course_videolectures' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}">Lecture
+                                            Notes</a>
                                     </li>
                                     <li>
                                         <a href="{% url 'course_resources' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}">Resource</a>
@@ -127,10 +131,21 @@
                                         {% for professor in course_instance.professors.all %}
                                             <dl>
                                                 <dt>
-                                                    - {{ professor.account_id.user.first_name }} {{ professor.account_id.user.last_name }}
-                                    <span style="font-size:12px"> < {{ professor.account_id.user.email }} > <span>
+                                                    -
+                                                    {% if professor.account_id.user.first_name|length > 0 %}
+                                                        {{ professor.account_id.user.first_name }}
+                                                        {{ professor.account_id.user.last_name }}
+                                                    {% else %}
+                                                        {{ professor.account_id.user.username }}
+                                                    {% endif %}
+                                                    {% if professor.account_id.user.email|length > 0 %}
+                                                        <span style="font-size:12px"> <
+                                                        {{ professor.account_id.user.email }} > <span>
+                                                    {% endif %}
                                                 </dt>
                                             </dl>
+                                        {% empty %}
+                                            No Instructor
                                         {% endfor %}
                                     </div>
                                 </div>
@@ -169,20 +184,23 @@
                                         {% if room_reservations|length > 0 %}
                                             <dl>
                                                 <dt>
-                                                    Time
+                                                    Time:
                                                 </dt>
                                                 <dd>
                                                     {% for room_reservation in room_reservations %}
-                                                        {{ room_reservation.start_time }}-
+                                                        {{ room_reservation.start_time }}
+                                                        to
                                                         {{ room_reservation.finish_time }}
-                                                        on {{ room_reservation.day }} <br>
+                                                        on {{ room_reservation.get_day }} <br>
                                                     {% endfor %}
                                                 </dd>
+
                                                 <dt>
-                                                    Location
+                                                    Location:
                                                 </dt>
                                                 <dd>
-                                                    class {{ room_reservations.0.room.number }} in Computer Engineering
+
+                                                    class {{ room_reservations.0.room_id.number }} in Computer Engineering
                                                     Department
                                                 </dd>
                                             </dl>
