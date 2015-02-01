@@ -175,7 +175,11 @@ def ajax_forum_topic_remove(request, course_year_1, course_year_2, term, course_
 
 @ajax
 def ajax_forum_post_remove(request, course_year_1, course_year_2, term, course_num, course_group):
-    print request.POST.get('post_id')
     post = Post.objects.get(id=request.POST.get('post_id'))
     Post.objects.filter(parent=post).delete()
     post.delete()
+
+@ajax
+def ajax_calendar_remove_item(request, course_year_1, course_year_2, term, course_num, course_group):
+    print request.POST.get('calendar_id')
+    Calendar.objects.filter(id=request.POST.get('calendar_id')).delete()

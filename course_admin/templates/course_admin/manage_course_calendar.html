@@ -7,14 +7,18 @@
 
 {% block 'js_header' %}
     <script type="text/javascript" src="{% static 'js/calendarManaging.js' %}"></script>
+    <script type="text/javascript" src="{% static 'django_ajax/js/jquery.ajax.min.js' %}"></script>
     <script>
         /**
          * Created by makan on 1/30/15.
          */
-        function removeRow(x) {
+        function removeRow(x, id) {
             x.style.display = "none";
             $(x).parents("tr").css({"display": "none"});
             //    and remove from server...;
+            ajaxPost("{% url 'ajax_calendar_remove_item' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}",
+                    {'calendar_id': id}, function (content) {
+                    })
         }
 
     </script>
@@ -48,7 +52,7 @@
                     {% for calendar_item in calendar_items %}
                         <tr>
                             <td>
-                                <a class="btn fa fa-times" onclick="removeRow(this);"></a>
+                                <a class="btn fa fa-times" onclick="removeRow(this, {{ calendar_item.id }});"></a>
                             </td>
 
                             <td>
