@@ -11,5 +11,3 @@ class CalendarForm(ModelForm):
         widgets = {
             'date': Html5DateInput(),
         }
-
-# class GradeForm( Form ):

@@ -37,7 +37,8 @@
                             </div>
                             <script>
                                 function showNewPostDiv() {
-                                    replySubmit();
+                                    document.getElementById('replyInput').style.display = 'block';
+                                    document.getElementById("editorDiv").style.display = 'none';
                                     document.getElementById("post").style.display = "block";
                                     document.getElementById("existingPost").style.display = "none"
 
@@ -111,23 +112,21 @@
             <div class="col-md-9 column">
                 <div class="row clearfix" id="post" style="display:none;">
                     <div class="col-md-12">
-                        <div class="row clearfix" id="typeOfPost">
-                            <div class="col-md-2">
-                                <label>Type </label>
-                            </div>
-                            <div class="col-md-10">
-                                <div class="btn-group btn-group-xs">
-                                    <button class="btn btn-default" type="button">HW</button>
-                                    <button class="btn btn-default" type="button"> Quiz</button>
-                                    <button class="btn btn-default" type="button"> Polls</button>
-                                    <button class="btn btn-default" type="button">Project</button>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                        <br>
+                        {#                        <div class="row clearfix" id="typeOfPost">#}
+                        {#                            <div class="col-md-2">#}
+                        {#                                <label>Type </label>#}
+                        {#                            </div>#}
+                        {#                            <div class="col-md-10">#}
+                        {#                                <div class="btn-group btn-group-xs">#}
+                        {#                                    <button class="btn btn-default" type="button">HW</button>#}
+                        {#                                    <button class="btn btn-default" type="button"> Quiz</button>#}
+                        {#                                    <button class="btn btn-default" type="button"> Polls</button>#}
+                        {#                                    <button class="btn btn-default" type="button">Project</button>#}
+                        {#                                </div>#}
+                        {##}
+                        {#                            </div>#}
+                        {#                        </div>#}
+                        {#                        <br>#}
 
                         <form action="{% url 'course_forum_add_topic' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}"
                               method="post" class="form-horizontal" role="form" id="topic_form">
@@ -144,7 +143,24 @@
                                     <div class="form-group">
 
                                         <div class="col-sm-12">
-                                            <input type="text" name="topic" class="form-control" id="inp"/>
+                                            {{ topic_form.title }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row clearfix">
+
+                                <div class="col-md-2 column">
+                                    <label>Anonymous</label>
+                                </div>
+
+                                <div class="col-md-10 column">
+
+                                    <div class="form-group">
+
+                                        <div class="col-sm-12">
+                                            {{ topic_form.anonymous }}
                                         </div>
                                     </div>
                                 </div>
@@ -158,7 +174,7 @@
 
 
                                 <div class="col-md-10 column">
-                                    <textarea name="topic_post"></textarea>
+                                    {{ topic_form.body }}
                                 </div>
                             </div>
 
@@ -186,7 +202,7 @@
                 <div class="row clearfix">
                     <div class="col-md-12">
 
-
+                        {% if topic %}
                         <div class="row clearfix" id="existingPost">
                             <div class="col-md-12 column">
                                 <div class="row clearfix">
@@ -202,7 +218,9 @@
                                                     </span>
 
                                             <p>
-                                                {{ post.body }}
+                                                {% autoescape off %}
+                                                    {{ post.body }}
+                                                {% endautoescape %}
                                             </p>
 
 
@@ -222,7 +240,9 @@
                                                             </span>
 
                                                         <p>
-                                                            {{ comment.body }}
+                                                            {% autoescape off %}
+                                                                {{ comment.body }}
+                                                            {% endautoescape %}
                                                         </p>
                                                     </div>
                                                 </div>
@@ -235,36 +255,46 @@
                                                 </div>
                                                 <div class="col-md-11 column">
 
-                                                    <form class="form-horizontal" role="form" id="topic">
+                                                    <form action="{% url 'course_forum_add_post' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}"
+                                                          method="post" class="form-horizontal" role="form">
+                                                        {% csrf_token %}
+                                                        <input type="hidden" name="topic" value="{{ topic.id }}"/>
+                                                        <input type="hidden" name="parent_post" value="{{ post.id }}"/>
+
                                                         <div class="form-group">
 
                                                             <div class="col-sm-12">
-                                                                <input type="text" class="form-control"
-                                                                       placeholder="Reply to this post"
-                                                                       onclick="changeToReplyMode(this)"
-                                                                       id="replyInput"/>
+                                                                <a onclick="changeToReplyMode(this)"
+                                                                   id="replyInput"> + Comment to this post </a>
 
                                                                 <div style="display: none;" id="editorDiv">
-                                                                    <form method="post" action="somepage">
-                                                                        <textarea></textarea>
-                                                                    </form>
-                                                                    <button type="button"
-                                                                            class="btn btn-info"
-                                                                            onclick="replySubmit(this)">Post
+
+                                                                    <div class="row clearfix">
+
+                                                                        <div class="col-md-2 column">
+                                                                            <label>Anonymous</label>
+                                                                        </div>
+
+                                                                        <div class="col-md-10 column">
+
+                                                                            <div class="form-group">
+
+                                                                                <div class="col-sm-12">
+                                                                                    {{ form.anonymous }}
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    {{ form.body }}
+
+                                                                    <button type="submit"
+                                                                            class="btn btn-info">Post
                                                                     </button>
                                                                     <script>
                                                                         function changeToReplyMode(x) {
                                                                             x.style.display = "none";
                                                                             $(x).siblings().css({"display": "block"});
-                                                                        }
-                                                                        ;
-                                                                    </script>
-                                                                    <script>
-                                                                        function replySubmit() {
-                                                                            document.getElementById('replyInput').style.display = 'block';
-                                                                            document.getElementById("editorDiv").style.display = 'none';
-
-
                                                                         }
                                                                         ;
                                                                     </script>
@@ -302,33 +332,47 @@
                                                 {% endfor %}
                                             {% endif %}
 
-                                            <form action="{% url 'course_forum' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}"
-                                                  method="post" class="form-horizontal" role="form" id="topic">
+                                            <form action="{% url 'course_forum_add_post' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}"
+                                                  method="post" class="form-horizontal" role="form">
                                                 {% csrf_token %}
+                                                <input type="hidden" name="topic" value="{{ topic.id }}"/>
+
                                                 <div class="form-group">
 
                                                     <div class="col-sm-12">
-                                                        <a onclick="changeToReplyMode(this)"
-                                                           id="replyInput"> + Reply to this post </a>
+
+                                                        <input type="text" class="form-control"
+                                                               placeholder="Reply to this topic"
+                                                               onclick="changeToReplyMode(this)"
+                                                               style="margin-left: -50px"
+                                                               id="replyInput"/>
 
                                                         <div style="display: none;" id="editorDiv">
-                                                            <textarea name="body" form="topic"></textarea>
-                                                            <button type="submit" class="btn btn-info"
-                                                                    onclick="replySubmit(this)">Post
+
+                                                            <div class="row clearfix">
+
+                                                                <div class="col-md-2 column">
+                                                                    <label>Anonymous</label>
+                                                                </div>
+
+                                                                <div class="col-md-10 column">
+
+                                                                    <div class="form-group">
+
+                                                                        <div class="col-sm-12">
+                                                                            {{ form.anonymous }}
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            {{ form.body }}
+                                                            <button type="submit" class="btn btn-info">Post
                                                             </button>
                                                             <script>
                                                                 function changeToReplyMode(x) {
                                                                     x.style.display = "none";
                                                                     $(x).siblings().css({"display": "block"});
-                                                                }
-                                                                ;
-                                                            </script>
-                                                            <script>
-                                                                function replySubmit() {
-                                                                    document.getElementById('replyInput').style.display = 'block';
-                                                                    document.getElementById("editorDiv").style.display = 'none';
-
-
                                                                 }
                                                                 ;
                                                             </script>
@@ -345,6 +389,9 @@
                                 </div>
                             </div>
                         </div>
+                        {% endif %}
+
+
                     </div>
                 </div>
             </div>

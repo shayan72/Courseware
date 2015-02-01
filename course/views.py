@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import Http404
+from django.contrib.auth.decorators import login_required
 
 from course.models import CourseInstance
 from course.models import Syllabus
@@ -12,13 +13,16 @@ from course.models import Topic
 from course.models import RoomReservation
 from course.models import Post
 from course.models import Term
+from account.models import Account
 
-from course.forms import PostForm
+from course.forms import PostForm, TopicForm
 
 from django.middleware.csrf import get_token
 from django.template import RequestContext
 
 from ajaxuploader.views import AjaxFileUploader
+
+import datetime
 
 def courses(request, course_year_1 = 93, course_year_2 = 94, term = 'FA' ):
     course_instance_list = CourseInstance.objects.filter(term__year=course_year_1).filter(term__semester=term)
@@ -111,21 +115,15 @@ def course_resources(request, course_year_1, course_year_2, term, course_num, co
 
 
 def course_forum(request, course_year_1, course_year_2, term, course_num, course_group):
-    if ( request.method == 'POST' ):
-        post_form = PostForm(request.POST)
-        if ( post_form.is_valid() ):
-            post_form.save()
-        else:
-            print "not valid :("
-    else:
-        post_form = PostForm()
 
     course_instance = get_course_instance(course_year_1, course_year_2, term, course_num, course_group)
     topics = Topic.objects.filter(course_instance=course_instance)
+    topic_form = TopicForm()
+    post_form = PostForm()
 
-    context = {'course_instance': course_instance, 'topics': topics, 'form': post_form}
+    context = {'course_instance': course_instance, 'topics': topics, 'form': post_form, 'topic_form': topic_form }
 
-    if ( request.GET.get('topic') != None ):
+    if ( request.GET.get('topic') is not None ):
         topic = Topic.objects.get(id=request.GET.get('topic'))
         posts = Post.objects.filter(topic=topic).filter(parent__isnull=True)
 
@@ -137,32 +135,53 @@ def course_forum(request, course_year_1, course_year_2, term, course_num, course
 
     return render(request, 'course/course_forum.html', context)
 
+@login_required
+def course_forum_add_post(request, course_year_1, course_year_2, term, course_num, course_group):
+
+    if ( request.method == 'POST' ):
+        post_form = PostForm(request.POST)
+        if ( post_form.is_valid() ):
+            body = post_form.cleaned_data['body']
+            anonymous = post_form.cleaned_data['anonymous']
+            created_by = Account.objects.get(user=request.user)
+            topic = Topic.objects.get(id=request.POST.get('topic')) #TODO: check if we are in topic
+            parent = None
+            if( request.POST.__contains__('parent_post') ):
+                parent = Post.objects.get(id=request.POST.get('parent_post'))
+            post = Post( topic=topic, created_by=created_by, body=body, anonymous=anonymous, parent=parent )
+            post.save()
+
+        else:
+            print "not valid :("
+
+    response = redirect('course_forum', course_year_1, course_year_2, term, course_num, course_group)
+    response['Location'] += '?topic=' + request.POST.get('topic')
+    return response
+
+@login_required
 def course_forum_add_topic(request, course_year_1, course_year_2, term, course_num, course_group):
-    # if ( request.method == 'POST' ):
-    #     post_form = PostForm(request.POST)
-    #     if ( post_form.is_valid() ):
-    #         post_form.save()
-    #     else:
-    #         print "not valid :("
-    # else:
-    #     post_form = PostForm()
-    #
-    # course_instance = get_course_instance(course_year_1, course_year_2, term, course_num, course_group)
-    # topics = Topic.objects.filter(course_instance=course_instance)
-    #
-    # context = {'course_instance': course_instance, 'topics': topics, 'form': post_form}
-    #
-    # if ( request.GET.get('topic') != None ):
-    #     topic = Topic.objects.get(id=request.GET.get('topic'))
-    #     posts = Post.objects.filter(topic=topic).filter(parent__isnull=True)
-    #
-    #     if ( topic == None ):
-    #         raise Http404("Topic does not exist")
-    #
-    #     context['topic'] = topic
-    #     context['posts'] = posts
-    print 'eyval'
-    return redirect('course_forum', course_year_1, course_year_2, term, course_num, course_group)
+
+    if ( request.method == 'POST' ):
+        topic_form = TopicForm(request.POST)
+        if ( topic_form.is_valid() ):
+            title = topic_form.cleaned_data['title']
+            body = topic_form.cleaned_data['body']
+            anonymous = topic_form.cleaned_data['anonymous']
+
+            course_instance = get_course_instance(course_year_1, course_year_2, term, course_num, course_group)
+            created_by = Account.objects.get(user=request.user)
+            topic = Topic(course_instance=course_instance, created_by=created_by, title=title, anonymous=anonymous )
+            topic.save()
+
+            post = Post( topic=topic, created_by=created_by, body=body, anonymous=anonymous )
+            post.save()
+
+        else:
+            print "not valid :("
+
+    response = redirect('course_forum', course_year_1, course_year_2, term, course_num, course_group)
+    response['Location'] += '?topic=' + str(topic.id)
+    return response
 
 
 def get_course_instance(course_year_1, course_year_2, term, course_num, course_group):

@@ -168,7 +168,7 @@ class Topic(models.Model):
     view_num = models.IntegerField( default=0 )
     locked = models.BooleanField( default=False )
     anonymous = models.BooleanField( default=False )
-    created_at = models.DateTimeField()
+    created_at = models.DateTimeField( auto_now_add = True )
 
     def __unicode__(self):
         return self.course_instance.course.name + " -> " + self.title
@@ -179,7 +179,7 @@ class Post(models.Model):
     created_by = models.ForeignKey('account.Account')
     body = models.TextField()
     anonymous = models.BooleanField( default=False )
-    created_at = models.DateTimeField()
+    created_at = models.DateTimeField( auto_now_add = True )
 
     def get_post_comments(self):
         return Post.objects.filter(parent=self)

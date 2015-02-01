@@ -20,6 +20,7 @@ urlpatterns = patterns('',
                                             url( r'^forum$', views.course_forum, name='course_forum' ),
 
                                             url( r'^forum/add/topic$', views.course_forum_add_topic, name='course_forum_add_topic' ),
+                                            url( r'^forum/add/post', views.course_forum_add_post, name='course_forum_add_post' ),
 
                                                                                                        ))
                                         ),

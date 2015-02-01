@@ -16,7 +16,6 @@ from course.views import get_course_instance
 
 from django_ajax.decorators import ajax
 
-import datetime
 import json
 
 # Create your views here.
@@ -106,9 +105,8 @@ def manage_course_forum(request, course_year_1, course_year_2, term, course_num,
 
 @ajax
 def add_course_grades(request, course_year_1, course_year_2, term, course_num, course_group):
-    # make new Grade Item
 
-    # gi = GradeItem(  )
+    # make new Grade Item
 
     dic = request.POST.dict()
     key, value = dic.popitem()
