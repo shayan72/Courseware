@@ -17,7 +17,8 @@ with open('./allCourses.json','r') as courses:
         except:
             pass   
         try:
-            group= item['group'][item['group'].find("Group")+6:]
+            group= item['group'][item['group'].find("Group")+6:item['group'].find("Group")+7]
+            print group
         except:
             pass
         try:
