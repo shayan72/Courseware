@@ -183,3 +183,27 @@ def ajax_forum_post_remove(request, course_year_1, course_year_2, term, course_n
 def ajax_calendar_remove_item(request, course_year_1, course_year_2, term, course_num, course_group):
     print request.POST.get('calendar_id')
     Calendar.objects.filter(id=request.POST.get('calendar_id')).delete()
+
+@ajax
+def ajax_set_course_description(request, course_year_1, course_year_2, term, course_num, course_group):
+    course_instance = get_course_instance(course_year_1, course_year_2, term, course_num, course_group)
+    course_instance.description = request.POST.get('description')
+    print request.POST.get('description')
+    course_instance.save()
+
+@ajax
+def ajax_update_course_professor(request, course_year_1, course_year_2, term, course_num, course_group):
+    course_instance = get_course_instance(course_year_1, course_year_2, term, course_num, course_group)
+    professor = course_instance.professors.all()[:1].get()
+    professor.professor_name = request.POST.get('teacher_name')
+    professor.professor_email = request.POST.get('teacher_email')
+    professor.save()
+
+@ajax
+def ajax_add_course_TA(request, course_year_1, course_year_2, term, course_num, course_group):
+    TA = Student( student_name=request.POST.get('TA_name'), student_email=request.POST.get('TA_email') )
+    TA.save()
+    course_instance = get_course_instance(course_year_1, course_year_2, term, course_num, course_group)
+    course_instance.teacher_assistants.add(TA)
+
+

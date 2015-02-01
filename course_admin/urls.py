@@ -30,6 +30,12 @@ urlpatterns = patterns('',
                                             url( r'forum/post/remove', views.ajax_forum_post_remove, name = 'ajax_forum_post_remove' ),
 
                                             url( r'calendar/remove', views.ajax_calendar_remove_item, name = 'ajax_calendar_remove_item' ),
+
+                                            url( r'course/description', views.ajax_set_course_description, name = 'ajax_set_course_description' ),
+                                            url( r'course/professor/update', views.ajax_update_course_professor, name = 'ajax_update_course_professor' ),
+                                            url( r'course/TA/add', views.ajax_add_course_TA, name = 'ajax_add_course_TA' ),
+
+
                            ))
                        ),
 )

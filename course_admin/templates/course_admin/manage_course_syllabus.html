@@ -1,10 +1,367 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-Manage Course Syllabus
-</body>
-</html>
+{% extends 'course_admin/manage_base.html' %}
+{% load staticfiles %}
+
+{% block 'css_header' %}
+    <link href="{% static 'css/coursesStyle.css' %}" rel="stylesheet">
+    <link href="{% static 'css/coursePageManaging.css' %}" rel="stylesheet">
+    <style>
+        #choosePic {
+            margin-top: 1em;
+        }
+    </style>
+{% endblock %}
+
+{% block 'js_header' %}
+    <script type="text/javascript" src="{% static 'django_ajax/js/jquery.ajax.min.js' %}"></script>
+    {#    <script type="text/javascript" src="{% static 'tinymce/js/tinymce/tinymce.min.js' %}"></script>#}
+    {#    <script type="text/javascript">#}
+    {#        tinymce.init({#}
+    {#            selector: "textarea",#}
+    {#            plugins: [#}
+    {#                "advlist autolink lists link image charmap print preview anchor",#}
+    {#                "searchreplace visualblocks code fullscreen"#}
+    {##}
+    {#            ],#}
+    {#            toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"#}
+    {#        });#}
+    {#    </script>#}
+{% endblock %}
+
+{% block 'body_block' %}
+
+    <div class="col-md-10 column">
+
+
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">Course description</a>
+
+                    <div class="list-group-item">
+
+                        <div class="row clearfix">
+                            <div class="col-md-8 column">
+                                <div class="row clearfix" id="currentDesc">
+                                    <div class="col-md-12">
+                                        {% autoescape off %}
+                                            {{ course_instance.description }}
+                                        {% endautoescape %}
+                                    </div>
+
+
+                                    <div class="col-md-12">
+                                        <button type="button" class="btn btn-default" onclick="hideCurrentDescDiv();">
+                                            Change Description
+                                        </button>
+
+
+                                        <Script>
+                                            function hideCurrentDescDiv() {
+                                                document.getElementById("descEditor").style.display = "block";
+                                                document.getElementById("currentDesc").style.display = "none";
+                                            }
+                                        </Script>
+                                    </div>
+
+
+                                </div>
+                                <div class="row clearfix" style="display:none;" id="descEditor">
+                                    <div class="col-md-12">
+                                        <textarea id="description_textarea">{{ course_instance.description }}</textarea>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button class="btn btn-default" onclick="hideDescEditor();">Set Description
+                                        </button>
+                                        <Script>
+                                            function hideDescEditor() {
+                                                document.getElementById("currentDesc").style.display = "block";
+                                                document.getElementById("descEditor").style.display = "none";
+
+                                                // send to server
+                                                ajaxPost("{% url 'ajax_set_course_description' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}",
+                                                        {'description': $("#description_textarea").val()}, function (content) {
+                                                            //onSuccess
+                                                            location.reload()
+                                                        })
+                                            }
+                                        </Script>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 column">
+                                <div class="row clearfix">
+                                    <div class="col-md-12">
+                                        <img alt="140x140" src="http://lorempixel.com/140/140/" id="image"/>
+                                    </div>
+                                </div>
+                                <div class="row clearfix">
+                                    <div class="col-md-12">
+                                        <input type="file" id="choosePic" onchange="readURL(this)">
+                                        <script>
+
+                                            function readURL(input) {
+                                                var x = document.getElementById("image");
+                                                if (input.files && input.files[0]) {
+                                                    var reader = new FileReader();
+                                                    reader.onload = function (e) {
+                                                        $('#image')
+                                                                .attr('src', e.target.result)
+                                                                .width(150)
+                                                                .height(200);
+                                                    };
+                                                    x.src = reader.readAsDataURL(input.files[0]);
+                                                }
+                                            }
+
+                                        </script>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">Instructor</a>
+
+                    <div class="list-group-item" id="currentTeacher">
+                        {% for professor in course_instance.professors.all %}
+                            <dl>
+                                <dt>
+                                    -
+                                    {#                                                    {% if professor.account_id.user.first_name|length > 0 %}#}
+                                    {#                                                        {{ professor.account_id.user.first_name }}#}
+                                    {#                                                        {{ professor.account_id.user.last_name }}#}
+                                    {% if professor.professor_name|length > 0 %}
+                                        {{ professor.professor_name }}
+                                    {% else %}
+                                        {{ professor.account_id.user.username }}
+                                    {% endif %}
+                                    {#                                                    {% if professor.account_id.user.email|length > 0 %}#}
+                                    {#                                                        <span style="font-size:12px"> <#}
+                                    {#                                                        {{ professor.account_id.user.email }} > <span>#}
+                                    {% if professor.professor_email|length > 0 %}
+                                        <span style="font-size:12px"> <
+                                        {{ professor.professor_email }} > <span>
+                                    {% endif %}
+                                </dt>
+                            </dl>
+                        {% empty %}
+                            No Instructor
+                        {% endfor %}
+                        <div>
+                            <button class="btn btn-default" onclick="hideCurrentTeacher()">Set Teacher</button>
+
+                            <Script>
+                                function hideCurrentTeacher() {
+                                    document.getElementById("setTeacher").style.display = "block";
+                                    document.getElementById("currentTeacher").style.display = "none";
+                                }
+                            </Script>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="list-group-item" style="display:none;" id="setTeacher">
+                        <div class="row clearfix">
+                            <div class="col-md-5">
+                                <dl>
+
+                                    <dt>
+                                        <label>Name</label>
+                                        <input type="text" name="teacher_name" class="form-control" id="teacher_name"/>
+                                    </dt>
+                                    <dd>
+                                        <ul style="list-style-type: none;">
+                                            <li>
+                                                <label>E-mail</label>
+                                                <input type="email" name="teacher_email" class="form-control"
+                                                       id="teacher_email"/>
+                                            </li>
+                                        </ul>
+
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="col-md-7">
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <button class="btn btn-default" onclick="hideGetTeacher();">Set Teacher</button>
+                            <Script>
+                                function hideGetTeacher() {
+                                    document.getElementById("setTeacher").style.display = "none";
+                                    document.getElementById("currentTeacher").style.display = "block";
+
+                                    // send to server
+                                    ajaxPost("{% url 'ajax_update_course_professor' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}",
+                                            {
+                                                'teacher_name': $("#teacher_name").val(),
+                                                'teacher_email': $("#teacher_email").val()
+                                            }, function (content) {
+                                                //onSuccess
+                                                location.reload()
+                                            })
+                                }
+                            </Script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">TA's</a>
+
+                    <div class="list-group-item">
+
+
+                        {% if course_instance.teacher_assistants.all|length > 0 %}
+                            <ul>
+                                {% for teacher_assistant in course_instance.teacher_assistants.all %}
+                                    <li>
+                                        {{ teacher_assistant.student_name }} :
+                                        {{ teacher_assistant.student_email }}
+                                        {#                                        {{ teacher_assistant.account_id.user.first_name }}#}
+                                        {#                                        {{ teacher_assistant.account_id.user.last_name }} :#}
+                                        {#                                        {{ teacher_assistant.account_id.user.email }}#}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% else %}
+                            No Teacher assistance
+                        {% endif %}
+                        <div>
+                            <button class="btn btn-default" onclick="hideAddTAButton();" id="addTAButton">Add TA
+                            </button>
+                            <Script>
+                                function hideAddTAButton() {
+                                    document.getElementById("addTAButton").style.display = "none";
+                                    document.getElementById("getTA").style.display = "block";
+                                }
+                            </Script>
+
+
+                            <ul id="getTA" style="display: none; list-style-type: none;">
+                                <li>
+                                    <div class="row clearfix">
+                                        <div class="col-md-5">
+                                            <input type="text" name="TA_name" id="TA_name" class="form-control"
+                                                   placeholder="Name">
+                                            <input type="email" name="TA_email" id="TA_email" class="form-control"
+                                                   placeholder="E-mail">
+                                            <button class="btn btn-default" onclick="hideGetTA()"
+                                                    style="margin-top: 2px;">Add
+                                            </button>
+                                            <Script>
+                                                function hideGetTA() {
+                                                    document.getElementById("addTAButton").style.display = "block";
+                                                    document.getElementById("getTA").style.display = "none";
+
+                                                    // send to server
+                                                    ajaxPost("{% url 'ajax_add_course_TA' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}",
+                                                            {
+                                                                'TA_name': $("#TA_name").val(),
+                                                                'TA_email': $("#TA_email").val()
+                                                            }, function (content) {
+                                                                //onSuccess
+                                                                location.reload()
+                                                            })
+                                                }
+                                            </Script>
+
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">About</a>
+
+                    <div class="list-group-item" id="showInfoDiv">
+                        <dl>
+                            <dt>
+                                Time
+                            </dt>
+                            <dd>
+                                13:30-15 on saturday & monday.
+                            </dd>
+                            <dt>
+                                Location
+                            </dt>
+                            <dd>
+                                class 102 in Computer Engineering Department
+                            </dd>
+                        </dl>
+                        <div>
+                            <button class="btn btn-default" onclick="hideShowInfo();">Add info</button>
+                            <Script>
+                                function hideShowInfo() {
+                                    document.getElementById("getInfoDiv").style.display = "block";
+                                    document.getElementById("showInfoDiv").style.display = "none";
+                                }
+                            </Script>
+
+
+                        </div>
+                    </div>
+
+                    <div class="list-group-item" style="display: none;" id="getInfoDiv">
+                        <dl>
+                            <dt>
+                                Time
+                            </dt>
+                            <dd>
+                                <div class="row clearfix">
+                                    <div class="col-md-5">
+                                        <input type="email" class="form-control" placeholder="Enter Time">
+                                    </div>
+                                </div>
+                            </dd>
+                            <dt>
+                                Location
+                            </dt>
+                            <dd>
+                                <div class="row clearfix">
+                                    <div class="col-md-5">
+                                        <input type="email" class="form-control" placeholder="Enter Location">
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <div>
+                            <button class="btn btn-default" onclick="hideGetInfo();">Set</button>
+                            <Script>
+                                function hideGetInfo() {
+                                    document.getElementById("showInfoDiv").style.display = "block";
+                                    document.getElementById("getInfoDiv").style.display = "none";
+                                }
+                            </Script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

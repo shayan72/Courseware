@@ -21,10 +21,10 @@ urlpatterns = patterns('',
 
                                             url( r'^forum/add/topic$', views.course_forum_add_topic, name='course_forum_add_topic' ),
                                             url( r'^forum/add/post', views.course_forum_add_post, name='course_forum_add_post' ),
-
                                                                                                        ))
                                         ),
                                                                                                                 ))
                        ),
                        url(r'ajax-upload$', views.import_uploader, name="my_ajax_upload"),
+
 )

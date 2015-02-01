@@ -113,7 +113,9 @@
                                     <div class="list-group-item">
                                         <div class="row clearfix">
                                             <div class="col-md-12 column">
+                                                {% autoescape off %}
                                                 {{ course_instance.description }}
+                                                {% endautoescape %}
                                             </div>
                                         </div>
                                     </div>
@@ -132,15 +134,20 @@
                                             <dl>
                                                 <dt>
                                                     -
-                                                    {% if professor.account_id.user.first_name|length > 0 %}
-                                                        {{ professor.account_id.user.first_name }}
-                                                        {{ professor.account_id.user.last_name }}
+{#                                                    {% if professor.account_id.user.first_name|length > 0 %}#}
+{#                                                        {{ professor.account_id.user.first_name }}#}
+{#                                                        {{ professor.account_id.user.last_name }}#}
+                                                    {% if professor.professor_name|length > 0 %}
+                                                        {{ professor.professor_name }}
                                                     {% else %}
                                                         {{ professor.account_id.user.username }}
                                                     {% endif %}
-                                                    {% if professor.account_id.user.email|length > 0 %}
+{#                                                    {% if professor.account_id.user.email|length > 0 %}#}
+{#                                                        <span style="font-size:12px"> <#}
+{#                                                        {{ professor.account_id.user.email }} > <span>#}
+                                                    {% if professor.professor_email|length > 0 %}
                                                         <span style="font-size:12px"> <
-                                                        {{ professor.account_id.user.email }} > <span>
+                                                        {{ professor.professor_email }} > <span>
                                                     {% endif %}
                                                 </dt>
                                             </dl>
@@ -162,9 +169,11 @@
                                             <ul>
                                                 {% for teacher_assistant in course_instance.teacher_assistants.all %}
                                                     <li>
-                                                        {{ teacher_assistant.account_id.user.first_name }}
-                                                        {{ teacher_assistant.account_id.user.last_name }} :
-                                                        {{ teacher_assistant.account_id.user.email }}
+                                                        {{ teacher_assistant.student_name }} :
+                                                        {{ teacher_assistant.student_email }}
+{#                                                        {{ teacher_assistant.account_id.user.first_name }}#}
+{#                                                        {{ teacher_assistant.account_id.user.last_name }} :#}
+{#                                                        {{ teacher_assistant.account_id.user.email }}#}
                                                     </li>
                                                 {% endfor %}
                                             </ul>

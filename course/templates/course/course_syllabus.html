@@ -60,7 +60,8 @@
                                     {% if professor.account_id.user.first_name|length > 0 %}
                                     {{ professor.account_id.user.first_name }} {{ professor.account_id.user.last_name }}
                                     {% else %}
-                                        {{ professor.account_id.user.username }}
+                                        hi
+                                        {{ professor }}
                                     {% endif %}
                                     {% if professor.account_id.user.email|length > 0 %}
                                     <span style="font-size:12px"> < {{ professor.account_id.user.email }} > <span>

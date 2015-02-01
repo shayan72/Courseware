@@ -11,6 +11,22 @@
     </style>
 {% endblock %}
 
+{% block 'js_header' %}
+    <script type="text/javascript" src="{% static 'django_ajax/js/jquery.ajax.min.js' %}"></script>
+    {#    <script type="text/javascript" src="{% static 'tinymce/js/tinymce/tinymce.min.js' %}"></script>#}
+    {#    <script type="text/javascript">#}
+    {#        tinymce.init({#}
+    {#            selector: "textarea",#}
+    {#            plugins: [#}
+    {#                "advlist autolink lists link image charmap print preview anchor",#}
+    {#                "searchreplace visualblocks code fullscreen"#}
+    {##}
+    {#            ],#}
+    {#            toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"#}
+    {#        });#}
+    {#    </script>#}
+{% endblock %}
+
 {% block 'body_block' %}
 
     <div class="col-md-10 column">
@@ -27,38 +43,9 @@
                             <div class="col-md-8 column">
                                 <div class="row clearfix" id="currentDesc">
                                     <div class="col-md-12">
-
-                                        <dl>
-                                            <dt>
-                                                Description lists
-                                            </dt>
-                                            <dd>
-                                                A description list is perfect for defining terms.
-                                            </dd>
-                                            <dt>
-                                                Euismod
-                                            </dt>
-                                            <dd>
-                                                Vestibulum id ligula porta felis euismod semper eget lacinia odio sem
-                                                nec elit.
-                                            </dd>
-                                            <dd>
-                                                Donec id elit non mi porta gravida at eget metus.
-                                            </dd>
-                                            <dt>
-                                                Malesuada porta
-                                            </dt>
-                                            <dd>
-                                                Etiam porta sem malesuada magna mollis euismod.
-                                            </dd>
-                                            <dt>
-                                                Felis euismod semper eget lacinia
-                                            </dt>
-                                            <dd>
-                                                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                                                ut fermentum massa justo sit amet risus.
-                                            </dd>
-                                        </dl>
+                                        {% autoescape off %}
+                                            {{ course_instance.description }}
+                                        {% endautoescape %}
                                     </div>
 
 
@@ -80,7 +67,7 @@
                                 </div>
                                 <div class="row clearfix" style="display:none;" id="descEditor">
                                     <div class="col-md-12">
-                                        <textarea></textarea>
+                                        <textarea id="description_textarea">{{ course_instance.description }}</textarea>
                                     </div>
                                     <div class="col-md-12">
                                         <button class="btn btn-default" onclick="hideDescEditor();">Set Description
@@ -89,15 +76,18 @@
                                             function hideDescEditor() {
                                                 document.getElementById("currentDesc").style.display = "block";
                                                 document.getElementById("descEditor").style.display = "none";
+
+                                                // send to server
+                                                ajaxPost("{% url 'ajax_set_course_description' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}",
+                                                        {'description': $("#description_textarea").val()}, function (content) {
+                                                            //onSuccess
+                                                            location.reload()
+                                                        })
                                             }
                                         </Script>
 
                                     </div>
-
-
                                 </div>
-
-
                             </div>
 
                             <div class="col-md-4 column">
@@ -129,8 +119,6 @@
 
                                     </div>
                                 </div>
-
-
                             </div>
 
                         </div>
@@ -141,22 +129,33 @@
         <div class="row clearfix">
             <div class="col-md-12 column">
                 <div class="list-group">
-                    <a href="#" class="list-group-item active">Ansector</a>
+                    <a href="#" class="list-group-item active">Instructor</a>
 
                     <div class="list-group-item" id="currentTeacher">
-                        <dl>
-                            <dt>
-                                Teacher Name
-                            </dt>
-                            <dd>
-                                <ul>
-                                    <li>
-                                        example@mail.com
-                                    </li>
-                                </ul>
-
-                            </dd>
-                        </dl>
+                        {% for professor in course_instance.professors.all %}
+                            <dl>
+                                <dt>
+                                    -
+                                    {#                                                    {% if professor.account_id.user.first_name|length > 0 %}#}
+                                    {#                                                        {{ professor.account_id.user.first_name }}#}
+                                    {#                                                        {{ professor.account_id.user.last_name }}#}
+                                    {% if professor.professor_name|length > 0 %}
+                                        {{ professor.professor_name }}
+                                    {% else %}
+                                        {{ professor.account_id.user.username }}
+                                    {% endif %}
+                                    {#                                                    {% if professor.account_id.user.email|length > 0 %}#}
+                                    {#                                                        <span style="font-size:12px"> <#}
+                                    {#                                                        {{ professor.account_id.user.email }} > <span>#}
+                                    {% if professor.professor_email|length > 0 %}
+                                        <span style="font-size:12px"> <
+                                        {{ professor.professor_email }} > <span>
+                                    {% endif %}
+                                </dt>
+                            </dl>
+                        {% empty %}
+                            No Instructor
+                        {% endfor %}
                         <div>
                             <button class="btn btn-default" onclick="hideCurrentTeacher()">Set Teacher</button>
 
@@ -169,9 +168,9 @@
 
 
                         </div>
-
-
                     </div>
+
+
                     <div class="list-group-item" style="display:none;" id="setTeacher">
                         <div class="row clearfix">
                             <div class="col-md-5">
@@ -179,13 +178,14 @@
 
                                     <dt>
                                         <label>Name</label>
-                                        <input type="email" class="form-control" id="inp"/>
+                                        <input type="text" name="teacher_name" class="form-control" id="teacher_name"/>
                                     </dt>
                                     <dd>
                                         <ul style="list-style-type: none;">
                                             <li>
                                                 <label>E-mail</label>
-                                                <input type="email" class="form-control" id="inp"/>
+                                                <input type="email" name="teacher_email" class="form-control"
+                                                       id="teacher_email"/>
                                             </li>
                                         </ul>
 
@@ -203,6 +203,16 @@
                                 function hideGetTeacher() {
                                     document.getElementById("setTeacher").style.display = "none";
                                     document.getElementById("currentTeacher").style.display = "block";
+
+                                    // send to server
+                                    ajaxPost("{% url 'ajax_update_course_professor' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}",
+                                            {
+                                                'teacher_name': $("#teacher_name").val(),
+                                                'teacher_email': $("#teacher_email").val()
+                                            }, function (content) {
+                                                //onSuccess
+                                                location.reload()
+                                            })
                                 }
                             </Script>
 
@@ -219,18 +229,22 @@
 
                     <div class="list-group-item">
 
-                        <ul>
-                            <li>
-                                Name : example@mail.com
-                            </li>
-                            <li>
-                                Name : example@mail.com
-                            </li>
-                            <li>
-                                Name : example@mail.com
-                            </li>
 
-                        </ul>
+                        {% if course_instance.teacher_assistants.all|length > 0 %}
+                            <ul>
+                                {% for teacher_assistant in course_instance.teacher_assistants.all %}
+                                    <li>
+                                        {{ teacher_assistant.student_name }} :
+                                        {{ teacher_assistant.student_email }}
+                                        {#                                        {{ teacher_assistant.account_id.user.first_name }}#}
+                                        {#                                        {{ teacher_assistant.account_id.user.last_name }} :#}
+                                        {#                                        {{ teacher_assistant.account_id.user.email }}#}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% else %}
+                            No Teacher assistance
+                        {% endif %}
                         <div>
                             <button class="btn btn-default" onclick="hideAddTAButton();" id="addTAButton">Add TA
                             </button>
@@ -246,7 +260,10 @@
                                 <li>
                                     <div class="row clearfix">
                                         <div class="col-md-5">
-                                            <input type="email" class="form-control" placeholder="Name : E-mail">
+                                            <input type="text" name="TA_name" id="TA_name" class="form-control"
+                                                   placeholder="Name">
+                                            <input type="email" name="TA_email" id="TA_email" class="form-control"
+                                                   placeholder="E-mail">
                                             <button class="btn btn-default" onclick="hideGetTA()"
                                                     style="margin-top: 2px;">Add
                                             </button>
@@ -254,6 +271,16 @@
                                                 function hideGetTA() {
                                                     document.getElementById("addTAButton").style.display = "block";
                                                     document.getElementById("getTA").style.display = "none";
+
+                                                    // send to server
+                                                    ajaxPost("{% url 'ajax_add_course_TA' course_year_1=course_instance.term.year course_year_2=course_instance.term.year|add:"1" term=course_instance.term.semester course_num=course_instance.course.course_number course_group=course_instance.group %}",
+                                                            {
+                                                                'TA_name': $("#TA_name").val(),
+                                                                'TA_email': $("#TA_email").val()
+                                                            }, function (content) {
+                                                                //onSuccess
+                                                                location.reload()
+                                                            })
                                                 }
                                             </Script>
 

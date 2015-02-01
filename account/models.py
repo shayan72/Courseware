@@ -12,10 +12,12 @@ class Account(models.Model):
         return self.user.username
 
 class Student(models.Model):
-    account_id = models.ForeignKey(Account)
-    student_number = models.PositiveIntegerField()
-    degree_level = models.PositiveSmallIntegerField()
-    website = models.URLField()
+    account_id = models.ForeignKey(Account, null = True, blank = True)
+    student_name = models.CharField(max_length=200, null = True, blank = True )
+    student_email = models.EmailField( null = True, blank = True )
+    student_number = models.PositiveIntegerField( null = True, blank = True )
+    degree_level = models.PositiveSmallIntegerField( null = True, blank = True )
+    website = models.URLField( null = True, blank = True )
 
 class Professor(models.Model):
     ASSOCIATE_PROFESSOR = 'ASSO'
@@ -28,13 +30,15 @@ class Professor(models.Model):
         ( PROFESSOR, 'Professor' ),
     )
 
-    account_id = models.ForeignKey(Account)
+    account_id = models.ForeignKey(Account, null = True, blank = True )
     # room
-    telephone = models.PositiveIntegerField()
-    research_interest = models.TextField()
-    education_background = models.TextField()
-    type = models.CharField( max_length=4, choices=PROFESSOR_CHOICES )
-    website = models.URLField()
+    professor_name = models.CharField(max_length=200, null = True, blank = True )
+    professor_email = models.EmailField( null = True, blank = True )
+    telephone = models.PositiveIntegerField( null = True, blank = True )
+    research_interest = models.TextField( null = True, blank = True )
+    education_background = models.TextField( null = True, blank = True )
+    type = models.CharField( max_length=4, choices=PROFESSOR_CHOICES, null = True, blank = True )
+    website = models.URLField( null = True, blank = True )
     # role
 
     def __unicode__(self):
