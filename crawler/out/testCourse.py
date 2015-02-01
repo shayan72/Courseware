@@ -12,9 +12,14 @@ with open('./allCourses.json','r') as courses:
         except:
             pass   
         try:
-            term=item['term']
+            year=item['term'][0:2]
+            term=item['term'][-1:]
         except:
             pass   
+        try:
+            group= item['group'][item['group'].find("Group")+6:]
+        except:
+            pass
         try:
             name=item['name']
         except:

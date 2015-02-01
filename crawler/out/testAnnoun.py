@@ -11,7 +11,10 @@ with open('./annoncements.json','r') as courses:
         
         #now we have announcements in annoncements list
         for annon in annoncements:
-            date=annon.split(dateSplitter)[0]
+			try:
+	            date=annon.split(dateSplitter)[0]
+			except:
+				date=""
             try:            
                 context=annon.split(dateSplitter)[1]
             except:
